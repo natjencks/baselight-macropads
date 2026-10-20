@@ -1,0 +1,1106 @@
+# Master source of truth for the Baselight ErgoDox macropads.
+# Edit THIS file, then run scripts/sync.py (see README). Key names: 1A..7E / R1A..R7E / T1..T6 / RT1..RT6.
+# layers.N: fn = what it does; key = keystroke sent (or macro:); hold = hold action; oryx = Oryx label (<=10 chars);
+#           cap = keycap legend (L0 <= ~5 chars on 1u keys, variants <= 7). Omit a layer to leave it transparent.
+layout:
+  name: Ergodox Baselight V16
+  oryx_hash: Y6DDQ
+  oryx_geometry: ergodox-ez-st
+  oryx_revision: B4K0zD
+  yuzu_name: Baselight V16 v3 (caps, slots)
+style:
+  profile: kam
+  cap_color: GR002
+  ink:
+    '0': GR001
+    '1': RD003
+    '2': GN010
+    '3': BL023
+  font_label: 26345
+  font_big: 11838
+  cap_mm_l0: 2.65
+  cap_mm_var: 1.8
+  top_y: -5.2
+  gap_after_l0: 1.05
+  gap_var: 0.65
+  cap_ratio: 0.712
+  big_cap_max_mm: 6.5
+  big_keys:
+  - R4A
+  - R5A
+  - R6A
+  - R7A
+  - R4B
+  - R5B
+  - R6B
+  - R7B
+  - R2C
+  - R4C
+  - R5C
+  - R6C
+  - R7C
+  - R1D
+  - R2D
+  - R3D
+  - R4D
+  - R5D
+  - R6D
+  - R5E
+  - R6E
+keys:
+  1A:
+    oryx: 0
+    yuzu: 7P28FW
+    size: 1.5u
+    layers:
+      0:
+        fn: Escape
+        key: Esc
+        oryx: Esc
+        cap: ESC
+      1:
+        fn: Quit Baselight
+        key: Ctrl+Q
+        oryx: Quit
+        cap: QUIT
+  2A:
+    oryx: 1
+    yuzu: GZQFPA
+    size: 1u
+    layers:
+      0:
+        fn: Display zoom
+        key: F12
+        oryx: Disp Zoom
+        cap: ZOOM
+      1:
+        fn: Timeline horizontal zoom
+        key: F7
+        oryx: TL H-Zoom
+        cap: TMLN H
+      2:
+        fn: Timeline vertical zoom
+        key: Shift+F7
+        oryx: TL V-Zoom
+        cap: TMLN V
+      3:
+        fn: Timeline H+V zoom
+        key: Ctrl+Shift+F7
+        oryx: TL HV-Zoom
+        cap: TMLN HV
+  3A:
+    oryx: 2
+    yuzu: FzWhED
+    size: 1u
+    layers:
+      0:
+        fn: Previous mark
+        key: Shift+Z
+        oryx: Prev Mark
+        cap: ‹MARK
+      1:
+        fn: Colour note (Win+Alt+Shift+C, Tab)
+        key: 'macro: Win+Alt+Shift+C, Tab'
+        oryx: Color Note
+        cap: C NOTE
+  4A:
+    oryx: 3
+    yuzu: 0R3YCk
+    size: 1u
+    layers:
+      0:
+        fn: Add mark
+        key: M
+        oryx: Mark
+        cap: MARK
+      1:
+        fn: Delete marks under cursor
+        key: Shift+M
+        oryx: Del Marks
+        cap: DELETE
+      2:
+        fn: Delete all marks
+        key: Ctrl+Shift+M
+        oryx: Del AllMks
+        cap: DEL ALL
+  5A:
+    oryx: 4
+    yuzu: rW9ob7
+    size: 1u
+    layers:
+      0:
+        fn: Next mark
+        key: Shift+X
+        oryx: Next Mark
+        cap: MARK›
+      1:
+        fn: Conform note (Win+Alt+Shift+O, Tab)
+        key: 'macro: Win+Alt+Shift+O, Tab'
+        oryx: Conf Note
+        cap: O NOTE
+  6A:
+    oryx: 5
+    yuzu: zYPGbQ
+    size: 1u
+    layers:
+      0:
+        fn: Grab to gallery
+        key: Shift+G
+        oryx: Grab
+        cap: GRAB
+      1:
+        fn: Group grading
+        key: Ctrl+G
+        oryx: Group Grd
+        cap: GROUP
+  7A:
+    oryx: 6
+    yuzu: A59P47
+    size: 1u
+    layers: {}
+  1B:
+    oryx: 7
+    yuzu: CEBPLX
+    size: 1.5u
+    layers:
+      0:
+        fn: Select / deselect all shots
+        key: Ctrl+Shift+Enter
+        oryx: Sel/Desel
+        cap: SELECT
+      1:
+        fn: Select all strips
+        key: Ctrl+A
+        oryx: Sel Strips
+        cap: +STRIPS
+      2:
+        fn: Deselect all strips
+        key: Ctrl+Shift+A
+        oryx: Desel Strp
+        cap: −STRIPS
+  2B:
+    oryx: 8
+    yuzu: l7DqSU
+    size: 1u
+    layers:
+      0:
+        fn: 1x1 view
+        key: F1
+        oryx: 1x1
+        cap: 1×1
+      2:
+        fn: 2x1 cursors
+        key: F2
+        oryx: 2x1 Cursor
+        cap: 2×1
+      3:
+        fn: Jump to BASE GRADE layer (FLAPI F13)
+        key: F13
+        oryx: BASE GRADE
+        cap: BASE
+  3B:
+    oryx: 9
+    yuzu: dfYXnc
+    size: 1u
+    layers:
+      0:
+        fn: Previous shot
+        key: Z
+        oryx: Prev Shot
+        cap: ‹SHOT
+      1:
+        fn: Shot start
+        key: Home
+        oryx: Shot Start
+        cap: START
+      2:
+        fn: Scene head
+        key: Ctrl+Home
+        oryx: Scene Head
+        cap: ‹SCENE
+      3:
+        fn: Jump to FACE1 layer (FLAPI F14)
+        key: F14
+        oryx: FACE1
+        cap: FACE
+  4B:
+    oryx: 10
+    yuzu: 2bSRwq
+    size: 1u
+    layers:
+      0:
+        fn: Bypass strip
+        key: Ctrl+F11
+        oryx: Byp Strip
+        cap: BYP
+      1:
+        fn: Bypass all
+        key: F11
+        oryx: Byp All
+        cap: ALL
+      2:
+        fn: Bypass operator
+        key: Ctrl+Shift+F11
+        oryx: Byp Op
+        cap: OPER
+      3:
+        fn: Jump to WIDE1 layer (FLAPI F15)
+        key: F15
+        oryx: WIDE1
+        cap: WIDE
+  5B:
+    oryx: 11
+    yuzu: JaOAd8
+    size: 1u
+    layers:
+      0:
+        fn: Next shot
+        key: X
+        oryx: Next Shot
+        cap: SHOT›
+      1:
+        fn: Shot end
+        key: End
+        oryx: Shot End
+        cap: END
+      2:
+        fn: Scene tail
+        key: Ctrl+End
+        oryx: Scene Tail
+        cap: SCENE›
+      3:
+        fn: Jump to VIGNETTE layer (FLAPI F16)
+        key: F16
+        oryx: VIGNETTE
+        cap: VIGN
+  6B:
+    oryx: 12
+    yuzu: J9JHWP
+    size: 1u
+    layers:
+      0:
+        fn: Add shape
+        key: S
+        oryx: Add Shape
+        cap: SHAPE
+      1:
+        fn: Create/edit shapes
+        key: Q
+        oryx: Edit Shape
+        cap: EDIT
+      2:
+        fn: Reset shape
+        key: Shift+S
+        oryx: Reset Shp
+        cap: RESET
+      3:
+        fn: Jump to CONTRAST layer (FLAPI F17)
+        key: F17
+        oryx: CONTRAST
+        cap: CONTR
+  7B:
+    oryx: 13
+    yuzu: 4JFX3U
+    size: 1.5uv
+    layers:
+      0:
+        fn: DBS view
+        key: ;
+        oryx: DBS View
+        cap: |-
+          DBS
+          VIEW
+  1C:
+    oryx: 14
+    yuzu: 3R8UDS
+    size: 1.5u
+    layers:
+      0:
+        fn: Layer up
+        key: PgUp
+        oryx: Layer Up
+        cap: LAYER↑
+      1:
+        fn: Top of stack
+        key: Win+PgUp
+        oryx: Stack Top
+        cap: TOP
+  2C:
+    oryx: 15
+    yuzu: I9bsjW
+    size: 1u
+    layers:
+      0:
+        fn: 2x1 vs DBS
+        key: Ctrl+Alt+3
+        oryx: 2x1|DBS
+        cap: VS DBS
+      1:
+        fn: Wipe vs DBS
+        key: Ctrl+Alt+4
+        oryx: Wipe|DBS
+        cap: WIPE
+      2:
+        fn: Cursor vs bypassed
+        key: Ctrl+Alt+2
+        oryx: Cur|Byp
+        cap: VS BYP
+  3C:
+    oryx: 16
+    yuzu: dXk9mu
+    size: 1u
+    layers:
+      0:
+        fn: Rewind (J)
+        key: J
+        oryx: Rew
+        cap: REW
+  4C:
+    oryx: 17
+    yuzu: 0XL1hR
+    size: 1u
+    layers:
+      0:
+        fn: Stop (K)
+        key: K
+        oryx: Stop
+        cap: STOP
+      1:
+        fn: Play scene
+        key: Shift+Space
+        oryx: Play Scene
+        cap: SCENE
+      2:
+        fn: Play shot
+        key: Ctrl+Space
+        oryx: Play Shot
+        cap: SHOT
+      3:
+        fn: Reset all parameters
+        key: Ctrl+Delete
+        oryx: Reset Prms
+        cap: RESET
+  5C:
+    oryx: 18
+    yuzu: Cg7Wc0
+    size: 1uh
+    layers:
+      0:
+        fn: Forward (L)
+        key: L
+        oryx: Fwd
+        cap: FWD
+  6C:
+    oryx: 19
+    yuzu: SGQPN7
+    size: 1u
+    layers:
+      0:
+        fn: Toggle grade / matte
+        key: G
+        oryx: Grd⇄Matte
+        cap: MATTE
+      1:
+        fn: Next shape
+        key: Ctrl+N
+        oryx: Next Shape
+        cap: SHAPE›
+      2:
+        fn: Matte display
+        key: O
+        oryx: Matte Disp
+        cap: DISP
+  1D:
+    oryx: 20
+    yuzu: 3UK6NS
+    size: 1.5u
+    layers:
+      0:
+        fn: Layer down
+        key: PgDn
+        oryx: Layer Down
+        cap: LAYER↓
+      1:
+        fn: Bottom of stack
+        key: Win+PgDn
+        oryx: Stack Bot
+        cap: BOTTOM
+  2D:
+    oryx: 21
+    yuzu: h9SSVX
+    size: 1u
+    layers:
+      0:
+        fn: Cursor 1
+        key: '1'
+        oryx: Cursor 1
+        cap: CUR 1
+      1:
+        fn: Toggle cursor 1
+        key: Ctrl+1
+        oryx: Toggle C1
+        cap: TOGGLE
+      2:
+        fn: Gang cursors
+        key: Ctrl+0
+        oryx: Gang Curs
+        cap: GANG
+  3D:
+    oryx: 22
+    yuzu: s6w7jw
+    size: 1u
+    layers:
+      0:
+        fn: Previous keyframe
+        key: '['
+        oryx: Prev KF
+        cap: ‹KEY
+      1:
+        fn: Move keyframe left
+        key: Ctrl+[
+        oryx: Move KF ◀
+        cap: MOVE
+      2:
+        fn: Edit keyframe left
+        key: ','
+        oryx: Edit KF ◀
+        cap: EDIT
+  4D:
+    oryx: 23
+    yuzu: UAeurI
+    size: 1u
+    layers:
+      0:
+        fn: Toggle keyframe
+        key: KP-
+        oryx: Toggle KF
+        cap: KEY ±
+  5D:
+    oryx: 24
+    yuzu: NGDt4W
+    size: 1u
+    layers:
+      0:
+        fn: Next keyframe
+        key: ']'
+        oryx: Next KF
+        cap: KEY›
+      1:
+        fn: Move keyframe right
+        key: Ctrl+]
+        oryx: Move KF ▶
+        cap: MOVE
+      2:
+        fn: Edit keyframe right
+        key: .
+        oryx: Edit KF ▶
+        cap: EDIT
+  6D:
+    oryx: 25
+    yuzu: M8QS7R
+    size: 1u
+    layers:
+      0:
+        fn: Blur (matte)
+        key: B
+        oryx: Blur
+        cap: BLUR
+      1:
+        fn: Reset blur
+        key: Shift+B
+        oryx: Reset Blur
+        cap: RESET
+  7D:
+    oryx: 26
+    yuzu: AMR4XD
+    size: 1.5uv
+    layers:
+      0:
+        fn: DBS apply
+        key: ''''
+        oryx: DBS Apply
+        cap: |-
+          DBS
+          APPLY
+  1E:
+    oryx: 27
+    yuzu: f19Yvj
+    size: 1u
+    layers:
+      0:
+        fn: Insert layer
+        key: P
+        oryx: Insert Lyr
+        cap: +LYR
+      1:
+        fn: Delete layer
+        key: Shift+P
+        oryx: Delete Lyr
+        cap: −LYR
+  2E:
+    oryx: 28
+    yuzu: kOxNNJ
+    size: 1u
+    layers:
+      0:
+        fn: Cursor 2
+        key: '2'
+        oryx: Cursor 2
+        cap: CUR 2
+      1:
+        fn: Toggle cursor 2
+        key: Ctrl+2
+        oryx: Toggle C2
+        cap: TOGGLE
+      2:
+        fn: Cursor vs reference
+        key: Ctrl+Alt+1
+        oryx: Cur|Ref
+        cap: VS REF
+  3E:
+    oryx: 29
+    yuzu: fzsvxA
+    size: 1u
+    layers:
+      0:
+        fn: Copy
+        key: Ctrl+C
+        oryx: Copy
+        cap: COPY
+      1:
+        fn: Smart copy
+        key: Ctrl+U
+        oryx: Smart Copy
+        cap: SMART
+      2:
+        fn: Copy parameters
+        key: Ctrl+Shift+C
+        oryx: Copy Prms
+        cap: PARAMS
+  4E:
+    oryx: 30
+    yuzu: dqz1KA
+    size: 1u
+    layers:
+      0:
+        fn: Rename strip
+        key: Ctrl+Shift+R
+        oryx: Rename
+        cap: NAME
+      2:
+        fn: Multi-paste
+        key: Ctrl+M
+        oryx: MultiPaste
+        cap: MULTI
+  5E:
+    oryx: 31
+    yuzu: K84UUS
+    size: 1u
+    layers:
+      0:
+        fn: Paste
+        key: Ctrl+V
+        oryx: Paste
+        cap: PASTE
+      1:
+        fn: Smart paste
+        key: Ctrl+I
+        oryx: SmartPaste
+        cap: SMART
+      2:
+        fn: Paste strips
+        key: Ctrl+F
+        oryx: Paste Strp
+        cap: STRIPS
+  T1:
+    oryx: 32
+    yuzu: GGCFEK
+    size: 1u
+    layers:
+      0:
+        fn: Undo
+        key: Ctrl+Z
+        oryx: Undo
+        cap: UNDO
+      1:
+        fn: Redo
+        key: Ctrl+Shift+Z
+        oryx: Redo
+        cap: REDO
+  T2:
+    oryx: 33
+    yuzu: LFQR52
+    size: 1u
+    layers:
+      0:
+        fn: Alt (hold)
+        key: LAlt
+        oryx: Alt
+        cap: ALT
+  T5:
+    oryx: 34
+    yuzu: XACG6H
+    size: 1u
+    layers:
+      0:
+        fn: Shift (hold)
+        key: LShift
+        oryx: Shift
+        cap: SHIFT
+  T3:
+    oryx: 35
+    yuzu: 54TSLP
+    size: 2uv
+    layers:
+      0:
+        fn: Layer 1 while held
+        hold: MO(1)
+        oryx: L1 Hold
+        cap: L1
+      2:
+        fn: Layer 3 one-shot (with T4 held)
+        key: OSL(3)
+        oryx: L3 1-shot
+        cap: L3
+  T4:
+    oryx: 36
+    yuzu: CD9XSL
+    size: 2uv
+    layers:
+      0:
+        fn: Layer 2 while held
+        hold: MO(2)
+        oryx: L2 Hold
+        cap: L2
+      1:
+        fn: Layer 3 one-shot (with T3 held)
+        key: OSL(3)
+        oryx: L3 1-shot
+        cap: L3
+  T6:
+    oryx: 37
+    yuzu: TLB9ES
+    size: 1u
+    layers:
+      0:
+        fn: Ctrl (hold)
+        key: LCtrl
+        oryx: Ctrl
+        cap: CTRL
+  R1A:
+    oryx: 38
+    yuzu: P56DXT
+    size: 1u
+    layers:
+      0:
+        fn: Preferences
+        key: Win+Shift+P
+        oryx: Prefs
+        cap: PREFS
+      1:
+        fn: Setups
+        key: Win+Shift+S
+        oryx: Setups
+        cap: SETUPS
+      2:
+        fn: Formats
+        key: Win+Shift+F
+        oryx: Formats
+        cap: FORMAT
+      3:
+        fn: Scene settings
+        key: Win+S
+        oryx: Scene Set
+        cap: SCENE
+  R2A:
+    oryx: 39
+    yuzu: TIDz6n
+    size: 1u
+    layers:
+      0:
+        fn: Mute audio
+        key: Alt+M
+        oryx: Mute Audio
+        cap: MUTE
+  R3A:
+    oryx: 40
+    yuzu: 0C6IJF
+    size: 1u
+    layers:
+      0:
+        fn: Timeline alignment panel
+        key: Win+;
+        oryx: TL Align
+        cap: ALIGN
+      1:
+        fn: Align timeline vertically
+        key: Ctrl+;
+        oryx: Align Vert
+        cap: VERT
+  R4A:
+    oryx: 41
+    yuzu: vTVl8h
+    size: 1u
+    layers:
+      0:
+        fn: Num lock
+        key: NumLock
+        cap: NUM
+  R5A:
+    oryx: 42
+    yuzu: cNAoas
+    size: 1u
+    layers:
+      0:
+        fn: Keypad /
+        key: KP/
+        cap: /
+  R6A:
+    oryx: 43
+    yuzu: UVi9dK
+    size: 1u
+    layers:
+      0:
+        fn: Keypad *
+        key: KP*
+        cap: '*'
+  R7A:
+    oryx: 44
+    yuzu: MKMFS4
+    size: 1.5u
+    layers:
+      0:
+        fn: Keypad -
+        key: KP-
+        cap: −
+  R1B:
+    oryx: 45
+    yuzu: GYPDRJ
+    size: 1.5uv
+    layers:
+      0:
+        fn: Jobs
+        key: Win+J
+        oryx: Jobs
+        cap: JOBS
+  R2B:
+    oryx: 46
+    yuzu: ZBNA2M
+    size: 1u
+    layers:
+      0:
+        fn: CSJ
+        key: Win+Shift+J
+        oryx: CSJ
+        cap: CSJ
+  R3B:
+    oryx: 47
+    yuzu: EyXwyF
+    size: 1u
+    layers:
+      0:
+        fn: Fold layer
+        key: \
+        oryx: Fold Lyr
+        cap: FOLD
+      1:
+        fn: Fold all
+        key: Ctrl+\
+        oryx: Fold All
+        cap: ALL
+  R4B:
+    oryx: 48
+    yuzu: 6Sh7Tl
+    size: 1u
+    layers:
+      0:
+        fn: Keypad 7
+        key: KP7
+        cap: '7'
+  R5B:
+    oryx: 49
+    yuzu: Y1R9rb
+    size: 1u
+    layers:
+      0:
+        fn: Keypad 8
+        key: KP8
+        cap: '8'
+  R6B:
+    oryx: 50
+    yuzu: 1wB5ta
+    size: 1u
+    layers:
+      0:
+        fn: Keypad 9
+        key: KP9
+        cap: '9'
+  R7B:
+    oryx: 51
+    yuzu: T24GU9
+    size: 1.5u
+    layers:
+      0:
+        fn: Keypad +
+        key: KP+
+        cap: +
+  R2C:
+    oryx: 52
+    yuzu: 8EYLJ4
+    size: 1u
+    layers:
+      0:
+        fn: Up arrow
+        key: Up
+        oryx: ↑
+        cap: ↑
+  R3C:
+    oryx: 53
+    yuzu: DmcEQn
+    size: 1uh
+    layers:
+      0:
+        fn: Counters
+        key: V
+        oryx: Counters
+        cap: COUNT
+      1:
+        fn: Show FPS
+        key: Win+F
+        oryx: Show FPS
+        cap: FPS
+  R4C:
+    oryx: 54
+    yuzu: 7tj5BS
+    size: 1u
+    layers:
+      0:
+        fn: Keypad 4
+        key: KP4
+        cap: '4'
+  R5C:
+    oryx: 55
+    yuzu: cGx7Jw
+    size: 1u
+    layers:
+      0:
+        fn: Keypad 5
+        key: KP5
+        cap: '5'
+  R6C:
+    oryx: 56
+    yuzu: emeZD1
+    size: 1u
+    layers:
+      0:
+        fn: Keypad 6
+        key: KP6
+        cap: '6'
+  R7C:
+    oryx: 57
+    yuzu: QEKHQW
+    size: 1.5u
+    layers:
+      0:
+        fn: Keypad Enter
+        key: KPEnter
+        cap: ENTER
+  R1D:
+    oryx: 58
+    yuzu: ZRHML7
+    size: 1.5uv
+    layers:
+      0:
+        fn: Left arrow
+        key: Left
+        oryx: ←
+        cap: ←
+  R2D:
+    oryx: 59
+    yuzu: BFSHE3
+    size: 1u
+    layers:
+      0:
+        fn: Down arrow
+        key: Down
+        oryx: ↓
+        cap: ↓
+  R3D:
+    oryx: 60
+    yuzu: Uzb6qW
+    size: 1u
+    layers:
+      0:
+        fn: Right arrow
+        key: Right
+        oryx: →
+        cap: →
+  R4D:
+    oryx: 61
+    yuzu: q4tLCR
+    size: 1u
+    layers:
+      0:
+        fn: Keypad 1
+        key: KP1
+        cap: '1'
+  R5D:
+    oryx: 62
+    yuzu: CRIsLR
+    size: 1u
+    layers:
+      0:
+        fn: Keypad 2
+        key: KP2
+        cap: '2'
+  R6D:
+    oryx: 63
+    yuzu: KbSM4v
+    size: 1u
+    layers:
+      0:
+        fn: Keypad 3
+        key: KP3
+        cap: '3'
+  R7D:
+    oryx: 64
+    yuzu: EGDHBG
+    size: 1.5u
+    layers:
+      0:
+        fn: Keypad Enter
+        key: KPEnter
+        cap: ENTER
+      1:
+        fn: 'Close comment (V15 macro: Tab, Tab, Enter)'
+        key: 'macro: Tab, Tab, Enter'
+        oryx: close comt
+        cap: CLOSE
+  R3E:
+    oryx: 65
+    yuzu: R4QLAP
+    size: 1u
+    layers:
+      0:
+        fn: Groups
+        key: Win+G
+        oryx: Groups
+        cap: GROUP
+  R4E:
+    oryx: 66
+    yuzu: SkCBkD
+    size: 1u
+    layers:
+      0:
+        fn: Cycle numpad mode
+        key: Win+KP0
+        oryx: Cycle Num
+        cap: CYCLE
+  R5E:
+    oryx: 67
+    yuzu: kCDQMH
+    size: 1u
+    layers:
+      0:
+        fn: Keypad 0
+        key: KP0
+        cap: '0'
+  R6E:
+    oryx: 68
+    yuzu: Y2XSTU
+    size: 1u
+    layers:
+      0:
+        fn: Keypad .
+        key: KP.
+        cap: .
+  R7E:
+    oryx: 69
+    yuzu: RTHPEX
+    size: 1u
+    layers:
+      0:
+        fn: Win
+        key: RWin
+        oryx: WIN
+        cap: WIN
+      1:
+        fn: 'Close comment (V15 macro: Tab, Tab, Enter)'
+        key: 'macro: Tab, Tab, Enter'
+        oryx: close comt
+        cap: CLOSE
+  RT2:
+    oryx: 70
+    yuzu: 4GSW3A
+    size: 1u
+    layers:
+      0:
+        fn: Alt (hold)
+        key: LAlt
+        oryx: Alt
+        cap: ALT
+  RT1:
+    oryx: 71
+    yuzu: ZK573M
+    size: 1u
+    layers:
+      0:
+        fn: Undo
+        key: Ctrl+Z
+        oryx: Undo
+        cap: UNDO
+      1:
+        fn: Redo
+        key: Ctrl+Shift+Z
+        oryx: Redo
+        cap: REDO
+  RT5:
+    oryx: 72
+    yuzu: LLAJET
+    size: 1u
+    layers:
+      0:
+        fn: Shift (hold)
+        key: LShift
+        oryx: Shift
+        cap: SHIFT
+  RT6:
+    oryx: 73
+    yuzu: SQPXD7
+    size: 1u
+    layers:
+      0:
+        fn: Ctrl (hold)
+        key: LCtrl
+        oryx: Ctrl
+        cap: CTRL
+  RT4:
+    oryx: 74
+    yuzu: Y53RLB
+    size: 2uv
+    layers:
+      0:
+        fn: Layer 2 while held
+        hold: MO(2)
+        oryx: L2 Hold
+        cap: L2
+      1:
+        fn: Layer 3 one-shot (with RT3 held)
+        key: OSL(3)
+        oryx: L3 1-shot
+        cap: L3
+  RT3:
+    oryx: 75
+    yuzu: H2CWXF
+    size: 2uv
+    layers:
+      0:
+        fn: Layer 1 while held
+        hold: MO(1)
+        oryx: L1 Hold
+        cap: L1
+      2:
+        fn: Layer 3 one-shot (with RT4 held)
+        key: OSL(3)
+        oryx: L3 1-shot
+        cap: L3
