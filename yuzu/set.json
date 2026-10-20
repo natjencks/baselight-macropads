@@ -1104,9 +1104,9 @@
    "layers": [
     {
      "colorId": "GR001",
-     "textLabel": "2x1 DBS",
+     "textLabel": "2x1DBS",
      "textFontId": 26345,
-     "textSize": 3.41,
+     "textSize": 3.67,
      "x": 0,
      "y": -3.88
     },
@@ -1459,9 +1459,9 @@
    "layers": [
     {
      "colorId": "GR001",
-     "textLabel": "RENAME",
+     "textLabel": "NAME",
      "textFontId": 26345,
-     "textSize": 3.2,
+     "textSize": 3.72,
      "x": 0,
      "y": -3.88
     },

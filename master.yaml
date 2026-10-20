@@ -334,7 +334,7 @@ keys:
         fn: 2x1 vs DBS
         key: Ctrl+Alt+3
         oryx: 2x1|DBS
-        cap: 2x1 DBS
+        cap: 2x1DBS
       1:
         fn: Wipe vs DBS
         key: Ctrl+Alt+4
@@ -581,7 +581,7 @@ keys:
         fn: Rename strip
         key: Ctrl+Shift+R
         oryx: Rename
-        cap: RENAME
+        cap: NAME
       2:
         fn: Multi-paste
         key: Ctrl+M
