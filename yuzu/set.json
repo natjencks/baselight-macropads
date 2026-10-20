@@ -1978,24 +1978,7 @@
   },
   "EGDHBG": {
    "colorId": "GR002",
-   "layers": [
-    {
-     "colorId": "GR001",
-     "textLabel": "ENTER",
-     "textFontId": 26345,
-     "textSize": 3.72,
-     "x": 0,
-     "y": -3.88
-    },
-    {
-     "colorId": "RD003",
-     "textLabel": "CLOSE",
-     "textFontId": 26345,
-     "textSize": 2.53,
-     "x": 0,
-     "y": -0.6
-    }
-   ]
+   "layers": []
   },
   "R4QLAP": {
    "colorId": "GR002",

@@ -1,0 +1,28 @@
+[
+ {
+  "layer": 0,
+  "idx": 64,
+  "key": "R7D",
+  "tap": "",
+  "hold": "",
+  "label": "",
+  "was": {
+   "tap": "KPEnter",
+   "hold": "",
+   "label": ""
+  }
+ },
+ {
+  "layer": 1,
+  "idx": 64,
+  "key": "R7D",
+  "tap": "",
+  "hold": "",
+  "label": "",
+  "was": {
+   "tap": "macro: Tab, Tab, Enter",
+   "hold": "",
+   "label": "close comt"
+  }
+ }
+]
