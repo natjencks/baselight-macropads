@@ -1062,19 +1062,11 @@
    "layers": [
     {
      "colorId": "GR001",
-     "textLabel": "DBS",
-     "textFontId": 26345,
-     "textSize": 3.72,
-     "x": 0,
-     "y": -3.88
-    },
-    {
-     "colorId": "GR001",
      "textLabel": "VIEW",
      "textFontId": 26345,
      "textSize": 3.72,
      "x": 0,
-     "y": -0.6
+     "y": -3.88
     }
    ]
   },
@@ -1359,19 +1351,11 @@
    "layers": [
     {
      "colorId": "GR001",
-     "textLabel": "DBS",
-     "textFontId": 26345,
-     "textSize": 3.72,
-     "x": 0,
-     "y": -3.88
-    },
-    {
-     "colorId": "GR001",
      "textLabel": "APPLY",
      "textFontId": 26345,
      "textSize": 3.72,
      "x": 0,
-     "y": -0.6
+     "y": -3.88
     }
    ]
   },
