@@ -6,7 +6,7 @@ layout:
   name: Ergodox Baselight V16
   oryx_hash: Y6DDQ
   oryx_geometry: ergodox-ez-st
-  oryx_revision: B4K0zD
+  oryx_revision: yoAOjl
   yuzu_name: Baselight V16 v3 (caps, slots)
 style:
   profile: kam
@@ -102,7 +102,7 @@ keys:
         fn: Colour note (Win+Alt+Shift+C, Tab)
         key: 'macro: Win+Alt+Shift+C, Tab'
         oryx: Color Note
-        cap: C NOTE
+        cap: CLR MK
   4A:
     oryx: 3
     yuzu: 0R3YCk
@@ -137,7 +137,7 @@ keys:
         fn: Conform note (Win+Alt+Shift+O, Tab)
         key: 'macro: Win+Alt+Shift+O, Tab'
         oryx: Conf Note
-        cap: O NOTE
+        cap: CNF MK
   6A:
     oryx: 5
     yuzu: zYPGbQ
@@ -152,7 +152,7 @@ keys:
         fn: Group grading
         key: Ctrl+G
         oryx: Group Grd
-        cap: GROUP
+        cap: GG
   7A:
     oryx: 6
     yuzu: A59P47
@@ -167,7 +167,7 @@ keys:
         fn: Select / deselect all shots
         key: Ctrl+Shift+Enter
         oryx: Sel/Desel
-        cap: SELECT
+        cap: SEL/DEL
       1:
         fn: Select all strips
         key: Ctrl+A
@@ -192,7 +192,7 @@ keys:
         fn: 2x1 cursors
         key: F2
         oryx: 2x1 Cursor
-        cap: 2×1
+        cap: 2x1 CUR
       3:
         fn: Jump to BASE GRADE layer (FLAPI F13)
         key: F13
@@ -217,7 +217,7 @@ keys:
         fn: Scene head
         key: Ctrl+Home
         oryx: Scene Head
-        cap: ‹SCENE
+        cap: HEAD
       3:
         fn: Jump to FACE1 layer (FLAPI F14)
         key: F14
@@ -267,12 +267,12 @@ keys:
         fn: Scene tail
         key: Ctrl+End
         oryx: Scene Tail
-        cap: SCENE›
+        cap: TAIL
       3:
         fn: Jump to VIGNETTE layer (FLAPI F16)
         key: F16
         oryx: VIGNETTE
-        cap: VIGN
+        cap: VIG
   6B:
     oryx: 12
     yuzu: J9JHWP
@@ -334,17 +334,12 @@ keys:
         fn: 2x1 vs DBS
         key: Ctrl+Alt+3
         oryx: 2x1|DBS
-        cap: VS DBS
+        cap: 2x1 DBS
       1:
         fn: Wipe vs DBS
         key: Ctrl+Alt+4
         oryx: Wipe|DBS
-        cap: WIPE
-      2:
-        fn: Cursor vs bypassed
-        key: Ctrl+Alt+2
-        oryx: Cur|Byp
-        cap: VS BYP
+        cap: WIP DBS
   3C:
     oryx: 16
     yuzu: dXk9mu
@@ -434,7 +429,7 @@ keys:
         fn: Cursor 1
         key: '1'
         oryx: Cursor 1
-        cap: CUR 1
+        cap: C1
       1:
         fn: Toggle cursor 1
         key: Ctrl+1
@@ -546,7 +541,7 @@ keys:
         fn: Cursor 2
         key: '2'
         oryx: Cursor 2
-        cap: CUR 2
+        cap: C2
       1:
         fn: Toggle cursor 2
         key: Ctrl+2
@@ -586,7 +581,7 @@ keys:
         fn: Rename strip
         key: Ctrl+Shift+R
         oryx: Rename
-        cap: NAME
+        cap: RENAME
       2:
         fn: Multi-paste
         key: Ctrl+M

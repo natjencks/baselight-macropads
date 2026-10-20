@@ -39,7 +39,9 @@ for name, e in m["keys"].items():
                 cap_mm = H0 if layer == 0 else HV
                 need = width_per_cap_mm(line) * cap_mm
                 if need > TOP_W[e["size"]] - 0.9:
-                    warnings.append(f"{name} L{layer} '{line}' needs {need:.1f} mm, cap allows {TOP_W[e['size']]-0.9:.1f}")
+                    fitted = (TOP_W[e["size"]] - 0.9) / width_per_cap_mm(line)
+                    warnings.append(f"{name} L{layer} '{line}' needs {need:.1f} mm, cap allows {TOP_W[e['size']]-0.9:.1f} -> shrunk to {fitted:.2f} mm cap")
+                    cap_mm = fitted
                 layers.append({"colorId": INK[layer], "textLabel": line, "textFontId": st["font_label"],
                                "textSize": size(cap_mm), "x": 0, "y": round(SLOT[layer + n], 2)})
     keys[kid] = {"colorId": st["cap_color"], "layers": layers}

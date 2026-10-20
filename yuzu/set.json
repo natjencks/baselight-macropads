@@ -768,7 +768,7 @@
     },
     {
      "colorId": "RD003",
-     "textLabel": "C NOTE",
+     "textLabel": "CLR MK",
      "textFontId": 26345,
      "textSize": 2.53,
      "x": 0,
@@ -818,7 +818,7 @@
     },
     {
      "colorId": "RD003",
-     "textLabel": "O NOTE",
+     "textLabel": "CNF MK",
      "textFontId": 26345,
      "textSize": 2.53,
      "x": 0,
@@ -839,7 +839,7 @@
     },
     {
      "colorId": "RD003",
-     "textLabel": "GROUP",
+     "textLabel": "GG",
      "textFontId": 26345,
      "textSize": 2.53,
      "x": 0,
@@ -856,7 +856,7 @@
    "layers": [
     {
      "colorId": "GR001",
-     "textLabel": "SELECT",
+     "textLabel": "SEL/DEL",
      "textFontId": 26345,
      "textSize": 3.72,
      "x": 0,
@@ -893,7 +893,7 @@
     },
     {
      "colorId": "GN010",
-     "textLabel": "2×1",
+     "textLabel": "2x1 CUR",
      "textFontId": 26345,
      "textSize": 2.53,
      "x": 0,
@@ -930,7 +930,7 @@
     },
     {
      "colorId": "GN010",
-     "textLabel": "‹SCENE",
+     "textLabel": "HEAD",
      "textFontId": 26345,
      "textSize": 2.53,
      "x": 0,
@@ -1004,7 +1004,7 @@
     },
     {
      "colorId": "GN010",
-     "textLabel": "SCENE›",
+     "textLabel": "TAIL",
      "textFontId": 26345,
      "textSize": 2.53,
      "x": 0,
@@ -1012,7 +1012,7 @@
     },
     {
      "colorId": "BL023",
-     "textLabel": "VIGN",
+     "textLabel": "VIG",
      "textFontId": 26345,
      "textSize": 2.53,
      "x": 0,
@@ -1104,27 +1104,19 @@
    "layers": [
     {
      "colorId": "GR001",
-     "textLabel": "VS DBS",
+     "textLabel": "2x1 DBS",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 3.41,
      "x": 0,
      "y": -3.88
     },
     {
      "colorId": "RD003",
-     "textLabel": "WIPE",
+     "textLabel": "WIP DBS",
      "textFontId": 26345,
      "textSize": 2.53,
      "x": 0,
      "y": -0.6
-    },
-    {
-     "colorId": "GN010",
-     "textLabel": "VS BYP",
-     "textFontId": 26345,
-     "textSize": 2.53,
-     "x": 0,
-     "y": 1.85
     }
    ]
   },
@@ -1246,7 +1238,7 @@
    "layers": [
     {
      "colorId": "GR001",
-     "textLabel": "CUR 1",
+     "textLabel": "C1",
      "textFontId": 26345,
      "textSize": 3.72,
      "x": 0,
@@ -1409,7 +1401,7 @@
    "layers": [
     {
      "colorId": "GR001",
-     "textLabel": "CUR 2",
+     "textLabel": "C2",
      "textFontId": 26345,
      "textSize": 3.72,
      "x": 0,
@@ -1467,9 +1459,9 @@
    "layers": [
     {
      "colorId": "GR001",
-     "textLabel": "NAME",
+     "textLabel": "RENAME",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 3.2,
      "x": 0,
      "y": -3.88
     },
