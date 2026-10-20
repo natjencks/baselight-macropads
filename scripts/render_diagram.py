@@ -9,7 +9,7 @@ def band(name, layer, cls):
     if not lay: return f'<div class="{cls}"></div>'
     fn = html.escape(lay.get("fn", "")); key = html.escape(lay.get("key") or lay.get("hold") or "")
     cap = html.escape(lay.get("cap", "").replace("\n", " "))
-    return f'<div class="{cls}"><b>{cap}</b> {fn} <code>{key}</code></div>'
+    return f'<div class="{cls}">{fn} <code>{key}</code></div>'
 def key(name, extra=""):
     return (f'<div class="k {extra}"><div class="id">{name}<span>{K[name]["size"]}</span></div>'
             + band(name, 0, "l0") + band(name, 1, "l1") + band(name, 2, "l2") + band(name, 3, "l3") + "</div>")
@@ -62,7 +62,7 @@ page = f"""<!doctype html><meta charset="utf-8"><title>{html.escape(m['layout'][
 <h2>{html.escape(m['layout']['name'])} — Oryx revision {rev} — left half</h2>
 <div class="leg"><span><i style="background:#fff"></i>Layer 0</span><span><i style="background:#fbeae6"></i>Layer 1 (hold T3)</span>
 <span><i style="background:#e2f3ec"></i>Layer 2 (hold T4)</span><span><i style="background:#e6f0fb"></i>Layer 3 (T3+T4 chord, one-shot)</span>
-<span><i style="outline:2px solid #6b5bd2"></i>prime block</span><span>bold = keycap legend</span></div>
+<span><i style="outline:2px solid #6b5bd2"></i>prime block</span><span>keycap legends: see yuzu/set.json</span></div>
 {grid(rows_left)}
 <div style="height:40px"></div>{thumbs(["T1","T2","T3","T4","T5","T6"], "left")}<div style="height:200px"></div>
 <h2>Right half</h2>{grid(rows_right, "right")}
