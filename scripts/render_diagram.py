@@ -9,7 +9,7 @@ def band(name, layer, cls):
     if not lay: return f'<div class="{cls}"></div>'
     fn = html.escape(lay.get("fn", "")); key = html.escape(lay.get("key") or lay.get("hold") or "")
     cap = html.escape(lay.get("cap", "").replace("\n", " "))
-    return f'<div class="{cls}">{fn} <code>{key}</code></div>'
+    return f'<div class="{cls}">{fn}</div>'
 def key(name, extra=""):
     return (f'<div class="k {extra}"><div class="id">{name}<span>{K[name]["size"]}</span></div>'
             + band(name, 0, "l0") + band(name, 1, "l1") + band(name, 2, "l2") + band(name, 3, "l3") + "</div>")
