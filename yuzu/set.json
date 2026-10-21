@@ -723,27 +723,19 @@
    "layers": [
     {
      "colorId": "GR001",
-     "textLabel": "ZOOM",
+     "textLabel": "SHOTS",
      "textFontId": 26345,
-     "textSize": 4.49,
+     "textSize": 4.1,
      "x": 0,
      "y": -3.6
     },
     {
      "colorId": "RD003",
-     "textLabel": "TMLN H",
+     "textLabel": "CYC F6",
      "textFontId": 26345,
      "textSize": 3.16,
      "x": 0,
      "y": 0.82
-    },
-    {
-     "colorId": "GN010",
-     "textLabel": "TMLN V",
-     "textFontId": 26345,
-     "textSize": 3.16,
-     "x": 0,
-     "y": 3.88
     }
    ]
   },
@@ -820,7 +812,32 @@
   },
   "zYPGbQ": {
    "colorId": "GR002",
-   "layers": []
+   "layers": [
+    {
+     "colorId": "GR001",
+     "textLabel": "ZOOM",
+     "textFontId": 26345,
+     "textSize": 4.49,
+     "x": 0,
+     "y": -3.6
+    },
+    {
+     "colorId": "RD003",
+     "textLabel": "TMLN H",
+     "textFontId": 26345,
+     "textSize": 3.16,
+     "x": 0,
+     "y": 0.82
+    },
+    {
+     "colorId": "GN010",
+     "textLabel": "TMLN V",
+     "textFontId": 26345,
+     "textSize": 3.16,
+     "x": 0,
+     "y": 3.88
+    }
+   ]
   },
   "A59P47": {
    "colorId": "GR002",
