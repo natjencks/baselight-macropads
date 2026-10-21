@@ -849,7 +849,24 @@
   },
   "A59P47": {
    "colorId": "GR002",
-   "layers": []
+   "layers": [
+    {
+     "colorId": "GR001",
+     "textLabel": "DELETE",
+     "textFontId": 26345,
+     "textSize": 3.68,
+     "x": 0,
+     "y": -3.88
+    },
+    {
+     "colorId": "RD003",
+     "textLabel": "BKSP",
+     "textFontId": 26345,
+     "textSize": 2.53,
+     "x": 0,
+     "y": -0.6
+    }
+   ]
   },
   "CEBPLX": {
    "colorId": "GR002",

@@ -6,7 +6,7 @@ layout:
   name: Ergodox Baselight V16
   oryx_hash: Y6DDQ
   oryx_geometry: ergodox-ez-st
-  oryx_revision: 0WBDlP
+  oryx_revision: 9DPE3L
   yuzu_name: Baselight V16 v3 (caps, slots)
 style:
   profile: kam
@@ -157,7 +157,17 @@ keys:
     oryx: 6
     yuzu: A59P47
     size: 1u
-    layers: {}
+    layers:
+      0:
+        fn: Delete
+        key: Delete
+        oryx: Delete
+        cap: DELETE
+      1:
+        fn: Backspace
+        key: Backspace
+        oryx: Backspace
+        cap: BKSP
   1B:
     oryx: 7
     yuzu: CEBPLX

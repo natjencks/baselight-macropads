@@ -1,11 +1,24 @@
 [
  {
   "layer": 0,
-  "idx": 57,
-  "key": "R7C",
-  "tap": "KPEnter",
+  "idx": 6,
+  "key": "7A",
+  "tap": "Delete",
   "hold": "",
-  "label": "",
+  "label": "Delete",
+  "was": {
+   "tap": "",
+   "hold": "",
+   "label": ""
+  }
+ },
+ {
+  "layer": 1,
+  "idx": 6,
+  "key": "7A",
+  "tap": "Backspace",
+  "hold": "",
+  "label": "Backspace",
   "was": {
    "tap": "",
    "hold": "",

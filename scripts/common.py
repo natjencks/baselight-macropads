@@ -40,7 +40,7 @@ YUZU_ID = {  # Oryx index -> Yuzu Playground key id (ErgoDox stock layout export
 
 # Oryx key code <-> human name used in master.yaml `key:` strings.
 CODE2NAME = {
-    "KC_ESCAPE":"Esc","KC_ENTER":"Enter","KC_SPACE":"Space","KC_TAB":"Tab","KC_DELETE":"Delete",
+    "KC_ESCAPE":"Esc","KC_ENTER":"Enter","KC_SPACE":"Space","KC_TAB":"Tab","KC_DELETE":"Delete","KC_BSPC":"Backspace",
     "KC_HOME":"Home","KC_END":"End","KC_PAGE_UP":"PgUp","KC_PGDN":"PgDn",
     "KC_UP":"Up","KC_DOWN":"Down","KC_LEFT":"Left","KC_RIGHT":"Right",
     "KC_SCLN":";","KC_QUOTE":"'","KC_LBRC":"[","KC_RBRC":"]","KC_BSLS":"\\","KC_COMMA":",","KC_DOT":".",
