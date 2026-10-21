@@ -59,11 +59,11 @@ SCHEMES = {
     caps={"default": "GR002", "sys": "GR020", "view": "BL034", "marks": "YW019", "nav": "PK014", "bypass": "PK014",
           "kf": "PK014", "layer": "GN025", "shape": "PL018", "dbs": "GN004", "edit": "BN020", "blank": "GR002",
           "mod": "GR020", "undo": "GR020", "l1key": "GR020", "l2key": "GR020", "num": "GR002", "arrows": "GN004", "misc": "BN002"}),
- "C": dict(dot=True, dot_colors=("RD003", "GN023"), inks_light=DK, inks_dark=LT,   # Yuzu's dark palette is small; ids picked by hand
+ "C": dict(dot=True, dot_colors=("OG030", "GN011"), inks_light=DK, inks_dark=LT,   # Yuzu's dark palette is small; ids picked by hand
     caps={"default": "GR001", "sys": "GR001", "view": "BL010", "marks": "BN024", "nav": "RD006", "bypass": "RD006",
           "kf": "RD006", "layer": "GN022", "shape": "PL004", "dbs": "GN009", "edit": "GN037", "blank": "GR001",
           "mod": "GR029", "undo": "GR029", "l1key": "GR001", "l2key": "GR001", "num": "GR001", "arrows": "GR028", "misc": "BN019"}),
- "F": dict(dot=True, dot_colors=("RD003", "GN023"), inks_light=DK, inks_dark=["#faf7f0", "#ffd1c9", "#c9f5e2", "#cfe3ff"],
+ "F": dict(dot=True, dot_colors=("PK014", "GN004"), inks_light=DK, inks_dark=["#faf7f0", "#ffd1c9", "#c9f5e2", "#cfe3ff"],
     caps={"default": "GR001", "sys": "GR001", "view": "BL022", "marks": "OG010", "nav": "RD025", "bypass": "RD025",
           "kf": "RD025", "layer": "GN023", "shape": "PL002", "dbs": "GN010", "edit": "YW026", "blank": "GR001",
           "mod": "GR029", "undo": "GR029", "l1key": "GR001", "l2key": "GR001", "num": "GR001", "arrows": "GN007", "misc": "BN034"}),
