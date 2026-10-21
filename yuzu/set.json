@@ -885,7 +885,7 @@
     },
     {
      "colorId": "RD003",
-     "textLabel": "2x1 CUR",
+     "textLabel": "2x1C",
      "textFontId": 26345,
      "textSize": 3.16,
      "x": 0,
@@ -1025,7 +1025,7 @@
     },
     {
      "colorId": "RD003",
-     "textLabel": "EDIT",
+     "textLabel": "NEW",
      "textFontId": 26345,
      "textSize": 3.16,
      "x": 0,
@@ -1033,7 +1033,7 @@
     },
     {
      "colorId": "GN010",
-     "textLabel": "RST",
+     "textLabel": "REM",
      "textFontId": 26345,
      "textSize": 3.16,
      "x": 0,
@@ -1088,15 +1088,15 @@
    "layers": [
     {
      "colorId": "GR001",
-     "textLabel": "2x1DBS",
+     "textLabel": "2x1D",
      "textFontId": 26345,
-     "textSize": 3.67,
+     "textSize": 4.49,
      "x": 0,
      "y": -3.6
     },
     {
      "colorId": "RD003",
-     "textLabel": "WIP DBS",
+     "textLabel": "WIP D",
      "textFontId": 26345,
      "textSize": 3.16,
      "x": 0,

@@ -196,7 +196,7 @@ keys:
         fn: 2x1 cursors
         key: F2
         oryx: 2x1 Cursor
-        cap: 2x1 CUR
+        cap: 2x1C
       3:
         fn: Jump to BASE GRADE layer (FLAPI F13)
         key: F13
@@ -288,15 +288,15 @@ keys:
         oryx: Add Shape
         cap: SHAPE
       1:
-        fn: Create/edit shapes
+        fn: New shape
         key: Q
         oryx: Edit Shape
-        cap: EDIT
+        cap: NEW
       2:
-        fn: Reset shape
+        fn: Remove shape
         key: Shift+S
         oryx: Reset Shp
-        cap: RST
+        cap: REM
       3:
         fn: Jump to CONTRAST layer (FLAPI F17)
         key: F17
@@ -336,12 +336,12 @@ keys:
         fn: 2x1 vs DBS
         key: Ctrl+Alt+3
         oryx: 2x1|DBS
-        cap: 2x1DBS
+        cap: 2x1D
       1:
         fn: Wipe vs DBS
         key: Ctrl+Alt+4
         oryx: Wipe|DBS
-        cap: WIP DBS
+        cap: WIP D
   3C:
     oryx: 16
     yuzu: dXk9mu
