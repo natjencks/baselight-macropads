@@ -66,11 +66,16 @@ Oryx key index ↔ name ↔ Yuzu id tables are in scripts/common.py (geometry er
   MUTE/ALIGN/FOLD/COUNT/CYCLE/CSJ/GROUP one "other" colour; numpad plain). Nat's favourites: C and F. All four
   match yuzu/variants/*.json as of 2026-10-21 (thumb cluster in one colour with L1/L2 dots in the L1/L2 ink colours,
   ALT/SHIFT/CTRL one big centred label, ENTER sized like NUM, 7A DELETE/BKSP, R1A SCENE/FORMAT, R7D ALL SHOTS, R7E TAPE).
-- Design decisions (Nat's): ALL CAPS; four fixed slots per key at the same heights on every key (blank slot when a
-  layer is unassigned); L0 2.65 mm, variants 1.8 mm uniform (sized by the longest label); white caps, inks
-  black / red RD003 / green GN010 / blue BL023; numpad + arrows one big centred legend; SemiBold for labels,
-  Regular for the big glyphs. Previews can be rendered locally with PIL from fonts/ to avoid Yuzu round-trips.
+- Design decisions (Nat's, 2026-10-21): ALL CAPS; THREE fixed text slots per key at the same heights on every key
+  (scripts/legends.py: L0 3.2 mm shrinking to fit wide words, L1/L2 2.25 mm uniform; blank slot when unassigned).
+  Layer 3 is NOT a slot: a one-letter cap in master.yaml prints as a 1.5 mm blue corner letter (the layer it jumps to:
+  B/F/W/V/C on row B), top-right if the L0 word leaves room else bottom-right; empty L3 cap = unlabelled (2A, 4C).
+  White caps, inks black / red RD003 / green GN010 / blue BL023; numpad + arrows one big centred legend; SemiBold for
+  labels, Regular for the big glyphs. Previews can be rendered locally with PIL from fonts/ to avoid Yuzu round-trips.
+- Saved designs on Nat's account (all re-saved with the 3-slot legends 2026-10-21): Baselight V16 (production, white),
+  Audition B1, C, F, G, C icons, F icons. Update loop: Open dialog -> click entry (coords from __entryPos) -> fetch the
+  variant JSON from raw.githubusercontent.com/<commit sha>/... (the /main/ URL is cached ~5 min) -> __import -> Save.
 
 ## Baselight facts used
 Shortcuts from the 7.0 Linux sheet (new): play shot Ctrl+Space; Ctrl+F1 is stereo-only; Reset Operator Ctrl+Backspace;
-Timeline Alignment panel Win+; vs Align Timeline Vertically Ctrl+;. Layer-3 jumps send F13–F17 for a FLAPI script (todo); R7D F18 = ALL SHOTS view, R7E F19 = CURRENT TAPE view (Shots View filters, script todo).
+Timeline Alignment panel Win+; vs Align Timeline Vertically Ctrl+;. Layer-3 jumps send F13–F17 for a FLAPI script (todo); Formats is JOBS(R1B)+L1 since B4KY9x; R7D F18 = ALL SHOTS view, R7E F19 = CURRENT TAPE view (Shots View filters, script todo).
