@@ -1659,7 +1659,7 @@
     {
      "colorId": "GR001",
      "textLabel": "NUM",
-     "textFontId": 11838,
+     "textFontId": 26415,
      "textSize": 5.6,
      "x": 0,
      "y": 0
@@ -1672,7 +1672,7 @@
     {
      "colorId": "GR001",
      "textLabel": "/",
-     "textFontId": 11838,
+     "textFontId": 26415,
      "textSize": 9.13,
      "x": 0,
      "y": 0
@@ -1685,7 +1685,7 @@
     {
      "colorId": "GR001",
      "textLabel": "*",
-     "textFontId": 11838,
+     "textFontId": 26415,
      "textSize": 9.13,
      "x": 0,
      "y": 0
@@ -1698,7 +1698,7 @@
     {
      "colorId": "GR001",
      "textLabel": "−",
-     "textFontId": 11838,
+     "textFontId": 26415,
      "textSize": 9.13,
      "x": 0,
      "y": 0
@@ -1766,7 +1766,7 @@
     {
      "colorId": "GR001",
      "textLabel": "7",
-     "textFontId": 11838,
+     "textFontId": 26415,
      "textSize": 9.13,
      "x": 0,
      "y": 0
@@ -1779,7 +1779,7 @@
     {
      "colorId": "GR001",
      "textLabel": "8",
-     "textFontId": 11838,
+     "textFontId": 26415,
      "textSize": 9.13,
      "x": 0,
      "y": 0
@@ -1792,7 +1792,7 @@
     {
      "colorId": "GR001",
      "textLabel": "9",
-     "textFontId": 11838,
+     "textFontId": 26415,
      "textSize": 9.13,
      "x": 0,
      "y": 0
@@ -1805,7 +1805,7 @@
     {
      "colorId": "GR001",
      "textLabel": "+",
-     "textFontId": 11838,
+     "textFontId": 26415,
      "textSize": 9.13,
      "x": 0,
      "y": 0
@@ -1818,7 +1818,7 @@
     {
      "colorId": "GR001",
      "textLabel": "↑",
-     "textFontId": 11838,
+     "textFontId": 26415,
      "textSize": 9.13,
      "x": 0,
      "y": 0
@@ -1852,7 +1852,7 @@
     {
      "colorId": "GR001",
      "textLabel": "4",
-     "textFontId": 11838,
+     "textFontId": 26415,
      "textSize": 9.13,
      "x": 0,
      "y": 0
@@ -1865,7 +1865,7 @@
     {
      "colorId": "GR001",
      "textLabel": "5",
-     "textFontId": 11838,
+     "textFontId": 26415,
      "textSize": 9.13,
      "x": 0,
      "y": 0
@@ -1878,7 +1878,7 @@
     {
      "colorId": "GR001",
      "textLabel": "6",
-     "textFontId": 11838,
+     "textFontId": 26415,
      "textSize": 9.13,
      "x": 0,
      "y": 0
@@ -1891,7 +1891,7 @@
     {
      "colorId": "GR001",
      "textLabel": "ENTER",
-     "textFontId": 11838,
+     "textFontId": 26415,
      "textSize": 5.6,
      "x": 0,
      "y": 0
@@ -1904,7 +1904,7 @@
     {
      "colorId": "GR001",
      "textLabel": "←",
-     "textFontId": 11838,
+     "textFontId": 26415,
      "textSize": 9.13,
      "x": 0,
      "y": 0
@@ -1917,7 +1917,7 @@
     {
      "colorId": "GR001",
      "textLabel": "↓",
-     "textFontId": 11838,
+     "textFontId": 26415,
      "textSize": 9.13,
      "x": 0,
      "y": 0
@@ -1930,7 +1930,7 @@
     {
      "colorId": "GR001",
      "textLabel": "→",
-     "textFontId": 11838,
+     "textFontId": 26415,
      "textSize": 9.13,
      "x": 0,
      "y": 0
@@ -1943,7 +1943,7 @@
     {
      "colorId": "GR001",
      "textLabel": "1",
-     "textFontId": 11838,
+     "textFontId": 26415,
      "textSize": 9.13,
      "x": 0,
      "y": 0
@@ -1956,7 +1956,7 @@
     {
      "colorId": "GR001",
      "textLabel": "2",
-     "textFontId": 11838,
+     "textFontId": 26415,
      "textSize": 9.13,
      "x": 0,
      "y": 0
@@ -1969,7 +1969,7 @@
     {
      "colorId": "GR001",
      "textLabel": "3",
-     "textFontId": 11838,
+     "textFontId": 26415,
      "textSize": 9.13,
      "x": 0,
      "y": 0
@@ -2021,7 +2021,7 @@
     {
      "colorId": "GR001",
      "textLabel": "0",
-     "textFontId": 11838,
+     "textFontId": 26415,
      "textSize": 9.13,
      "x": 0,
      "y": 0
@@ -2034,7 +2034,7 @@
     {
      "colorId": "GR001",
      "textLabel": ".",
-     "textFontId": 11838,
+     "textFontId": 26415,
      "textSize": 9.13,
      "x": 0,
      "y": 0

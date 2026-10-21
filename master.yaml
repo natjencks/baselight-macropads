@@ -17,7 +17,7 @@ style:
     '2': GN010
     '3': BL023
   font_label: 26345
-  font_big: 11838
+  font_big: 26415   # HelvNow Cn300 BL (Light, width 70): stem matches the arrow icons' 0.53 mm stroke
   cap_mm_l0: 3.2       # Layer 0 (shrinks to fit on wide words)
   cap_mm_var: 2.25     # Layer 1/2
   top_y: -5.2
