@@ -81,7 +81,13 @@ ICONS = json.load(open(f"{ROOT}/icons/icons.json"))
 ICON_MAP = {"3A": "MarkerLeft", "4A": "Marker", "5A": "MarkerRight", "3B": "ShotLeft", "5B": "ShotRight", "4B": "NoSymbol",
             "3C": "PlayLeft", "4C": "StopSquare", "5C": "PlayRight", "3D": "CarrotLeft", "4D": "Key", "5D": "CarrotRight",
             "7A": "Trash", "R2A": "AudioMute", "R2C": "ArrowUp", "R2D": "ArrowDown", "R1D": "ArrowLeft", "R3D": "ArrowRight"}
-ICON_H, ICON_W_MAX = 4.4, 10.2   # mm: every icon the same height, at the Layer-0 slot position on every key
+# Slot icons: one height for all, sitting between the cap-top edge (usable half-height ≈ 5.2 mm) and the L1 text
+# (top ≈ -1.5 mm): 3.5 mm tall centred at -3.4 spans -5.15 .. -1.65. 4.4 mm at -3.98 was clipped at the top.
+ICON_H, ICON_Y, ICON_W_MAX = 3.5, -3.4, 10.2
+# Arrow keys: big centred glyph like the numpad; the four arrows are one shape rotated, so one long axis for all.
+ARROWS = {"R2C": "ArrowUp", "R2D": "ArrowDown", "R1D": "ArrowLeft", "R3D": "ArrowRight"}
+ARROW_LONG_MM = 9.0
+ARROW_Y = {"R1D": 4.76}   # R1D is 1.5u tall: drop its arrow 0.25u so it lines up with R3D's
 def icon_layer(name, color, height_mm, y):
     # Yuzu's vectScale 100 maps the viewBox HEIGHT to 1u (19.05 mm) — measured in the Playground SVG (getBBox):
     # ArrowUp 8.6x17.1 @23.1 -> 2.2x4.4 mm, ArrowLeft 17.1x8.6 @45.93 -> 17.4x8.75 mm. Square icons can't tell.
@@ -117,8 +123,11 @@ def build(tag):
                 if t.isalpha() and len(t) > 1:  # word legends (NUM, ENTER) share one size: the one that fits NUM on a 1u key
                     cap_mm = min(st["big_cap_max_mm"], (TOP_W["1u"] - 1.2) / width_per_cap_mm("NUM"))
                 layers.append(dict(colorId=inks[0], textLabel=t, textFontId=st["font_big"], textSize=size(cap_mm), x=0, y=0))
+        elif sc.get("icons") and name in ARROWS:
+            ic = ICONS[ARROWS[name]]; h_mm = ARROW_LONG_MM * ic["h"] / max(ic["w"], ic["h"])
+            layers.append(icon_layer(ARROWS[name], inks[0], h_mm, ARROW_Y.get(name, 0)))
         elif sc.get("icons") and name in ICON_MAP:
-            layers.append(icon_layer(ICON_MAP[name], inks[0], ICON_H, round(SLOT[0] - 0.1, 2)))  # 0.1 up so a 4.4 mm icon clears the L1 slot
+            layers.append(icon_layer(ICON_MAP[name], inks[0], ICON_H, ICON_Y))
             for layer, lay in sorted(e["layers"].items()):
                 t = lay.get("cap", "")
                 if layer == 0 or not t: continue

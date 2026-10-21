@@ -50,8 +50,9 @@ Oryx key index ↔ name ↔ Yuzu id tables are in scripts/common.py (geometry er
   (19.05 mm) whatever the aspect (measured with getBBox on the Playground SVG), so a 20/24-unit circle at
   vectScale 44 is a 7 mm dot and any icon at 23.1 is 4.4 mm tall. Used for the L1/L2 thumb dots and the icon sets.
 - Icon sets: Nat's SVGs in icons/ (Illustrator exports) -> scripts/icons.py -> icons/icons.json (one flattened path
-  each). yuzu_variant.py builds TAG+"i" variants ("Audition X icons"): ICON_MAP key->icon, every icon ICON_H 4.4 mm
-  at y -3.98 (the L0 slot, nudged up so it clears L1 text), L1-L3 labels stay in their slots. Saved on Yuzu so far:
+  each). yuzu_variant.py builds TAG+"i" variants ("Audition X icons"): ICON_MAP key->icon, slot icons 3.5 mm tall at
+  y -3.4 (4.4 mm clipped at the cap-top edge), L1-L3 labels stay in their slots; arrows are big centred glyphs, 9 mm long
+  axis, R1D's dropped 0.25u (y 4.76) to line up with R3D. Saved on Yuzu so far:
   "Audition C icons". Unplaced icons (Dot, Grid, Boundry*, Expand*, Trash*, Carrot*Thin): ask Nat what they are for.
 - Colour auditions: scripts/yuzu_variant.py SCHEME -> yuzu/variants/SCHEME.json (same slots as the production set,
   per-zone caps). The pane's screenshot is capped at 800 px wide: for a readable render, serialise the Playground
