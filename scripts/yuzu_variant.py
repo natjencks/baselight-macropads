@@ -72,8 +72,20 @@ SCHEMES = {
           "kf": "#e74c3c", "layer": "#7cb342", "shape": "PL021", "dbs": "#16a085", "edit": "#f1c40f", "blank": "#d9d5ce",
           "mod": "#b8b3ab", "undo": "#b8b3ab", "l1key": "RD003", "l2key": "GN023", "num": "#d9d5ce", "arrows": "GN005", "misc": "BN039"}),
 }
+for _t in list(SCHEMES):
+    _v = dict(SCHEMES[_t]); _v["icons"] = True; SCHEMES[_t + "i"] = _v
 def is_dark(h):
     r, g, b = _rgb(PAL.get(h, h)); return 0.299 * r + 0.587 * g + 0.114 * b < 128
+ICONS = json.load(open(f"{ROOT}/icons/icons.json"))
+# Layer-0 icon per key (icon-variant sets only).  Icons live in icons/*.svg, flattened by scripts/icons.py.
+ICON_MAP = {"3A": "MarkerLeft", "4A": "Marker", "5A": "MarkerRight", "3B": "ShotLeft", "5B": "ShotRight", "4B": "NoSymbol",
+            "3C": "PlayLeft", "4C": "StopSquare", "5C": "PlayRight", "3D": "CarrotLeft", "4D": "Key", "5D": "CarrotRight",
+            "7A": "Trash", "R2A": "AudioMute", "R2C": "ArrowUp", "R2D": "ArrowDown", "R1D": "ArrowLeft", "R3D": "ArrowRight"}
+ICON_H_SLOT, ICON_H_BIG, ICON_W_MAX = 3.6, 6.5, 10.2   # mm
+def icon_layer(name, color, height_mm, y):
+    ic = ICONS[name]; w_mm = height_mm * ic["w"] / ic["h"]
+    if w_mm > ICON_W_MAX: w_mm = ICON_W_MAX
+    return dict(colorId=color, vectDef=ic["d"], vectViewbox=ic["viewBox"], vectScale=round(100 * w_mm / 19.05, 2), x=0, y=y)
 DOT = dict(vectDef="M12 2a10 10 0 1 0 0 20a10 10 0 1 0 0-20z", vectViewbox="0 0 24 24", vectScale=44, x=0, y=0)  # ≈7 mm
 
 def build(tag):
@@ -96,13 +108,23 @@ def build(tag):
             t = e["layers"].get(0, {}).get("cap", "")
             cap_mm = min(st["big_cap_max_mm"], (TOP_W["1u"] - 1.2) / max(width_per_cap_mm(x) for x in ("ALT", "SHIFT", "CTRL")))
             layers.append(dict(colorId=inks[0], textLabel=t, textFontId=st["font_label"], textSize=size(cap_mm), x=0, y=0))
-        elif name in st["big_keys"]:
+        elif name in st["big_keys"] and not (sc.get("icons") and name in ICON_MAP):
             t = e["layers"].get(0, {}).get("cap", "")
             if t:
                 cap_mm = min(st["big_cap_max_mm"], (TOP_W[e["size"]] - 1.2) / width_per_cap_mm(t))
                 if t.isalpha() and len(t) > 1:  # word legends (NUM, ENTER) share one size: the one that fits NUM on a 1u key
                     cap_mm = min(st["big_cap_max_mm"], (TOP_W["1u"] - 1.2) / width_per_cap_mm("NUM"))
                 layers.append(dict(colorId=inks[0], textLabel=t, textFontId=st["font_big"], textSize=size(cap_mm), x=0, y=0))
+        elif sc.get("icons") and name in ICON_MAP:
+            others = [l for l in e["layers"] if l != 0 and e["layers"][l].get("cap")]
+            if others:
+                layers.append(icon_layer(ICON_MAP[name], inks[0], ICON_H_SLOT, round(SLOT[0] + 0.3, 2)))
+                for layer, lay in sorted(e["layers"].items()):
+                    t = lay.get("cap", "")
+                    if layer == 0 or not t: continue
+                    layers.append(dict(colorId=inks[layer], textLabel=t, textFontId=st["font_label"], textSize=size(HV), x=0, y=round(SLOT[layer], 2)))
+            else:
+                layers.append(icon_layer(ICON_MAP[name], inks[0], ICON_H_BIG, 0))
         else:
             for layer, lay in sorted(e["layers"].items()):
                 t = lay.get("cap", "")
@@ -113,7 +135,7 @@ def build(tag):
                     if need > TOP_W[e["size"]] - 0.9: cap_mm = (TOP_W[e["size"]] - 0.9) / width_per_cap_mm(line)
                     layers.append(dict(colorId=inks[layer], textLabel=line, textFontId=st["font_label"], textSize=size(cap_mm), x=0, y=round(SLOT[layer + n], 2)))
         keys[e["yuzu"]] = {"colorId": cap, "layers": layers}
-    out = dict(tpl); out["name"] = f"Audition {tag}"; out["author"] = "Nat"; out["keys"] = keys; out["keyTemplates"] = {}; out["designUrl"] = None
+    out = dict(tpl); out["name"] = f"Audition {tag[:-1]} icons" if tag.endswith("i") else f"Audition {tag}"; out["author"] = "Nat"; out["keys"] = keys; out["keyTemplates"] = {}; out["designUrl"] = None
     os.makedirs(f"{ROOT}/yuzu/variants", exist_ok=True)
     json.dump(out, open(f"{ROOT}/yuzu/variants/{tag}.json", "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     print(f"{tag}: yuzu/variants/{tag}.json  colour mapping:"); [print(f"   {h} -> {v}") for h, v in REPORT.items()]
