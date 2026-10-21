@@ -83,9 +83,11 @@ ICON_MAP = {"3A": "MarkerLeft", "4A": "Marker", "5A": "MarkerRight", "3B": "Shot
             "7A": "Trash", "R2A": "AudioMute", "R2C": "ArrowUp", "R2D": "ArrowDown", "R1D": "ArrowLeft", "R3D": "ArrowRight"}
 ICON_H, ICON_W_MAX = 4.4, 10.2   # mm: every icon the same height, at the Layer-0 slot position on every key
 def icon_layer(name, color, height_mm, y):
+    # Yuzu's vectScale 100 maps the viewBox HEIGHT to 1u (19.05 mm) — measured in the Playground SVG (getBBox):
+    # ArrowUp 8.6x17.1 @23.1 -> 2.2x4.4 mm, ArrowLeft 17.1x8.6 @45.93 -> 17.4x8.75 mm. Square icons can't tell.
     ic = ICONS[name]; w_mm = height_mm * ic["w"] / ic["h"]
-    if w_mm > ICON_W_MAX: w_mm = ICON_W_MAX
-    return dict(colorId=color, vectDef=ic["d"], vectViewbox=ic["viewBox"], vectScale=round(100 * w_mm / 19.05, 2), x=0, y=y)
+    if w_mm > ICON_W_MAX: w_mm = ICON_W_MAX; height_mm = w_mm * ic["h"] / ic["w"]
+    return dict(colorId=color, vectDef=ic["d"], vectViewbox=ic["viewBox"], vectScale=round(100 * height_mm / 19.05, 2), x=0, y=y)
 DOT = dict(vectDef="M12 2a10 10 0 1 0 0 20a10 10 0 1 0 0-20z", vectViewbox="0 0 24 24", vectScale=44, x=0, y=0)  # ≈7 mm
 
 def build(tag):
@@ -116,7 +118,7 @@ def build(tag):
                     cap_mm = min(st["big_cap_max_mm"], (TOP_W["1u"] - 1.2) / width_per_cap_mm("NUM"))
                 layers.append(dict(colorId=inks[0], textLabel=t, textFontId=st["font_big"], textSize=size(cap_mm), x=0, y=0))
         elif sc.get("icons") and name in ICON_MAP:
-            layers.append(icon_layer(ICON_MAP[name], inks[0], ICON_H, round(SLOT[0] + 0.3, 2)))
+            layers.append(icon_layer(ICON_MAP[name], inks[0], ICON_H, round(SLOT[0] - 0.1, 2)))  # 0.1 up so a 4.4 mm icon clears the L1 slot
             for layer, lay in sorted(e["layers"].items()):
                 t = lay.get("cap", "")
                 if layer == 0 or not t: continue

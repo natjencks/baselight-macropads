@@ -46,8 +46,13 @@ Oryx key index ↔ name ↔ Yuzu id tables are in scripts/common.py (geometry er
 - Palette: yuzu/colors.txt (id:hex, from /api/dev/colors). No tints paler than e.g. BL034/PK014/GN025/PL018/YW019;
   the dark range is small (GR001, GR029, BL010, BL022, RD006, RD025, PL004, PL002, GN022, GN009, BN024...).
   Light legends on dark caps are orderable (Yuzu's own /dev/json example does it).
-- Legends can be SVG: KeyLayer {vectDef, vectViewbox, vectScale}; vectScale 100 maps the viewBox width to 1u
-  (24 units -> 19.05 mm), so a 20-unit circle at vectScale 44 is a 7 mm dot. Used for the L1/L2 thumb dots.
+- Legends can be SVG: KeyLayer {vectDef, vectViewbox, vectScale}; vectScale 100 maps the viewBox HEIGHT to 1u
+  (19.05 mm) whatever the aspect (measured with getBBox on the Playground SVG), so a 20/24-unit circle at
+  vectScale 44 is a 7 mm dot and any icon at 23.1 is 4.4 mm tall. Used for the L1/L2 thumb dots and the icon sets.
+- Icon sets: Nat's SVGs in icons/ (Illustrator exports) -> scripts/icons.py -> icons/icons.json (one flattened path
+  each). yuzu_variant.py builds TAG+"i" variants ("Audition X icons"): ICON_MAP key->icon, every icon ICON_H 4.4 mm
+  at y -3.98 (the L0 slot, nudged up so it clears L1 text), L1-L3 labels stay in their slots. Saved on Yuzu so far:
+  "Audition C icons". Unplaced icons (Dot, Grid, Boundry*, Expand*, Trash*, Carrot*Thin): ask Nat what they are for.
 - Colour auditions: scripts/yuzu_variant.py SCHEME -> yuzu/variants/SCHEME.json (same slots as the production set,
   per-zone caps). The pane's screenshot is capped at 800 px wide: for a readable render, serialise the Playground
   SVG into a fixed full-screen iframe (window.__showFrame in the session notes) and tile 3 screenshots.
