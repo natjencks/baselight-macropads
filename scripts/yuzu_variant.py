@@ -46,11 +46,11 @@ def nearest(hexc):
 ZONE = {}
 def z(names, zone):
     for n in names.split(): ZONE[n] = zone
-z("1A R1A R1B R2B R3E", "sys"); z("2A 2B 2C 2D 2E R2A R3A R3B R3C R4E", "view"); z("3A 4A 5A", "marks")
-z("3B 5B 3C 4C 5C", "nav"); z("4B", "bypass"); z("3D 4D 5D", "kf"); z("1B 1C 1D 1E", "layer"); z("6A 6B 6C 6D", "shape")
+z("1A R1A R1B R2B R3E R2A", "sys"); z("2A 2B 2C 2D 2E R3A R3C", "view"); z("3A 4A 5A", "marks")
+z("3B 5B 3C 4C 5C", "nav"); z("4B", "bypass"); z("3D 4D 5D", "kf"); z("1B 1C 1D 1E R3B", "layer"); z("6A 6B 6C 6D", "shape")
 z("7B 7D", "dbs"); z("3E 4E 5E", "edit"); z("7A", "blank"); z("T2 T5 T6 RT2 RT5 RT6", "mod"); z("T1 RT1", "undo")
 z("T3 RT3", "l1key"); z("T4 RT4", "l2key"); z("R2C R1D R2D R3D", "arrows")
-z("R4A R5A R6A R7A R4B R5B R6B R7B R4C R5C R6C R7C R4D R5D R6D R7D R5E R6E R7E", "num")
+z("R4A R5A R6A R7A R4B R5B R6B R7B R4C R5C R6C R7C R4D R5D R6D R7D R5E R6E R7E R4E", "num")
 
 DK = ["#262626", "#db3537", "#346563", "#2b4782"]          # current inks (black, RD003, GN010, BL023)
 LT = ["#faf7f0", "#ff8a7a", "#7fe0b8", "#9cc8ff"]          # light inks for dark caps
@@ -58,19 +58,19 @@ SCHEMES = {
  "B1": dict(dot=True, inks_light=DK, inks_dark=LT,   # palette ids chosen by hand: Yuzu has no paler tints than these
     caps={"default": "GR002", "sys": "GR020", "view": "BL034", "marks": "YW019", "nav": "PK014", "bypass": "PK014",
           "kf": "PK014", "layer": "GN025", "shape": "PL018", "dbs": "GN004", "edit": "BN020", "blank": "GR002",
-          "mod": "GR020", "undo": "GR020", "l1key": "GR020", "l2key": "GR020", "num": "GR002", "arrows": "BL034"}),
+          "mod": "GR020", "undo": "GR020", "l1key": "GR020", "l2key": "GR020", "num": "GR002", "arrows": "GN004"}),
  "C": dict(dot=False, inks_light=DK, inks_dark=LT,   # Yuzu's dark palette is small; ids picked by hand
     caps={"default": "GR001", "sys": "GR001", "view": "BL010", "marks": "BN024", "nav": "RD006", "bypass": "RD006",
           "kf": "RD006", "layer": "GN022", "shape": "PL004", "dbs": "GN009", "edit": "GN037", "blank": "GR001",
-          "mod": "GR029", "undo": "GR029", "l1key": "RD003", "l2key": "GN023", "num": "GR001", "arrows": "BL010"}),
+          "mod": "GR029", "undo": "GR029", "l1key": "RD003", "l2key": "GN023", "num": "GR001", "arrows": "GR028"}),
  "F": dict(dot=False, inks_light=DK, inks_dark=["#faf7f0", "#ffd1c9", "#c9f5e2", "#cfe3ff"],
     caps={"default": "GR001", "sys": "GR001", "view": "BL022", "marks": "OG010", "nav": "RD025", "bypass": "RD025",
           "kf": "RD025", "layer": "GN023", "shape": "PL002", "dbs": "GN010", "edit": "YW026", "blank": "GR001",
-          "mod": "GR029", "undo": "GR029", "l1key": "RD003", "l2key": "GN023", "num": "GR001", "arrows": "BL022"}),
+          "mod": "GR029", "undo": "GR029", "l1key": "RD003", "l2key": "GN023", "num": "GR001", "arrows": "GN007"}),
  "G": dict(dot=False, inks_light=["#262626"] * 4, inks_dark=["#faf7f0"] * 4,
     caps={"default": "#d9d5ce", "sys": "#b8b3ab", "view": "#4a90d9", "marks": "#f0a030", "nav": "#e74c3c", "bypass": "#e74c3c",
           "kf": "#e74c3c", "layer": "#7cb342", "shape": "PL021", "dbs": "#16a085", "edit": "#f1c40f", "blank": "#d9d5ce",
-          "mod": "#b8b3ab", "undo": "#b8b3ab", "l1key": "#d8232a", "l2key": "#1f9d4a", "num": "#d9d5ce", "arrows": "#4a90d9"}),
+          "mod": "#b8b3ab", "undo": "#b8b3ab", "l1key": "#d8232a", "l2key": "#1f9d4a", "num": "#d9d5ce", "arrows": "GN005"}),
 }
 def is_dark(h):
     r, g, b = _rgb(PAL.get(h, h)); return 0.299 * r + 0.587 * g + 0.114 * b < 128
