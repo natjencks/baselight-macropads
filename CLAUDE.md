@@ -55,8 +55,8 @@ Oryx key index ↔ name ↔ Yuzu id tables are in scripts/common.py (geometry er
   vectScale 44 is a 7 mm dot and any icon at 23.1 is 4.4 mm tall. Used for the L1/L2 thumb dots and the icon sets.
 - Icon sets: Nat's SVGs in icons/ (Illustrator exports) -> scripts/icons.py -> icons/icons.json (one flattened path
   each). yuzu_variant.py builds TAG+"i" variants ("Audition X icons"): ICON_MAP key->icon, slot icons 3.5 mm tall at
-  y -3.4 (4.4 mm clipped at the cap-top edge), L1-L3 labels stay in their slots; arrows are big centred glyphs, 9 mm long
-  axis, R1D's dropped 0.25u (y 4.76) to line up with R3D. Saved on Yuzu: "Audition C icons", "Audition F icons". Unplaced icons (Dot, Grid, Boundry*, Expand*, Trash*, Carrot*Thin): ask Nat what they are for.
+  y -3.45 (4.4 mm clipped at the cap-top edge), L1/L2 labels stay in their slots. The ARROW keys use Nat's arrow icons on
+  EVERY set (legends.ARROWS): 9 mm long axis, centred, R1D's dropped 0.25u (y 4.76) to line up with R3D. Saved on Yuzu: "Audition C icons", "Audition F icons". Unplaced icons (Dot, Grid, Boundry*, Expand*, Trash*, Carrot*Thin): ask Nat what they are for.
 - Colour auditions: scripts/yuzu_variant.py SCHEME -> yuzu/variants/SCHEME.json (same slots as the production set,
   per-zone caps). The page can fetch variant JSON straight from raw.githubusercontent.com (repo is public) into window.__json.
   The pane's screenshot is capped at 800 px wide: for a readable render, serialise the Playground
@@ -71,12 +71,13 @@ Oryx key index ↔ name ↔ Yuzu id tables are in scripts/common.py (geometry er
   match yuzu/variants/*.json as of 2026-10-21 (thumb cluster in one colour with L1/L2 dots in the L1/L2 ink colours,
   ALT/SHIFT/CTRL one big centred label, ENTER sized like NUM, 7A DELETE/BKSP, R1A SCENE/FORMAT, R7D ALL SHOTS, R7E TAPE).
 - Design decisions (Nat's, 2026-10-21): ALL CAPS; THREE fixed text slots per key at the same heights on every key
-  (scripts/legends.py: L0 3.2 mm shrinking to fit wide words, L1/L2 2.25 mm uniform; blank slot when unassigned).
+  (scripts/legends.py: L0 3.2 mm shrinking to fit wide words, L1/L2 2.25 mm uniform; blank slot when unassigned;
+  slot centres -3.6 / 0.82 / 3.88 — gap_after_l0 1.7 so the L0 word has air, L2 ends 0.2 mm above the printable edge).
   Layer 3 is NOT a slot: a one-letter cap in master.yaml prints as a 1.5 mm blue letter in the bottom-right corner
   (the layer it jumps to: B/F/W/V/C on row B); empty L3 cap = unlabelled (2A, 4C).
   White caps, inks black / red RD003 / green GN010 / blue BL023; numpad + arrows one big centred legend; SemiBold for
   labels, Regular for the big glyphs. Previews can be rendered locally with PIL from fonts/ to avoid Yuzu round-trips.
-- Saved designs on Nat's account (all re-saved 2026-10-21 with the 3-slot legends + Light numpad font + VqwoWd key moves): Baselight V16 (production, white),
+- Saved designs on Nat's account (all re-saved 2026-10-21 18:00: 3-slot legends, Light numpad font, VqwoWd key moves, arrow icons everywhere, L1/L2 +0.5 mm): Baselight V16 (production, white),
   Audition B1, C, F, G, C icons, F icons. Update loop: Open dialog -> click entry (coords from __entryPos) -> fetch the
   variant JSON from raw.githubusercontent.com/<commit sha>/... (the /main/ URL is cached ~5 min) -> __import -> Save.
 
