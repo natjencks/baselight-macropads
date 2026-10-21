@@ -1,54 +1,28 @@
 [
  {
   "layer": 2,
-  "idx": 12,
-  "key": "6B",
-  "tap": "Ctrl+N",
+  "idx": 21,
+  "key": "2D",
+  "tap": "Ctrl+Alt+1",
   "hold": "",
-  "label": "Next Shape",
+  "label": "Cur|Ref",
   "was": {
-   "tap": "Shift+S",
+   "tap": "Ctrl+0",
    "hold": "",
-   "label": "Reset Shp"
-  }
- },
- {
-  "layer": 0,
-  "idx": 19,
-  "key": "6C",
-  "tap": "O",
-  "hold": "",
-  "label": "View Matte",
-  "was": {
-   "tap": "G",
-   "hold": "",
-   "label": "Grd⇄Matte"
-  }
- },
- {
-  "layer": 1,
-  "idx": 19,
-  "key": "6C",
-  "tap": "G",
-  "hold": "",
-  "label": "Grd⇄Matte",
-  "was": {
-   "tap": "Ctrl+N",
-   "hold": "",
-   "label": "Next Shape"
+   "label": "Gang Curs"
   }
  },
  {
   "layer": 2,
-  "idx": 19,
-  "key": "6C",
-  "tap": "",
+  "idx": 28,
+  "key": "2E",
+  "tap": "Ctrl+0",
   "hold": "",
-  "label": "",
+  "label": "Gang Curs",
   "was": {
-   "tap": "O",
+   "tap": "Ctrl+Alt+1",
    "hold": "",
-   "label": "Matte Disp"
+   "label": "Cur|Ref"
   }
  }
 ]

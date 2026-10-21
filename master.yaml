@@ -6,7 +6,7 @@ layout:
   name: Ergodox Baselight V16
   oryx_hash: Y6DDQ
   oryx_geometry: ergodox-ez-st
-  oryx_revision: WvRLzn
+  oryx_revision: wOXdx9
   yuzu_name: Baselight V16
 style:
   profile: kam
@@ -443,10 +443,10 @@ keys:
         oryx: Toggle C1
         cap: TOGGLE
       2:
-        fn: Gang cursors
-        key: Ctrl+0
-        oryx: Gang Curs
-        cap: GANG
+        fn: Cursor vs reference
+        key: Ctrl+Alt+1
+        oryx: Cur|Ref
+        cap: VS REF
   3D:
     oryx: 22
     yuzu: s6w7jw
@@ -553,10 +553,10 @@ keys:
         oryx: Toggle C2
         cap: TOGGLE
       2:
-        fn: Cursor vs reference
-        key: Ctrl+Alt+1
-        oryx: Cur|Ref
-        cap: VS REF
+        fn: Gang cursors
+        key: Ctrl+0
+        oryx: Gang Curs
+        cap: GANG
   3E:
     oryx: 29
     yuzu: fzsvxA

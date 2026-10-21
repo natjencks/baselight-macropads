@@ -1238,7 +1238,7 @@
     },
     {
      "colorId": "GN010",
-     "textLabel": "GANG",
+     "textLabel": "VS REF",
      "textFontId": 26345,
      "textSize": 3.16,
      "x": 0,
@@ -1393,7 +1393,7 @@
     },
     {
      "colorId": "GN010",
-     "textLabel": "VS REF",
+     "textLabel": "GANG",
      "textFontId": 26345,
      "textSize": 3.16,
      "x": 0,
