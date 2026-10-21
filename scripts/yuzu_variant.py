@@ -81,7 +81,7 @@ ICONS = json.load(open(f"{ROOT}/icons/icons.json"))
 ICON_MAP = {"3A": "MarkerLeft", "4A": "Marker", "5A": "MarkerRight", "3B": "ShotLeft", "5B": "ShotRight", "4B": "NoSymbol",
             "3C": "PlayLeft", "4C": "StopSquare", "5C": "PlayRight", "3D": "CarrotLeft", "4D": "Key", "5D": "CarrotRight",
             "7A": "Trash", "R2A": "AudioMute", "R2C": "ArrowUp", "R2D": "ArrowDown", "R1D": "ArrowLeft", "R3D": "ArrowRight"}
-ICON_H_SLOT, ICON_H_BIG, ICON_W_MAX = 3.6, 6.5, 10.2   # mm
+ICON_H, ICON_W_MAX = 4.4, 10.2   # mm: every icon the same height, at the Layer-0 slot position on every key
 def icon_layer(name, color, height_mm, y):
     ic = ICONS[name]; w_mm = height_mm * ic["w"] / ic["h"]
     if w_mm > ICON_W_MAX: w_mm = ICON_W_MAX
@@ -116,15 +116,11 @@ def build(tag):
                     cap_mm = min(st["big_cap_max_mm"], (TOP_W["1u"] - 1.2) / width_per_cap_mm("NUM"))
                 layers.append(dict(colorId=inks[0], textLabel=t, textFontId=st["font_big"], textSize=size(cap_mm), x=0, y=0))
         elif sc.get("icons") and name in ICON_MAP:
-            others = [l for l in e["layers"] if l != 0 and e["layers"][l].get("cap")]
-            if others:
-                layers.append(icon_layer(ICON_MAP[name], inks[0], ICON_H_SLOT, round(SLOT[0] + 0.3, 2)))
-                for layer, lay in sorted(e["layers"].items()):
-                    t = lay.get("cap", "")
-                    if layer == 0 or not t: continue
-                    layers.append(dict(colorId=inks[layer], textLabel=t, textFontId=st["font_label"], textSize=size(HV), x=0, y=round(SLOT[layer], 2)))
-            else:
-                layers.append(icon_layer(ICON_MAP[name], inks[0], ICON_H_BIG, 0))
+            layers.append(icon_layer(ICON_MAP[name], inks[0], ICON_H, round(SLOT[0] + 0.3, 2)))
+            for layer, lay in sorted(e["layers"].items()):
+                t = lay.get("cap", "")
+                if layer == 0 or not t: continue
+                layers.append(dict(colorId=inks[layer], textLabel=t, textFontId=st["font_label"], textSize=size(HV), x=0, y=round(SLOT[layer], 2)))
         else:
             for layer, lay in sorted(e["layers"].items()):
                 t = lay.get("cap", "")
