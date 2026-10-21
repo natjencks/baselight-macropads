@@ -46,7 +46,7 @@ def nearest(hexc):
 ZONE = {}
 def z(names, zone):
     for n in names.split(): ZONE[n] = zone
-z("1A R1A R1B R2B R3E", "sys"); z("2A 2B 2C 2D 2E", "view"); z("R2A R3A R3B R3C R4E", "misc"); z("3A 4A 5A", "marks")
+z("1A R1A R1B", "sys"); z("2A 2B 2C 2D 2E", "view"); z("R2A R2B R3A R3B R3C R3E R4E", "misc"); z("3A 4A 5A", "marks")
 z("3B 5B 3C 4C 5C", "nav"); z("4B", "bypass"); z("3D 4D 5D", "kf"); z("1B 1C 1D 1E", "layer"); z("6A 6B 6C 6D", "shape")
 z("7B 7D", "dbs"); z("3E 4E 5E", "edit"); z("7A", "blank"); z("T2 T5 T6 RT2 RT5 RT6", "mod"); z("T1 RT1", "undo")
 z("T3 RT3", "l1key"); z("T4 RT4", "l2key"); z("R2C R1D R2D R3D", "arrows")
