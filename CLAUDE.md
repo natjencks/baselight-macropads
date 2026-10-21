@@ -43,6 +43,16 @@ Oryx key index ↔ name ↔ Yuzu id tables are in scripts/common.py (geometry er
   11838 = Helvetica Now Var Text Cond Regular (big centred numpad/arrow legends); 9658 = Text (normal width).
   Yuzu applies GPOS kerning to uploaded fonts (verified to 0.001 mm). Helvetica Now lacks ⇄ ◀ ▶ (use ‹ › ← →).
 - Nothing persists in the Playground until Nat clicks Save; never Add to cart / purchase — leave that to him.
+- Palette: yuzu/colors.txt (id:hex, from /api/dev/colors). No tints paler than e.g. BL034/PK014/GN025/PL018/YW019;
+  the dark range is small (GR001, GR029, BL010, BL022, RD006, RD025, PL004, PL002, GN022, GN009, BN024...).
+  Light legends on dark caps are orderable (Yuzu's own /dev/json example does it).
+- Legends can be SVG: KeyLayer {vectDef, vectViewbox, vectScale}; vectScale 100 maps the viewBox width to 1u
+  (24 units -> 19.05 mm), so a 20-unit circle at vectScale 44 is a 7 mm dot. Used for the L1/L2 thumb dots.
+- Colour auditions: scripts/yuzu_variant.py SCHEME -> yuzu/variants/SCHEME.json (same slots as the production set,
+  per-zone caps). The pane's screenshot is capped at 800 px wide: for a readable render, serialise the Playground
+  SVG into a fixed full-screen iframe (window.__showFrame in the session notes) and tile 3 screenshots.
+- Saving is Nat's click (the harness refuses the Save button). To add a design without overwriting the open one:
+  click "New" (button text becomes "No name"), import, then Nat clicks Save. Saved: Audition G, B1, C, F (2026-10-20).
 - Design decisions (Nat's): ALL CAPS; four fixed slots per key at the same heights on every key (blank slot when a
   layer is unassigned); L0 2.65 mm, variants 1.8 mm uniform (sized by the longest label); white caps, inks
   black / red RD003 / green GN010 / blue BL023; numpad + arrows one big centred legend; SemiBold for labels,
