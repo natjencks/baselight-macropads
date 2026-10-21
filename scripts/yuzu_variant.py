@@ -80,7 +80,7 @@ def build(tag):
     sc = SCHEMES[tag]; REPORT.clear()
     tpl = json.load(open(f"{ROOT}/yuzu/template.json")); keys = {}
     for name, e in K.items():
-        zone = ZONE.get(name, "default"); cap_hex = sc["caps"].get(zone, sc["caps"]["default"])
+        zone = ZONE.get(name, "default"); cap_hex = sc["caps"].get("l1key" if zone == "mod" else zone, sc["caps"]["default"])
         cap = nearest(cap_hex)
         inks = [nearest(h) for h in (sc["inks_dark"] if is_dark(cap_hex) else sc["inks_light"])]
         layers = []
@@ -92,6 +92,10 @@ def build(tag):
             for layer, lay in sorted(e["layers"].items()):
                 t = lay.get("cap", "")
                 if t: layers.append(dict(colorId=inks[layer], textLabel=t, textFontId=st["font_label"], textSize=size(H0 if layer == 0 else HV), x=0, y=round(SLOT[layer], 2)))
+        elif zone == "mod":
+            t = e["layers"].get(0, {}).get("cap", "")
+            cap_mm = min(st["big_cap_max_mm"], (TOP_W["1u"] - 1.2) / max(width_per_cap_mm(x) for x in ("ALT", "SHIFT", "CTRL")))
+            layers.append(dict(colorId=inks[0], textLabel=t, textFontId=st["font_label"], textSize=size(cap_mm), x=0, y=0))
         elif name in st["big_keys"]:
             t = e["layers"].get(0, {}).get("cap", "")
             if t:
