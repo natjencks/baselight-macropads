@@ -912,9 +912,9 @@
      "colorId": "BL023",
      "textLabel": "B",
      "textFontId": 26345,
-     "textSize": 2.39,
-     "x": 4.49,
-     "y": -4.28
+     "textSize": 2.11,
+     "x": 4.66,
+     "y": -4.47
     }
    ]
   },
@@ -949,9 +949,9 @@
      "colorId": "BL023",
      "textLabel": "F",
      "textFontId": 26345,
-     "textSize": 2.39,
-     "x": 4.59,
-     "y": 4.28
+     "textSize": 2.11,
+     "x": 4.76,
+     "y": 4.47
     }
    ]
   },
@@ -986,9 +986,9 @@
      "colorId": "BL023",
      "textLabel": "W",
      "textFontId": 26345,
-     "textSize": 2.39,
-     "x": 4.21,
-     "y": 4.28
+     "textSize": 2.11,
+     "x": 4.42,
+     "y": 4.47
     }
    ]
   },
@@ -1023,9 +1023,9 @@
      "colorId": "BL023",
      "textLabel": "V",
      "textFontId": 26345,
-     "textSize": 2.39,
-     "x": 4.5,
-     "y": 4.28
+     "textSize": 2.11,
+     "x": 4.68,
+     "y": 4.47
     }
    ]
   },
@@ -1060,9 +1060,9 @@
      "colorId": "BL023",
      "textLabel": "C",
      "textFontId": 26345,
-     "textSize": 2.39,
-     "x": 4.47,
-     "y": 4.28
+     "textSize": 2.11,
+     "x": 4.65,
+     "y": 4.47
     }
    ]
   },
