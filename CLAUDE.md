@@ -40,7 +40,11 @@ Oryx key index ↔ name ↔ Yuzu id tables are in scripts/common.py (geometry er
   layer `y` is mm from the key centre (negative = up). 1u KAM top is 11.45 × 11.45 mm (usable ≈ 10.4).
 - Fonts: Nat's uploads live on HIS account — the pane must be signed in to see them. IDs: 26345 =
   "HelvNow Cn575 BL" (our subset, weight 575 / width 70 / opsz 8, used for all slot labels);
-  11838 = Helvetica Now Var Text Cond Regular (big centred numpad/arrow legends); 9658 = Text (normal width).
+  26415 = "HelvNow Cn300 BL" (Light, width 70: big centred numpad/arrow/NUM/ENTER legends — its 0.52 mm stem matches the
+  arrow icons' stroke); 11838 = Helvetica Now Var Text Cond Regular (no longer used); 9658 = Text (normal width).
+  Font ids can be looked up in Yuzu's Supabase: fetch /rest/v1/fonts?select=id,name&name=ilike.*X* with the anon key
+  from useRuntimeConfig (public.supabase.key) + the sb-*-auth-token access_token. The variable source font is only in
+  the session uploads (helvetica-now-var.ttf) — ask Nat for it again if a new instance is needed; fonts/ has the subsets.
   Yuzu applies GPOS kerning to uploaded fonts (verified to 0.001 mm). Helvetica Now lacks ⇄ ◀ ▶ (use ‹ › ← →).
 - Nothing persists in the Playground until Nat clicks Save; never Add to cart / purchase — leave that to him.
 - Palette: yuzu/colors.txt (id:hex, from /api/dev/colors). No tints paler than e.g. BL034/PK014/GN025/PL018/YW019;
@@ -68,14 +72,15 @@ Oryx key index ↔ name ↔ Yuzu id tables are in scripts/common.py (geometry er
   ALT/SHIFT/CTRL one big centred label, ENTER sized like NUM, 7A DELETE/BKSP, R1A SCENE/FORMAT, R7D ALL SHOTS, R7E TAPE).
 - Design decisions (Nat's, 2026-10-21): ALL CAPS; THREE fixed text slots per key at the same heights on every key
   (scripts/legends.py: L0 3.2 mm shrinking to fit wide words, L1/L2 2.25 mm uniform; blank slot when unassigned).
-  Layer 3 is NOT a slot: a one-letter cap in master.yaml prints as a 1.5 mm blue corner letter (the layer it jumps to:
-  B/F/W/V/C on row B), top-right if the L0 word leaves room else bottom-right; empty L3 cap = unlabelled (2A, 4C).
+  Layer 3 is NOT a slot: a one-letter cap in master.yaml prints as a 1.5 mm blue letter in the bottom-right corner
+  (the layer it jumps to: B/F/W/V/C on row B); empty L3 cap = unlabelled (2A, 4C).
   White caps, inks black / red RD003 / green GN010 / blue BL023; numpad + arrows one big centred legend; SemiBold for
   labels, Regular for the big glyphs. Previews can be rendered locally with PIL from fonts/ to avoid Yuzu round-trips.
-- Saved designs on Nat's account (all re-saved with the 3-slot legends 2026-10-21): Baselight V16 (production, white),
+- Saved designs on Nat's account (all re-saved 2026-10-21 with the 3-slot legends + Light numpad font + VqwoWd key moves): Baselight V16 (production, white),
   Audition B1, C, F, G, C icons, F icons. Update loop: Open dialog -> click entry (coords from __entryPos) -> fetch the
   variant JSON from raw.githubusercontent.com/<commit sha>/... (the /main/ URL is cached ~5 min) -> __import -> Save.
 
 ## Baselight facts used
 Shortcuts from the 7.0 Linux sheet (new): play shot Ctrl+Space; Ctrl+F1 is stereo-only; Reset Operator Ctrl+Backspace;
-Timeline Alignment panel Win+; vs Align Timeline Vertically Ctrl+;. Layer-3 jumps send F13–F17 for a FLAPI script (todo); Formats is JOBS(R1B)+L1 since B4KY9x; R7D F18 = ALL SHOTS view, R7E F19 = CURRENT TAPE view (Shots View filters, script todo).
+Timeline Alignment panel Win+; vs Align Timeline Vertically Ctrl+;. Layer-3 jumps send F13–F17 for a FLAPI script (todo); Formats is JOBS(R1B)+L1 since B4KY9x; since VqwoWd: 2x1 Cursor 2B+L1, Byp Op 4B+L1 / Byp All 4B+L2,
+Grab Still 3C(REW)+L1, Group Grade 5C(FWD)+L1, 6A blank; R7D F18 = ALL SHOTS view, R7E F19 = CURRENT TAPE view (Shots View filters, script todo).
