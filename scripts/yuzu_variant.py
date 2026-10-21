@@ -59,14 +59,14 @@ SCHEMES = {
     caps={"default": "GR002", "sys": "GR020", "view": "BL034", "marks": "YW019", "nav": "PK014", "bypass": "PK014",
           "kf": "PK014", "layer": "GN025", "shape": "PL018", "dbs": "GN004", "edit": "BN020", "blank": "GR002",
           "mod": "GR020", "undo": "GR020", "l1key": "GR020", "l2key": "GR020", "num": "GR002", "arrows": "GN004", "misc": "BN002"}),
- "C": dict(dot=False, inks_light=DK, inks_dark=LT,   # Yuzu's dark palette is small; ids picked by hand
+ "C": dict(dot=True, dot_colors=("RD003", "GN023"), inks_light=DK, inks_dark=LT,   # Yuzu's dark palette is small; ids picked by hand
     caps={"default": "GR001", "sys": "GR001", "view": "BL010", "marks": "BN024", "nav": "RD006", "bypass": "RD006",
           "kf": "RD006", "layer": "GN022", "shape": "PL004", "dbs": "GN009", "edit": "GN037", "blank": "GR001",
-          "mod": "GR029", "undo": "GR029", "l1key": "RD003", "l2key": "GN023", "num": "GR001", "arrows": "GR028", "misc": "BN019"}),
- "F": dict(dot=False, inks_light=DK, inks_dark=["#faf7f0", "#ffd1c9", "#c9f5e2", "#cfe3ff"],
+          "mod": "GR029", "undo": "GR029", "l1key": "GR001", "l2key": "GR001", "num": "GR001", "arrows": "GR028", "misc": "BN019"}),
+ "F": dict(dot=True, dot_colors=("RD003", "GN023"), inks_light=DK, inks_dark=["#faf7f0", "#ffd1c9", "#c9f5e2", "#cfe3ff"],
     caps={"default": "GR001", "sys": "GR001", "view": "BL022", "marks": "OG010", "nav": "RD025", "bypass": "RD025",
           "kf": "RD025", "layer": "GN023", "shape": "PL002", "dbs": "GN010", "edit": "YW026", "blank": "GR001",
-          "mod": "GR029", "undo": "GR029", "l1key": "RD003", "l2key": "GN023", "num": "GR001", "arrows": "GN007", "misc": "BN034"}),
+          "mod": "GR029", "undo": "GR029", "l1key": "GR001", "l2key": "GR001", "num": "GR001", "arrows": "GN007", "misc": "BN034"}),
  "G": dict(dot=False, inks_light=["#262626"] * 4, inks_dark=["#faf7f0"] * 4,
     caps={"default": "#d9d5ce", "sys": "#b8b3ab", "view": "#4a90d9", "marks": "#f0a030", "nav": "#e74c3c", "bypass": "#e74c3c",
           "kf": "#e74c3c", "layer": "#7cb342", "shape": "PL021", "dbs": "#16a085", "edit": "#f1c40f", "blank": "#d9d5ce",
@@ -85,7 +85,8 @@ def build(tag):
         inks = [nearest(h) for h in (sc["inks_dark"] if is_dark(cap_hex) else sc["inks_light"])]
         layers = []
         if sc["dot"] and zone in ("l1key", "l2key"):
-            layers.append(dict(colorId=DK[1] and nearest(DK[1]) if zone == "l1key" else nearest(DK[2]), **DOT))
+            dc = sc.get("dot_colors", ("RD003", "GN010"))
+            layers.append(dict(colorId=dc[0] if zone == "l1key" else dc[1], **DOT))
         elif zone in ("l1key", "l2key"):
             inks = [nearest(h) for h in LT]
             for layer, lay in sorted(e["layers"].items()):
