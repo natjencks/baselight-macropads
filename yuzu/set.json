@@ -820,24 +820,7 @@
   },
   "zYPGbQ": {
    "colorId": "GR002",
-   "layers": [
-    {
-     "colorId": "GR001",
-     "textLabel": "GRAB",
-     "textFontId": 26345,
-     "textSize": 4.49,
-     "x": 0,
-     "y": -3.6
-    },
-    {
-     "colorId": "RD003",
-     "textLabel": "GG",
-     "textFontId": 26345,
-     "textSize": 3.16,
-     "x": 0,
-     "y": 0.32
-    }
-   ]
+   "layers": []
   },
   "A59P47": {
    "colorId": "GR002",
@@ -901,12 +884,12 @@
      "y": -3.6
     },
     {
-     "colorId": "GN010",
+     "colorId": "RD003",
      "textLabel": "2x1 CUR",
      "textFontId": 26345,
      "textSize": 3.16,
      "x": 0,
-     "y": 3.38
+     "y": 0.32
     },
     {
      "colorId": "BL023",
@@ -914,7 +897,7 @@
      "textFontId": 26345,
      "textSize": 2.11,
      "x": 4.66,
-     "y": -4.47
+     "y": 4.47
     }
    ]
   },
@@ -968,7 +951,7 @@
     },
     {
      "colorId": "RD003",
-     "textLabel": "ALL",
+     "textLabel": "OPER",
      "textFontId": 26345,
      "textSize": 3.16,
      "x": 0,
@@ -976,7 +959,7 @@
     },
     {
      "colorId": "GN010",
-     "textLabel": "OPER",
+     "textLabel": "ALL",
      "textFontId": 26345,
      "textSize": 3.16,
      "x": 0,
@@ -1131,6 +1114,14 @@
      "textSize": 4.49,
      "x": 0,
      "y": -3.6
+    },
+    {
+     "colorId": "RD003",
+     "textLabel": "GRAB",
+     "textFontId": 26345,
+     "textSize": 3.16,
+     "x": 0,
+     "y": 0.32
     }
    ]
   },
@@ -1173,6 +1164,14 @@
      "textSize": 4.49,
      "x": 0,
      "y": -3.6
+    },
+    {
+     "colorId": "RD003",
+     "textLabel": "GG",
+     "textFontId": 26345,
+     "textSize": 3.16,
+     "x": 0,
+     "y": 0.32
     }
    ]
   },

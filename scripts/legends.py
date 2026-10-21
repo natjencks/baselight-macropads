@@ -1,7 +1,7 @@
 """Shared legend geometry for the Yuzu renderers (render_yuzu.py = production set, yuzu_variant.py = auditions).
 Three fixed text slots per key (Layer 0 big, Layer 1/2 smaller) at the same heights on every key.
-Layer 3 is a corner letter: a one-letter cap in master.yaml is printed small and blue in the top-right corner
-when the Layer-0 word leaves room there, else bottom-right; an empty Layer-3 cap means unlabelled."""
+Layer 3 is a corner letter: a one-letter cap in master.yaml is printed small and blue in the bottom-right corner;
+an empty Layer-3 cap means unlabelled."""
 from fontTools.ttLib import TTFont
 from PIL import ImageFont, Image, ImageDraw
 from common import ROOT
@@ -41,13 +41,11 @@ def text_layers(st, e, inks, font_id):
     return out, warn
 
 def corner_layer(st, e, ink, font_id):
-    """The Layer-3 corner letter, or None. Position: top-right if the L0 word leaves room, else bottom-right."""
+    """The Layer-3 corner letter (always bottom-right), or None."""
     t = e["layers"].get(3, {}).get("cap", "")
     if not t: return None
     if len(t) > 1: raise ValueError(f"Layer-3 cap must be one letter or empty, got {t!r}")
     cm, inset = st["l3_corner_mm"], st["l3_corner_inset"]
     w = width_per_cap_mm(t) * cm; half_w = TOP_W[e["size"]] / 2
-    l0 = e["layers"].get(0, {}).get("cap", ""); l0_w = width_per_cap_mm(l0) * fit(st, l0, st["cap_mm_l0"], e["size"])[0] if l0 else 0
-    top = (TOP_W[e["size"]] - l0_w) / 2 >= w + inset + 0.4
-    y = -TOP_H / 2 + inset + cm / 2 if top else TOP_H / 2 - inset - cm / 2
+    y = TOP_H / 2 - inset - cm / 2
     return dict(colorId=ink, textLabel=t, textFontId=font_id, textSize=size(st, cm), x=round(half_w - inset - w / 2, 2), y=round(y, 2))

@@ -1,37 +1,37 @@
 [
  {
-  "layer": 2,
-  "idx": 38,
-  "key": "R1A",
-  "tap": "Win+S",
-  "hold": "",
-  "label": "Scene Set",
-  "was": {
-   "tap": "Win+Shift+F",
-   "hold": "",
-   "label": "Formats"
-  }
- },
- {
-  "layer": 3,
-  "idx": 38,
-  "key": "R1A",
-  "tap": "Win+Shift+F",
-  "hold": "",
-  "label": "Formats",
-  "was": {
-   "tap": "Win+S",
-   "hold": "",
-   "label": "Scene Set"
-  }
- },
- {
   "layer": 0,
-  "idx": 64,
-  "key": "R7D",
-  "tap": "F18",
+  "idx": 5,
+  "key": "6A",
+  "tap": "",
   "hold": "",
-  "label": "ALL SHOTS",
+  "label": "",
+  "was": {
+   "tap": "Shift+G",
+   "hold": "",
+   "label": "Grab"
+  }
+ },
+ {
+  "layer": 1,
+  "idx": 5,
+  "key": "6A",
+  "tap": "",
+  "hold": "",
+  "label": "",
+  "was": {
+   "tap": "Ctrl+G",
+   "hold": "",
+   "label": "Group Grd"
+  }
+ },
+ {
+  "layer": 1,
+  "idx": 8,
+  "key": "2B",
+  "tap": "F2",
+  "hold": "",
+  "label": "2x1 Cursor",
   "was": {
    "tap": "",
    "hold": "",
@@ -39,12 +39,64 @@
   }
  },
  {
-  "layer": 0,
-  "idx": 69,
-  "key": "R7E",
-  "tap": "F19",
+  "layer": 2,
+  "idx": 8,
+  "key": "2B",
+  "tap": "",
   "hold": "",
-  "label": "CUR TAPE",
+  "label": "",
+  "was": {
+   "tap": "F2",
+   "hold": "",
+   "label": "2x1 Cursor"
+  }
+ },
+ {
+  "layer": 1,
+  "idx": 10,
+  "key": "4B",
+  "tap": "Ctrl+Shift+F11",
+  "hold": "",
+  "label": "Byp Op",
+  "was": {
+   "tap": "F11",
+   "hold": "",
+   "label": "Byp All"
+  }
+ },
+ {
+  "layer": 2,
+  "idx": 10,
+  "key": "4B",
+  "tap": "F11",
+  "hold": "",
+  "label": "Byp All",
+  "was": {
+   "tap": "Ctrl+Shift+F11",
+   "hold": "",
+   "label": "Byp Op"
+  }
+ },
+ {
+  "layer": 1,
+  "idx": 16,
+  "key": "3C",
+  "tap": "Shift+G",
+  "hold": "",
+  "label": "Grab",
+  "was": {
+   "tap": "",
+   "hold": "",
+   "label": ""
+  }
+ },
+ {
+  "layer": 1,
+  "idx": 18,
+  "key": "5C",
+  "tap": "Ctrl+G",
+  "hold": "",
+  "label": "Group Grd",
   "was": {
    "tap": "",
    "hold": "",
