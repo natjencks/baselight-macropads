@@ -46,7 +46,7 @@ Oryx key index ↔ name ↔ Yuzu id tables are in scripts/common.py (geometry er
   from useRuntimeConfig (public.supabase.key) + the sb-*-auth-token access_token. The variable source font is only in
   the session uploads (helvetica-now-var.ttf) — ask Nat for it again if a new instance is needed; fonts/ has the subsets.
   Yuzu applies GPOS kerning to uploaded fonts (verified to 0.001 mm). Helvetica Now lacks ⇄ ◀ ▶ (use ‹ › ← →).
-- Nothing persists in the Playground until Nat clicks Save; never Add to cart / purchase — leave that to him.
+- Nothing persists in the Playground until Save is clicked (Nat, or me when his message asks for it); never Add to cart / purchase — leave that to him.
 - Palette: yuzu/colors.txt (id:hex, from /api/dev/colors). No tints paler than e.g. BL034/PK014/GN025/PL018/YW019;
   the dark range is small (GR001, GR029, BL010, BL022, RD006, RD025, PL004, PL002, GN022, GN009, BN024...).
   Light legends on dark caps are orderable (Yuzu's own /dev/json example does it).
@@ -77,11 +77,12 @@ Oryx key index ↔ name ↔ Yuzu id tables are in scripts/common.py (geometry er
   (the layer it jumps to: B/F/W/V/C on row B); empty L3 cap = unlabelled (2A, 4C).
   White caps, inks black / red RD003 / green GN010 / blue BL023; numpad + arrows one big centred legend; SemiBold for
   labels, Regular for the big glyphs. Previews can be rendered locally with PIL from fonts/ to avoid Yuzu round-trips.
-- Saved designs on Nat's account (all re-saved 2026-10-21 18:00: 3-slot legends, Light numpad font, VqwoWd key moves, arrow icons everywhere, L1/L2 +0.5 mm): Baselight V16 (production, white),
+- Saved designs on Nat's account (all re-saved 2026-10-21 19:18 at repo 5b42eac / Oryx GGKD5j: 3-slot legends, Light digits + SemiBold NUM/ENTER, arrow icons everywhere, L1/L2 +0.5 mm, label changes 2x1C/2x1D/WIP D, 6B NEW/NEXT, 6C VW-MAT/GRD-MAT, 2A SHOTS/CYC F6, 6A zoom set): Baselight V16 (production, white),
   Audition B1, C, F, G, C icons, F icons. Update loop: Open dialog -> click entry (coords from __entryPos) -> fetch the
   variant JSON from raw.githubusercontent.com/<commit sha>/... (the /main/ URL is cached ~5 min) -> __import -> Save.
 
 ## Baselight facts used
 Shortcuts from the 7.0 Linux sheet (new): play shot Ctrl+Space; Ctrl+F1 is stereo-only; Reset Operator Ctrl+Backspace;
 Timeline Alignment panel Win+; vs Align Timeline Vertically Ctrl+;. Layer-3 jumps send F13–F17 for a FLAPI script (todo); Formats is JOBS(R1B)+L1 since B4KY9x; since VqwoWd: 2x1 Cursor 2B+L1, Byp Op 4B+L1 / Byp All 4B+L2,
-Grab Still 3C(REW)+L1, Group Grade 5C(FWD)+L1, 6A blank; R7D F18 = ALL SHOTS view, R7E F19 = CURRENT TAPE view (Shots View filters, script todo).
+Grab Still 3C(REW)+L1, Group Grade 5C(FWD)+L1; WvRLzn: 6B L2 Next Shape, 6C View Matte (O) / Grd⇄Matte (G); wOXdx9: 2D L2 Cur|Ref,
+2E L2 Gang Curs; GGKD5j: zoom set 2A→6A, 2A = 1x1 Shots view F6 / Cycle F6 Ctrl+F6; R7D F18 = ALL SHOTS view, R7E F19 = CURRENT TAPE view (Shots View filters, script todo).
