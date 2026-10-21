@@ -1628,7 +1628,7 @@
     },
     {
      "colorId": "GN010",
-     "textLabel": "FORMAT",
+     "textLabel": "SCENE",
      "textFontId": 26345,
      "textSize": 2.53,
      "x": 0,
@@ -1636,7 +1636,7 @@
     },
     {
      "colorId": "BL023",
-     "textLabel": "SCENE",
+     "textLabel": "FORMAT",
      "textFontId": 26345,
      "textSize": 2.53,
      "x": 0,
@@ -1995,7 +1995,16 @@
   },
   "EGDHBG": {
    "colorId": "GR002",
-   "layers": []
+   "layers": [
+    {
+     "colorId": "GR001",
+     "textLabel": "ALL SHOTS",
+     "textFontId": 26345,
+     "textSize": 3.72,
+     "x": 0,
+     "y": -3.88
+    }
+   ]
   },
   "R4QLAP": {
    "colorId": "GR002",
@@ -2051,7 +2060,16 @@
   },
   "RTHPEX": {
    "colorId": "GR002",
-   "layers": []
+   "layers": [
+    {
+     "colorId": "GR001",
+     "textLabel": "TAPE",
+     "textFontId": 26345,
+     "textSize": 3.72,
+     "x": 0,
+     "y": -3.88
+    }
+   ]
   },
   "4GSW3A": {
    "colorId": "GR002",

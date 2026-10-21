@@ -1,11 +1,37 @@
 [
  {
-  "layer": 0,
-  "idx": 6,
-  "key": "7A",
-  "tap": "Delete",
+  "layer": 2,
+  "idx": 38,
+  "key": "R1A",
+  "tap": "Win+S",
   "hold": "",
-  "label": "Delete",
+  "label": "Scene Set",
+  "was": {
+   "tap": "Win+Shift+F",
+   "hold": "",
+   "label": "Formats"
+  }
+ },
+ {
+  "layer": 3,
+  "idx": 38,
+  "key": "R1A",
+  "tap": "Win+Shift+F",
+  "hold": "",
+  "label": "Formats",
+  "was": {
+   "tap": "Win+S",
+   "hold": "",
+   "label": "Scene Set"
+  }
+ },
+ {
+  "layer": 0,
+  "idx": 64,
+  "key": "R7D",
+  "tap": "F18",
+  "hold": "",
+  "label": "ALL SHOTS",
   "was": {
    "tap": "",
    "hold": "",
@@ -13,12 +39,12 @@
   }
  },
  {
-  "layer": 1,
-  "idx": 6,
-  "key": "7A",
-  "tap": "Backspace",
+  "layer": 0,
+  "idx": 69,
+  "key": "R7E",
+  "tap": "F19",
   "hold": "",
-  "label": "Backspace",
+  "label": "CUR TAPE",
   "was": {
    "tap": "",
    "hold": "",

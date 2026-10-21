@@ -1,0 +1,1264 @@
+{
+ "layout": "Ergodox Baselight V16",
+ "rev": "jZjAVe",
+ "layers": [
+  {
+   "title": "L0-White",
+   "keys": [
+    {
+     "tap": {
+      "code": "KC_ESCAPE"
+     },
+     "label": "Esc"
+    },
+    {
+     "tap": {
+      "code": "KC_F12"
+     },
+     "label": "Disp Zoom"
+    },
+    {
+     "tap": {
+      "code": "KC_Z",
+      "mods": [
+       "leftShift"
+      ]
+     },
+     "label": "Prev Mark"
+    },
+    {
+     "tap": {
+      "code": "KC_M"
+     },
+     "label": "Mark"
+    },
+    {
+     "tap": {
+      "code": "KC_X",
+      "mods": [
+       "leftShift"
+      ]
+     },
+     "label": "Next Mark"
+    },
+    {
+     "tap": {
+      "code": "KC_G",
+      "mods": [
+       "leftShift"
+      ]
+     },
+     "label": "Grab"
+    },
+    {
+     "tap": {
+      "code": "KC_DELETE"
+     },
+     "label": "Delete"
+    },
+    {
+     "tap": {
+      "code": "KC_ENTER",
+      "mods": [
+       "leftCtrl",
+       "leftShift"
+      ]
+     },
+     "label": "Sel/Desel"
+    },
+    {
+     "tap": {
+      "code": "KC_F1"
+     },
+     "label": "1x1"
+    },
+    {
+     "tap": {
+      "code": "KC_Z"
+     },
+     "label": "Prev Shot"
+    },
+    {
+     "tap": {
+      "code": "KC_F11",
+      "mods": [
+       "leftCtrl"
+      ]
+     },
+     "label": "Byp Strip"
+    },
+    {
+     "tap": {
+      "code": "KC_X"
+     },
+     "label": "Next Shot"
+    },
+    {
+     "tap": {
+      "code": "KC_S"
+     },
+     "label": "Add Shape"
+    },
+    {
+     "tap": {
+      "code": "KC_SCLN"
+     },
+     "label": "DBS View"
+    },
+    {
+     "tap": {
+      "code": "KC_PAGE_UP"
+     },
+     "label": "Layer Up"
+    },
+    {
+     "tap": {
+      "code": "KC_3",
+      "mods": [
+       "leftAlt",
+       "leftCtrl"
+      ]
+     },
+     "label": "2x1|DBS"
+    },
+    {
+     "tap": {
+      "code": "KC_J"
+     },
+     "label": "Rew"
+    },
+    {
+     "tap": {
+      "code": "KC_K"
+     },
+     "label": "Stop"
+    },
+    {
+     "tap": {
+      "code": "KC_L"
+     },
+     "label": "Fwd"
+    },
+    {
+     "tap": {
+      "code": "KC_G"
+     },
+     "label": "Grd⇄Matte"
+    },
+    {
+     "tap": {
+      "code": "KC_PGDN"
+     },
+     "label": "Layer Down"
+    },
+    {
+     "tap": {
+      "code": "KC_1"
+     },
+     "label": "Cursor 1"
+    },
+    {
+     "tap": {
+      "code": "KC_LBRC"
+     },
+     "label": "Prev KF"
+    },
+    {
+     "tap": {
+      "code": "KC_KP_MINUS"
+     },
+     "label": "Toggle KF"
+    },
+    {
+     "tap": {
+      "code": "KC_RBRC"
+     },
+     "label": "Next KF"
+    },
+    {
+     "tap": {
+      "code": "KC_B"
+     },
+     "label": "Blur"
+    },
+    {
+     "tap": {
+      "code": "KC_QUOTE"
+     },
+     "label": "DBS Apply"
+    },
+    {
+     "tap": {
+      "code": "KC_P"
+     },
+     "label": "Insert Lyr"
+    },
+    {
+     "tap": {
+      "code": "KC_2"
+     },
+     "label": "Cursor 2"
+    },
+    {
+     "tap": {
+      "code": "KC_C",
+      "mods": [
+       "leftCtrl"
+      ]
+     },
+     "label": "Copy"
+    },
+    {
+     "tap": {
+      "code": "KC_R",
+      "mods": [
+       "leftCtrl",
+       "leftShift"
+      ]
+     },
+     "label": "Rename"
+    },
+    {
+     "tap": {
+      "code": "KC_V",
+      "mods": [
+       "leftCtrl"
+      ]
+     },
+     "label": "Paste"
+    },
+    {
+     "tap": {
+      "code": "KC_Z",
+      "mods": [
+       "leftCtrl"
+      ]
+     },
+     "label": "Undo"
+    },
+    {
+     "tap": {
+      "code": "KC_LEFT_ALT"
+     },
+     "label": "Alt"
+    },
+    {
+     "tap": {
+      "code": "KC_LEFT_SHIFT"
+     },
+     "label": "Shift"
+    },
+    {
+     "hold": {
+      "code": "MO",
+      "layer": 1
+     },
+     "label": "L1 Hold"
+    },
+    {
+     "hold": {
+      "code": "MO",
+      "layer": 2
+     },
+     "label": "L2 Hold"
+    },
+    {
+     "tap": {
+      "code": "KC_LEFT_CTRL"
+     },
+     "label": "Ctrl"
+    },
+    {
+     "tap": {
+      "code": "KC_P",
+      "mods": [
+       "leftGui",
+       "leftShift"
+      ]
+     },
+     "label": "Prefs"
+    },
+    {
+     "tap": {
+      "code": "KC_M",
+      "mods": [
+       "leftAlt"
+      ]
+     },
+     "label": "Mute Audio"
+    },
+    {
+     "tap": {
+      "code": "KC_SCLN",
+      "mods": [
+       "leftGui"
+      ]
+     },
+     "label": "TL Align"
+    },
+    {
+     "tap": {
+      "code": "KC_NUM"
+     }
+    },
+    {
+     "tap": {
+      "code": "KC_KP_SLASH"
+     }
+    },
+    {
+     "tap": {
+      "code": "KC_KP_ASTERISK"
+     }
+    },
+    {
+     "tap": {
+      "code": "KC_KP_MINUS"
+     }
+    },
+    {
+     "tap": {
+      "code": "KC_J",
+      "mods": [
+       "leftGui"
+      ]
+     },
+     "label": "Jobs"
+    },
+    {
+     "tap": {
+      "code": "KC_J",
+      "mods": [
+       "leftGui",
+       "leftShift"
+      ]
+     },
+     "label": "CSJ"
+    },
+    {
+     "tap": {
+      "code": "KC_BSLS"
+     },
+     "label": "Fold Lyr"
+    },
+    {
+     "tap": {
+      "code": "KC_KP_7"
+     }
+    },
+    {
+     "tap": {
+      "code": "KC_KP_8"
+     }
+    },
+    {
+     "tap": {
+      "code": "KC_KP_9"
+     }
+    },
+    {
+     "tap": {
+      "code": "KC_KP_PLUS"
+     }
+    },
+    {
+     "tap": {
+      "code": "KC_UP"
+     },
+     "label": "↑"
+    },
+    {
+     "tap": {
+      "code": "KC_V"
+     },
+     "label": "Counters"
+    },
+    {
+     "tap": {
+      "code": "KC_KP_4"
+     }
+    },
+    {
+     "tap": {
+      "code": "KC_KP_5"
+     }
+    },
+    {
+     "tap": {
+      "code": "KC_KP_6"
+     }
+    },
+    {
+     "tap": {
+      "code": "KC_KP_ENTER"
+     }
+    },
+    {
+     "tap": {
+      "code": "KC_LEFT"
+     },
+     "label": "←"
+    },
+    {
+     "tap": {
+      "code": "KC_DOWN"
+     },
+     "label": "↓"
+    },
+    {
+     "tap": {
+      "code": "KC_RIGHT"
+     },
+     "label": "→"
+    },
+    {
+     "tap": {
+      "code": "KC_KP_1"
+     }
+    },
+    {
+     "tap": {
+      "code": "KC_KP_2"
+     }
+    },
+    {
+     "tap": {
+      "code": "KC_KP_3"
+     }
+    },
+    {
+     "tap": {
+      "code": "KC_F18"
+     },
+     "label": "ALL SHOTS"
+    },
+    {
+     "tap": {
+      "code": "KC_G",
+      "mods": [
+       "leftGui"
+      ]
+     },
+     "label": "Groups"
+    },
+    {
+     "tap": {
+      "code": "KC_KP_0",
+      "mods": [
+       "leftGui"
+      ]
+     },
+     "label": "Cycle Num"
+    },
+    {
+     "tap": {
+      "code": "KC_KP_0"
+     }
+    },
+    {
+     "tap": {
+      "code": "KC_KP_DOT"
+     }
+    },
+    {
+     "tap": {
+      "code": "KC_F19"
+     },
+     "label": "CUR TAPE"
+    },
+    {
+     "tap": {
+      "code": "KC_LEFT_ALT"
+     },
+     "label": "Alt"
+    },
+    {
+     "tap": {
+      "code": "KC_Z",
+      "mods": [
+       "leftCtrl"
+      ]
+     },
+     "label": "Undo"
+    },
+    {
+     "tap": {
+      "code": "KC_LEFT_SHIFT"
+     },
+     "label": "Shift"
+    },
+    {
+     "tap": {
+      "code": "KC_LEFT_CTRL"
+     },
+     "label": "Ctrl"
+    },
+    {
+     "hold": {
+      "code": "MO",
+      "layer": 2
+     },
+     "label": "L2 Hold"
+    },
+    {
+     "hold": {
+      "code": "MO",
+      "layer": 1
+     },
+     "label": "L1 Hold"
+    }
+   ]
+  },
+  {
+   "title": "L1-Red",
+   "keys": [
+    {
+     "tap": {
+      "code": "KC_Q",
+      "mods": [
+       "leftCtrl"
+      ]
+     },
+     "label": "Quit"
+    },
+    {
+     "tap": {
+      "code": "KC_F7"
+     },
+     "label": "TL H-Zoom"
+    },
+    {
+     "tap": {
+      "code": "KC_TRANSPARENT",
+      "macro": {
+       "keys": [
+        {
+         "code": "KC_C",
+         "delay": 100,
+         "modifiers": {
+          "leftAlt": true,
+          "leftGui": true,
+          "leftCtrl": false,
+          "rightAlt": false,
+          "rightGui": false,
+          "leftShift": true,
+          "rightCtrl": false,
+          "rightShift": false
+         }
+        },
+        {
+         "code": "KC_TAB",
+         "delay": 100,
+         "modifiers": null
+        }
+       ],
+       "name": null,
+       "applyAlt": false,
+       "endEnter": false
+      }
+     },
+     "label": "Color Note"
+    },
+    {
+     "tap": {
+      "code": "KC_M",
+      "mods": [
+       "leftShift"
+      ]
+     },
+     "label": "Del Marks"
+    },
+    {
+     "tap": {
+      "code": "KC_TRANSPARENT",
+      "macro": {
+       "keys": [
+        {
+         "code": "KC_O",
+         "delay": 100,
+         "modifiers": {
+          "leftAlt": true,
+          "leftGui": true,
+          "leftCtrl": false,
+          "rightAlt": false,
+          "rightGui": false,
+          "leftShift": true,
+          "rightCtrl": false,
+          "rightShift": false
+         }
+        },
+        {
+         "code": "KC_TAB",
+         "delay": 100,
+         "modifiers": null
+        }
+       ],
+       "name": null,
+       "applyAlt": false,
+       "endEnter": false
+      }
+     },
+     "label": "Conf Note"
+    },
+    {
+     "tap": {
+      "code": "KC_G",
+      "mods": [
+       "leftCtrl"
+      ]
+     },
+     "label": "Group Grd"
+    },
+    {
+     "tap": {
+      "code": "KC_BSPC"
+     },
+     "label": "Backspace"
+    },
+    {
+     "tap": {
+      "code": "KC_A",
+      "mods": [
+       "leftCtrl"
+      ]
+     },
+     "label": "Sel Strips"
+    },
+    {},
+    {
+     "tap": {
+      "code": "KC_HOME"
+     },
+     "label": "Shot Start"
+    },
+    {
+     "tap": {
+      "code": "KC_F11"
+     },
+     "label": "Byp All"
+    },
+    {
+     "tap": {
+      "code": "KC_END"
+     },
+     "label": "Shot End"
+    },
+    {
+     "tap": {
+      "code": "KC_Q"
+     },
+     "label": "Edit Shape"
+    },
+    {},
+    {
+     "tap": {
+      "code": "KC_PAGE_UP",
+      "mods": [
+       "leftGui"
+      ]
+     },
+     "label": "Stack Top"
+    },
+    {
+     "tap": {
+      "code": "KC_4",
+      "mods": [
+       "leftAlt",
+       "leftCtrl"
+      ]
+     },
+     "label": "Wipe|DBS"
+    },
+    {},
+    {
+     "tap": {
+      "code": "KC_SPACE",
+      "mods": [
+       "leftShift"
+      ]
+     },
+     "label": "Play Scene"
+    },
+    {},
+    {
+     "tap": {
+      "code": "KC_N",
+      "mods": [
+       "leftCtrl"
+      ]
+     },
+     "label": "Next Shape"
+    },
+    {
+     "tap": {
+      "code": "KC_PGDN",
+      "mods": [
+       "leftGui"
+      ]
+     },
+     "label": "Stack Bot"
+    },
+    {
+     "tap": {
+      "code": "KC_1",
+      "mods": [
+       "leftCtrl"
+      ]
+     },
+     "label": "Toggle C1"
+    },
+    {
+     "tap": {
+      "code": "KC_LBRC",
+      "mods": [
+       "leftCtrl"
+      ]
+     },
+     "label": "Move KF ◀"
+    },
+    {},
+    {
+     "tap": {
+      "code": "KC_RBRC",
+      "mods": [
+       "leftCtrl"
+      ]
+     },
+     "label": "Move KF ▶"
+    },
+    {
+     "tap": {
+      "code": "KC_B",
+      "mods": [
+       "leftShift"
+      ]
+     },
+     "label": "Reset Blur"
+    },
+    {},
+    {
+     "tap": {
+      "code": "KC_P",
+      "mods": [
+       "leftShift"
+      ]
+     },
+     "label": "Delete Lyr"
+    },
+    {
+     "tap": {
+      "code": "KC_2",
+      "mods": [
+       "leftCtrl"
+      ]
+     },
+     "label": "Toggle C2"
+    },
+    {
+     "tap": {
+      "code": "KC_U",
+      "mods": [
+       "leftCtrl"
+      ]
+     },
+     "label": "Smart Copy"
+    },
+    {},
+    {
+     "tap": {
+      "code": "KC_I",
+      "mods": [
+       "leftCtrl"
+      ]
+     },
+     "label": "SmartPaste"
+    },
+    {
+     "tap": {
+      "code": "KC_Z",
+      "mods": [
+       "leftCtrl",
+       "leftShift"
+      ]
+     },
+     "label": "Redo"
+    },
+    {},
+    {},
+    {},
+    {
+     "tap": {
+      "code": "OSL",
+      "layer": 3
+     },
+     "label": "L3 1-shot"
+    },
+    {},
+    {
+     "tap": {
+      "code": "KC_S",
+      "mods": [
+       "leftGui",
+       "leftShift"
+      ]
+     },
+     "label": "Setups"
+    },
+    {},
+    {
+     "tap": {
+      "code": "KC_SCLN",
+      "mods": [
+       "leftCtrl"
+      ]
+     },
+     "label": "Align Vert"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+     "tap": {
+      "code": "KC_BSLS",
+      "mods": [
+       "leftCtrl"
+      ]
+     },
+     "label": "Fold All"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+     "tap": {
+      "code": "KC_F",
+      "mods": [
+       "leftGui"
+      ]
+     },
+     "label": "Show FPS"
+    },
+    {},
+    {},
+    {},
+    {
+     "tap": {
+      "code": "KC_TRANSPARENT"
+     }
+    },
+    {
+     "tap": {
+      "code": "KC_TRANSPARENT"
+     }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+     "tap": {
+      "code": "KC_TRANSPARENT"
+     }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+     "tap": {
+      "code": "KC_Z",
+      "mods": [
+       "leftCtrl",
+       "leftShift"
+      ]
+     },
+     "label": "Redo"
+    },
+    {},
+    {
+     "tap": {
+      "code": "KC_TRANSPARENT"
+     }
+    },
+    {
+     "tap": {
+      "code": "OSL",
+      "layer": 3
+     },
+     "label": "L3 1-shot"
+    },
+    {}
+   ]
+  },
+  {
+   "title": "L2-Green",
+   "keys": [
+    {},
+    {
+     "tap": {
+      "code": "KC_F7",
+      "mods": [
+       "leftShift"
+      ]
+     },
+     "label": "TL V-Zoom"
+    },
+    {},
+    {
+     "tap": {
+      "code": "KC_M",
+      "mods": [
+       "leftCtrl",
+       "leftShift"
+      ]
+     },
+     "label": "Del AllMks"
+    },
+    {},
+    {},
+    {},
+    {
+     "tap": {
+      "code": "KC_A",
+      "mods": [
+       "leftCtrl",
+       "leftShift"
+      ]
+     },
+     "label": "Desel Strp"
+    },
+    {
+     "tap": {
+      "code": "KC_F2"
+     },
+     "label": "2x1 Cursor"
+    },
+    {
+     "tap": {
+      "code": "KC_HOME",
+      "mods": [
+       "leftCtrl"
+      ]
+     },
+     "label": "Scene Head"
+    },
+    {
+     "tap": {
+      "code": "KC_F11",
+      "mods": [
+       "leftCtrl",
+       "leftShift"
+      ]
+     },
+     "label": "Byp Op"
+    },
+    {
+     "tap": {
+      "code": "KC_END",
+      "mods": [
+       "leftCtrl"
+      ]
+     },
+     "label": "Scene Tail"
+    },
+    {
+     "tap": {
+      "code": "KC_S",
+      "mods": [
+       "leftShift"
+      ]
+     },
+     "label": "Reset Shp"
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+     "tap": {
+      "code": "KC_SPACE",
+      "mods": [
+       "leftCtrl"
+      ]
+     },
+     "label": "Play Shot"
+    },
+    {},
+    {
+     "tap": {
+      "code": "KC_O"
+     },
+     "label": "Matte Disp"
+    },
+    {},
+    {
+     "tap": {
+      "code": "KC_0",
+      "mods": [
+       "leftCtrl"
+      ]
+     },
+     "label": "Gang Curs"
+    },
+    {
+     "tap": {
+      "code": "KC_COMMA"
+     },
+     "label": "Edit KF ◀"
+    },
+    {},
+    {
+     "tap": {
+      "code": "KC_DOT"
+     },
+     "label": "Edit KF ▶"
+    },
+    {},
+    {},
+    {},
+    {
+     "tap": {
+      "code": "KC_1",
+      "mods": [
+       "leftAlt",
+       "leftCtrl"
+      ]
+     },
+     "label": "Cur|Ref"
+    },
+    {
+     "tap": {
+      "code": "KC_C",
+      "mods": [
+       "leftCtrl",
+       "leftShift"
+      ]
+     },
+     "label": "Copy Prms"
+    },
+    {
+     "tap": {
+      "code": "KC_M",
+      "mods": [
+       "leftCtrl"
+      ]
+     },
+     "label": "MultiPaste"
+    },
+    {
+     "tap": {
+      "code": "KC_F",
+      "mods": [
+       "leftCtrl"
+      ]
+     },
+     "label": "Paste Strp"
+    },
+    {},
+    {},
+    {},
+    {
+     "tap": {
+      "code": "OSL",
+      "layer": 3
+     },
+     "label": "L3 1-shot"
+    },
+    {},
+    {},
+    {
+     "tap": {
+      "code": "KC_S",
+      "mods": [
+       "leftGui"
+      ]
+     },
+     "label": "Scene Set"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+     "tap": {
+      "code": "OSL",
+      "layer": 3
+     },
+     "label": "L3 1-shot"
+    }
+   ]
+  },
+  {
+   "title": "L3-Blue",
+   "keys": [
+    {},
+    {
+     "tap": {
+      "code": "KC_F7",
+      "mods": [
+       "leftCtrl",
+       "leftShift"
+      ]
+     },
+     "label": "TL HV-Zoom"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+     "tap": {
+      "code": "KC_F13"
+     },
+     "label": "BASE GRADE"
+    },
+    {
+     "tap": {
+      "code": "KC_F14"
+     },
+     "label": "FACE1"
+    },
+    {
+     "tap": {
+      "code": "KC_F15"
+     },
+     "label": "WIDE1"
+    },
+    {
+     "tap": {
+      "code": "KC_F16"
+     },
+     "label": "VIGNETTE"
+    },
+    {
+     "tap": {
+      "code": "KC_F17"
+     },
+     "label": "CONTRAST"
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+     "tap": {
+      "code": "KC_DELETE",
+      "mods": [
+       "leftCtrl"
+      ]
+     },
+     "label": "Reset Prms"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+     "tap": {
+      "code": "KC_F",
+      "mods": [
+       "leftGui",
+       "leftShift"
+      ]
+     },
+     "label": "Formats"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+   ]
+  }
+ ]
+}

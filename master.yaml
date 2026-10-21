@@ -6,7 +6,7 @@ layout:
   name: Ergodox Baselight V16
   oryx_hash: Y6DDQ
   oryx_geometry: ergodox-ez-st
-  oryx_revision: 9DPE3L
+  oryx_revision: jZjAVe
   yuzu_name: Baselight V16 v3 (caps, slots)
 style:
   profile: kam
@@ -704,15 +704,15 @@ keys:
         oryx: Setups
         cap: SETUPS
       2:
-        fn: Formats
-        key: Win+Shift+F
-        oryx: Formats
-        cap: FORMAT
-      3:
         fn: Scene settings
         key: Win+S
         oryx: Scene Set
         cap: SCENE
+      3:
+        fn: Formats
+        key: Win+Shift+F
+        oryx: Formats
+        cap: FORMAT
   R2A:
     oryx: 39
     yuzu: TIDz6n
@@ -967,7 +967,12 @@ keys:
     oryx: 64
     yuzu: EGDHBG
     size: 1.5u
-    layers: {}
+    layers:
+      0:
+        fn: Jump to ALL SHOTS view (FLAPI F18, script todo)
+        key: F18
+        oryx: ALL SHOTS
+        cap: ALL SHOTS
   R3E:
     oryx: 65
     yuzu: R4QLAP
@@ -1010,7 +1015,12 @@ keys:
     oryx: 69
     yuzu: RTHPEX
     size: 1u
-    layers: {}
+    layers:
+      0:
+        fn: Jump to CURRENT TAPE view (FLAPI F19, script todo)
+        key: F19
+        oryx: CUR TAPE
+        cap: TAPE
   RT2:
     oryx: 70
     yuzu: 4GSW3A
