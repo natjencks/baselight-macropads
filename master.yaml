@@ -891,11 +891,7 @@ keys:
     oryx: 57
     yuzu: QEKHQW
     size: 1.5u
-    layers:
-      0:
-        fn: Keypad Enter
-        key: KPEnter
-        cap: ENTER
+    layers: {}
   R1D:
     oryx: 58
     yuzu: ZRHML7
@@ -1000,17 +996,7 @@ keys:
     oryx: 69
     yuzu: RTHPEX
     size: 1u
-    layers:
-      0:
-        fn: Win
-        key: RWin
-        oryx: WIN
-        cap: WIN
-      1:
-        fn: 'Close comment (V15 macro: Tab, Tab, Enter)'
-        key: 'macro: Tab, Tab, Enter'
-        oryx: close comt
-        cap: CLOSE
+    layers: {}
   RT2:
     oryx: 70
     yuzu: 4GSW3A

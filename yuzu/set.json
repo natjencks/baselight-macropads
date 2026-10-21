@@ -1887,16 +1887,7 @@
   },
   "QEKHQW": {
    "colorId": "GR002",
-   "layers": [
-    {
-     "colorId": "GR001",
-     "textLabel": "ENTER",
-     "textFontId": 11838,
-     "textSize": 7.83,
-     "x": 0,
-     "y": 0
-    }
-   ]
+   "layers": []
   },
   "ZRHML7": {
    "colorId": "GR002",
@@ -2034,24 +2025,7 @@
   },
   "RTHPEX": {
    "colorId": "GR002",
-   "layers": [
-    {
-     "colorId": "GR001",
-     "textLabel": "WIN",
-     "textFontId": 26345,
-     "textSize": 3.72,
-     "x": 0,
-     "y": -3.88
-    },
-    {
-     "colorId": "RD003",
-     "textLabel": "CLOSE",
-     "textFontId": 26345,
-     "textSize": 2.53,
-     "x": 0,
-     "y": -0.6
-    }
-   ]
+   "layers": []
   },
   "4GSW3A": {
    "colorId": "GR002",
