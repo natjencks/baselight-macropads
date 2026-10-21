@@ -18,11 +18,15 @@ style:
     '3': BL023
   font_label: 26345
   font_big: 11838
-  cap_mm_l0: 2.65
-  cap_mm_var: 1.8
+  cap_mm_l0: 3.2       # Layer 0 (shrinks to fit on wide words)
+  cap_mm_var: 2.25     # Layer 1/2
   top_y: -5.2
-  gap_after_l0: 1.05
-  gap_var: 0.65
+  gap_after_l0: 1.2
+  gap_var: 0.8
+  # Layer 3 is not a slot any more: a one-letter cap is printed as a small blue corner letter (the layer it jumps to),
+  # an empty cap means unlabelled. Corner = top-right if the L0 word leaves room, else bottom-right.
+  l3_corner_mm: 1.7
+  l3_corner_inset: 0.6
   cap_ratio: 0.712
   big_cap_max_mm: 6.5
   big_keys:
@@ -87,7 +91,7 @@ keys:
         fn: Timeline H+V zoom
         key: Ctrl+Shift+F7
         oryx: TL HV-Zoom
-        cap: TMLN HV
+        cap: ''
   3A:
     oryx: 2
     yuzu: FzWhED
@@ -162,7 +166,7 @@ keys:
         fn: Delete
         key: Delete
         oryx: Delete
-        cap: DELETE
+        cap: DEL
       1:
         fn: Backspace
         key: Backspace
@@ -207,7 +211,7 @@ keys:
         fn: Jump to BASE GRADE layer (FLAPI F13)
         key: F13
         oryx: BASE GRADE
-        cap: BASE
+        cap: B
   3B:
     oryx: 9
     yuzu: dfYXnc
@@ -232,7 +236,7 @@ keys:
         fn: Jump to FACE1 layer (FLAPI F14)
         key: F14
         oryx: FACE1
-        cap: FACE
+        cap: F
   4B:
     oryx: 10
     yuzu: 2bSRwq
@@ -257,7 +261,7 @@ keys:
         fn: Jump to WIDE1 layer (FLAPI F15)
         key: F15
         oryx: WIDE1
-        cap: WIDE
+        cap: W
   5B:
     oryx: 11
     yuzu: JaOAd8
@@ -282,7 +286,7 @@ keys:
         fn: Jump to VIGNETTE layer (FLAPI F16)
         key: F16
         oryx: VIGNETTE
-        cap: VIG
+        cap: V
   6B:
     oryx: 12
     yuzu: J9JHWP
@@ -302,12 +306,12 @@ keys:
         fn: Reset shape
         key: Shift+S
         oryx: Reset Shp
-        cap: RESET
+        cap: RST
       3:
         fn: Jump to CONTRAST layer (FLAPI F17)
         key: F17
         oryx: CONTRAST
-        cap: CONTR
+        cap: C
   7B:
     oryx: 13
     yuzu: 4JFX3U
@@ -382,7 +386,7 @@ keys:
         fn: Reset all parameters
         key: Ctrl+Delete
         oryx: Reset Prms
-        cap: RESET
+        cap: ''
   5C:
     oryx: 18
     yuzu: Cg7Wc0
@@ -708,11 +712,6 @@ keys:
         key: Win+S
         oryx: Scene Set
         cap: SCENE
-      3:
-        fn: Formats
-        key: Win+Shift+F
-        oryx: Formats
-        cap: FORMAT
   R2A:
     oryx: 39
     yuzu: TIDz6n
@@ -784,6 +783,11 @@ keys:
         key: Win+J
         oryx: Jobs
         cap: JOBS
+      1:
+        fn: Formats
+        key: Win+Shift+F
+        oryx: Formats
+        cap: FORMAT
   R2B:
     oryx: 46
     yuzu: ZBNA2M

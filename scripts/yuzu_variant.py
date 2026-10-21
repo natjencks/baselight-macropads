@@ -4,21 +4,14 @@ per-zone cap colours, per-scheme inks and an optional solid dot on the layer key
 Hex colours are mapped to the nearest Yuzu dye-sub colour (yuzu/colors.txt, from /api/dev/colors).
 Usage: yuzu_variant.py SCHEME [...]  -> yuzu/variants/<SCHEME>.json (+ a colour-mapping report)"""
 import json, os, sys
-from fontTools.ttLib import TTFont
-from PIL import ImageFont, Image, ImageDraw
 from common import load_master, ROOT
+from legends import width_per_cap_mm, TOP_W, slots, text_layers, corner_layer, fit
+import legends
 
 m = load_master(); st = m["style"]; K = m["keys"]
-FONT = f"{ROOT}/fonts/HelvNowCn575BL.ttf"
-tt = TTFont(FONT); CAPR = tt["OS/2"].sCapHeight / tt["head"].unitsPerEm
-_F = ImageFont.truetype(FONT, 400); _d = ImageDraw.Draw(Image.new("L", (4, 4)))
-def width_per_cap_mm(t): return _d.textlength(t, font=_F, features=["kern"]) / (400 * CAPR)
-TOP_W = {"1u": 11.45, "1uh": 11.55, "1.5u": 20.98, "1.5uv": 11.25, "2uv": 11.25}
 H0, HV = st["cap_mm_l0"], st["cap_mm_var"]
-c0 = st["top_y"] + H0 / 2; c1 = st["top_y"] + H0 + st["gap_after_l0"] + HV / 2
-c2 = c1 + HV + st["gap_var"]; c3 = c2 + HV + st["gap_var"]
-SLOT = [c0, c1, c2, c3]
-def size(cap_mm): return round(cap_mm / st["cap_ratio"], 2)
+SLOT = slots(st)
+def size(cap_mm): return legends.size(st, cap_mm)
 
 # ---- Yuzu palette
 PAL = {}
@@ -81,9 +74,10 @@ ICONS = json.load(open(f"{ROOT}/icons/icons.json"))
 ICON_MAP = {"3A": "MarkerLeft", "4A": "Marker", "5A": "MarkerRight", "3B": "ShotLeft", "5B": "ShotRight", "4B": "NoSymbol",
             "3C": "PlayLeft", "4C": "StopSquare", "5C": "PlayRight", "3D": "CarrotLeft", "4D": "Key", "5D": "CarrotRight",
             "7A": "Trash", "R2A": "AudioMute", "R2C": "ArrowUp", "R2D": "ArrowDown", "R1D": "ArrowLeft", "R3D": "ArrowRight"}
-# Slot icons: one height for all, sitting between the cap-top edge (usable half-height ≈ 5.2 mm) and the L1 text
-# (top ≈ -1.5 mm): 3.5 mm tall centred at -3.4 spans -5.15 .. -1.65. 4.4 mm at -3.98 was clipped at the top.
-ICON_H, ICON_Y, ICON_W_MAX = 3.5, -3.4, 10.2
+# Slot icons: one height for all, at the top of the stack in place of the Layer-0 word (3.5 mm from top_y down,
+# leaving ~0.9 mm clear above the Layer-1 text). 4.4 mm was clipped at the cap-top edge.
+ICON_H, ICON_W_MAX = 3.5, 10.2
+ICON_Y = round(st["top_y"] + ICON_H / 2, 2)
 # Arrow keys: big centred glyph like the numpad; the four arrows are one shape rotated, so one long axis for all.
 ARROWS = {"R2C": "ArrowUp", "R2D": "ArrowDown", "R1D": "ArrowLeft", "R3D": "ArrowRight"}
 ARROW_LONG_MM = 9.0
@@ -109,9 +103,7 @@ def build(tag):
             layers.append(dict(colorId=dc[0] if zone == "l1key" else dc[1], **DOT))
         elif zone in ("l1key", "l2key"):
             inks = [nearest(h) for h in LT]
-            for layer, lay in sorted(e["layers"].items()):
-                t = lay.get("cap", "")
-                if t: layers.append(dict(colorId=inks[layer], textLabel=t, textFontId=st["font_label"], textSize=size(H0 if layer == 0 else HV), x=0, y=round(SLOT[layer], 2)))
+            layers, _ = text_layers(st, e, inks, st["font_label"])
         elif zone == "mod":
             t = e["layers"].get(0, {}).get("cap", "")
             cap_mm = min(st["big_cap_max_mm"], (TOP_W["1u"] - 1.2) / max(width_per_cap_mm(x) for x in ("ALT", "SHIFT", "CTRL")))
@@ -128,19 +120,14 @@ def build(tag):
             layers.append(icon_layer(ARROWS[name], inks[0], h_mm, ARROW_Y.get(name, 0)))
         elif sc.get("icons") and name in ICON_MAP:
             layers.append(icon_layer(ICON_MAP[name], inks[0], ICON_H, ICON_Y))
-            for layer, lay in sorted(e["layers"].items()):
-                t = lay.get("cap", "")
-                if layer == 0 or not t: continue
-                layers.append(dict(colorId=inks[layer], textLabel=t, textFontId=st["font_label"], textSize=size(HV), x=0, y=round(SLOT[layer], 2)))
+            txt, _ = text_layers(st, e, inks, st["font_label"])
+            layers += [l for l in txt if l["y"] != round(SLOT[0], 2)]   # icon replaces the Layer-0 word
+            c = corner_layer(st, e, inks[3], st["font_label"])
+            if c: layers.append(c)
         else:
-            for layer, lay in sorted(e["layers"].items()):
-                t = lay.get("cap", "")
-                if not t: continue
-                for n, line in enumerate(t.split("\n")):
-                    cap_mm = H0 if layer == 0 else HV
-                    need = width_per_cap_mm(line) * cap_mm
-                    if need > TOP_W[e["size"]] - 0.9: cap_mm = (TOP_W[e["size"]] - 0.9) / width_per_cap_mm(line)
-                    layers.append(dict(colorId=inks[layer], textLabel=line, textFontId=st["font_label"], textSize=size(cap_mm), x=0, y=round(SLOT[layer + n], 2)))
+            layers, _ = text_layers(st, e, inks, st["font_label"])
+            c = corner_layer(st, e, inks[3], st["font_label"])
+            if c: layers.append(c)
         keys[e["yuzu"]] = {"colorId": cap, "layers": layers}
     out = dict(tpl); out["name"] = f"Audition {tag[:-1]} icons" if tag.endswith("i") else f"Audition {tag}"; out["author"] = "Nat"; out["keys"] = keys; out["keyTemplates"] = {}; out["designUrl"] = None
     os.makedirs(f"{ROOT}/yuzu/variants", exist_ok=True)

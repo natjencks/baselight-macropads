@@ -704,17 +704,17 @@
      "colorId": "GR001",
      "textLabel": "ESC",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "QUIT",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     }
    ]
   },
@@ -725,33 +725,25 @@
      "colorId": "GR001",
      "textLabel": "ZOOM",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "TMLN H",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     },
     {
      "colorId": "GN010",
      "textLabel": "TMLN V",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": 1.85
-    },
-    {
-     "colorId": "BL023",
-     "textLabel": "TMLN HV",
-     "textFontId": 26345,
-     "textSize": 2.53,
-     "x": 0,
-     "y": 4.3
+     "y": 3.38
     }
    ]
   },
@@ -762,17 +754,17 @@
      "colorId": "GR001",
      "textLabel": "‹MARK",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.06,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "CLR MK",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     }
    ]
   },
@@ -783,25 +775,25 @@
      "colorId": "GR001",
      "textLabel": "MARK",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "DELETE",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     },
     {
      "colorId": "GN010",
      "textLabel": "DEL ALL",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": 1.85
+     "y": 3.38
     }
    ]
   },
@@ -812,17 +804,17 @@
      "colorId": "GR001",
      "textLabel": "MARK›",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.06,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "CNF MK",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     }
    ]
   },
@@ -833,17 +825,17 @@
      "colorId": "GR001",
      "textLabel": "GRAB",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "GG",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     }
    ]
   },
@@ -852,19 +844,19 @@
    "layers": [
     {
      "colorId": "GR001",
-     "textLabel": "DELETE",
+     "textLabel": "DEL",
      "textFontId": 26345,
-     "textSize": 3.68,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "BKSP",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     }
    ]
   },
@@ -875,25 +867,25 @@
      "colorId": "GR001",
      "textLabel": "SEL/DEL",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "+STRIPS",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     },
     {
      "colorId": "GN010",
      "textLabel": "−STRIPS",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": 1.85
+     "y": 3.38
     }
    ]
   },
@@ -904,25 +896,25 @@
      "colorId": "GR001",
      "textLabel": "1×1",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "GN010",
      "textLabel": "2x1 CUR",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": 1.85
+     "y": 3.38
     },
     {
      "colorId": "BL023",
-     "textLabel": "BASE",
+     "textLabel": "B",
      "textFontId": 26345,
-     "textSize": 2.53,
-     "x": 0,
-     "y": 4.3
+     "textSize": 2.39,
+     "x": 4.49,
+     "y": -4.28
     }
    ]
   },
@@ -933,33 +925,33 @@
      "colorId": "GR001",
      "textLabel": "‹SHOT",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.45,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "START",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     },
     {
      "colorId": "GN010",
      "textLabel": "HEAD",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": 1.85
+     "y": 3.38
     },
     {
      "colorId": "BL023",
-     "textLabel": "FACE",
+     "textLabel": "F",
      "textFontId": 26345,
-     "textSize": 2.53,
-     "x": 0,
-     "y": 4.3
+     "textSize": 2.39,
+     "x": 4.59,
+     "y": 4.28
     }
    ]
   },
@@ -970,33 +962,33 @@
      "colorId": "GR001",
      "textLabel": "BYP",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "ALL",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     },
     {
      "colorId": "GN010",
      "textLabel": "OPER",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": 1.85
+     "y": 3.38
     },
     {
      "colorId": "BL023",
-     "textLabel": "WIDE",
+     "textLabel": "W",
      "textFontId": 26345,
-     "textSize": 2.53,
-     "x": 0,
-     "y": 4.3
+     "textSize": 2.39,
+     "x": 4.21,
+     "y": 4.28
     }
    ]
   },
@@ -1007,33 +999,33 @@
      "colorId": "GR001",
      "textLabel": "SHOT›",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.48,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "END",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     },
     {
      "colorId": "GN010",
      "textLabel": "TAIL",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": 1.85
+     "y": 3.38
     },
     {
      "colorId": "BL023",
-     "textLabel": "VIG",
+     "textLabel": "V",
      "textFontId": 26345,
-     "textSize": 2.53,
-     "x": 0,
-     "y": 4.3
+     "textSize": 2.39,
+     "x": 4.5,
+     "y": 4.28
     }
    ]
   },
@@ -1044,33 +1036,33 @@
      "colorId": "GR001",
      "textLabel": "SHAPE",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.1,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "EDIT",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     },
     {
      "colorId": "GN010",
-     "textLabel": "RESET",
+     "textLabel": "RST",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": 1.85
+     "y": 3.38
     },
     {
      "colorId": "BL023",
-     "textLabel": "CONTR",
+     "textLabel": "C",
      "textFontId": 26345,
-     "textSize": 2.53,
-     "x": 0,
-     "y": 4.3
+     "textSize": 2.39,
+     "x": 4.47,
+     "y": 4.28
     }
    ]
   },
@@ -1081,9 +1073,9 @@
      "colorId": "GR001",
      "textLabel": "VIEW",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     }
    ]
   },
@@ -1094,17 +1086,17 @@
      "colorId": "GR001",
      "textLabel": "LAYER↑",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "TOP",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     }
    ]
   },
@@ -1117,15 +1109,15 @@
      "textFontId": 26345,
      "textSize": 3.67,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "WIP DBS",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     }
    ]
   },
@@ -1136,9 +1128,9 @@
      "colorId": "GR001",
      "textLabel": "REW",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     }
    ]
   },
@@ -1149,33 +1141,25 @@
      "colorId": "GR001",
      "textLabel": "STOP",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "SCENE",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     },
     {
      "colorId": "GN010",
      "textLabel": "SHOT",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": 1.85
-    },
-    {
-     "colorId": "BL023",
-     "textLabel": "RESET",
-     "textFontId": 26345,
-     "textSize": 2.53,
-     "x": 0,
-     "y": 4.3
+     "y": 3.38
     }
    ]
   },
@@ -1186,9 +1170,9 @@
      "colorId": "GR001",
      "textLabel": "FWD",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     }
    ]
   },
@@ -1199,25 +1183,25 @@
      "colorId": "GR001",
      "textLabel": "MATTE",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.05,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "SHAPE›",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     },
     {
      "colorId": "GN010",
      "textLabel": "DISP",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": 1.85
+     "y": 3.38
     }
    ]
   },
@@ -1228,17 +1212,17 @@
      "colorId": "GR001",
      "textLabel": "LAYER↓",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "BOTTOM",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     }
    ]
   },
@@ -1249,25 +1233,25 @@
      "colorId": "GR001",
      "textLabel": "C1",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "TOGGLE",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     },
     {
      "colorId": "GN010",
      "textLabel": "GANG",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": 1.85
+     "y": 3.38
     }
    ]
   },
@@ -1278,25 +1262,25 @@
      "colorId": "GR001",
      "textLabel": "‹KEY",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "MOVE",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     },
     {
      "colorId": "GN010",
      "textLabel": "EDIT",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": 1.85
+     "y": 3.38
     }
    ]
   },
@@ -1307,9 +1291,9 @@
      "colorId": "GR001",
      "textLabel": "KEY ±",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     }
    ]
   },
@@ -1320,25 +1304,25 @@
      "colorId": "GR001",
      "textLabel": "KEY›",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "MOVE",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     },
     {
      "colorId": "GN010",
      "textLabel": "EDIT",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": 1.85
+     "y": 3.38
     }
    ]
   },
@@ -1349,17 +1333,17 @@
      "colorId": "GR001",
      "textLabel": "BLUR",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "RESET",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     }
    ]
   },
@@ -1370,9 +1354,9 @@
      "colorId": "GR001",
      "textLabel": "APPLY",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.28,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     }
    ]
   },
@@ -1383,17 +1367,17 @@
      "colorId": "GR001",
      "textLabel": "+LYR",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "−LYR",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     }
    ]
   },
@@ -1404,25 +1388,25 @@
      "colorId": "GR001",
      "textLabel": "C2",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "TOGGLE",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     },
     {
      "colorId": "GN010",
      "textLabel": "VS REF",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": 1.85
+     "y": 3.38
     }
    ]
   },
@@ -1433,25 +1417,25 @@
      "colorId": "GR001",
      "textLabel": "COPY",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "SMART",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     },
     {
      "colorId": "GN010",
      "textLabel": "PARAMS",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": 1.85
+     "y": 3.38
     }
    ]
   },
@@ -1462,17 +1446,17 @@
      "colorId": "GR001",
      "textLabel": "NAME",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "GN010",
      "textLabel": "MULTI",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": 1.85
+     "y": 3.38
     }
    ]
   },
@@ -1483,25 +1467,25 @@
      "colorId": "GR001",
      "textLabel": "PASTE",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.34,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "SMART",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     },
     {
      "colorId": "GN010",
      "textLabel": "STRIPS",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": 1.85
+     "y": 3.38
     }
    ]
   },
@@ -1512,17 +1496,17 @@
      "colorId": "GR001",
      "textLabel": "UNDO",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "REDO",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     }
    ]
   },
@@ -1533,9 +1517,9 @@
      "colorId": "GR001",
      "textLabel": "ALT",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     }
    ]
   },
@@ -1546,9 +1530,9 @@
      "colorId": "GR001",
      "textLabel": "SHIFT",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     }
    ]
   },
@@ -1559,17 +1543,17 @@
      "colorId": "GR001",
      "textLabel": "L1",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "GN010",
      "textLabel": "L3",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": 1.85
+     "y": 3.38
     }
    ]
   },
@@ -1580,17 +1564,17 @@
      "colorId": "GR001",
      "textLabel": "L2",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "L3",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     }
    ]
   },
@@ -1601,9 +1585,9 @@
      "colorId": "GR001",
      "textLabel": "CTRL",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     }
    ]
   },
@@ -1614,33 +1598,25 @@
      "colorId": "GR001",
      "textLabel": "PREFS",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.29,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "SETUPS",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     },
     {
      "colorId": "GN010",
      "textLabel": "SCENE",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": 1.85
-    },
-    {
-     "colorId": "BL023",
-     "textLabel": "FORMAT",
-     "textFontId": 26345,
-     "textSize": 2.53,
-     "x": 0,
-     "y": 4.3
+     "y": 3.38
     }
    ]
   },
@@ -1651,9 +1627,9 @@
      "colorId": "GR001",
      "textLabel": "MUTE",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     }
    ]
   },
@@ -1664,17 +1640,17 @@
      "colorId": "GR001",
      "textLabel": "ALIGN",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "VERT",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     }
    ]
   },
@@ -1737,9 +1713,17 @@
      "colorId": "GR001",
      "textLabel": "JOBS",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
+    },
+    {
+     "colorId": "RD003",
+     "textLabel": "FORMAT",
+     "textFontId": 26345,
+     "textSize": 3.16,
+     "x": 0,
+     "y": 0.32
     }
    ]
   },
@@ -1750,9 +1734,9 @@
      "colorId": "GR001",
      "textLabel": "CSJ",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     }
    ]
   },
@@ -1763,17 +1747,17 @@
      "colorId": "GR001",
      "textLabel": "FOLD",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "ALL",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     }
    ]
   },
@@ -1849,17 +1833,17 @@
      "colorId": "GR001",
      "textLabel": "COUNT",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 3.91,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "FPS",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     }
    ]
   },
@@ -2000,9 +1984,9 @@
      "colorId": "GR001",
      "textLabel": "ALL SHOTS",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     }
    ]
   },
@@ -2013,9 +1997,9 @@
      "colorId": "GR001",
      "textLabel": "GROUP",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 3.85,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     }
    ]
   },
@@ -2026,9 +2010,9 @@
      "colorId": "GR001",
      "textLabel": "CYCLE",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.33,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     }
    ]
   },
@@ -2065,9 +2049,9 @@
      "colorId": "GR001",
      "textLabel": "TAPE",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     }
    ]
   },
@@ -2078,9 +2062,9 @@
      "colorId": "GR001",
      "textLabel": "ALT",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     }
    ]
   },
@@ -2091,17 +2075,17 @@
      "colorId": "GR001",
      "textLabel": "UNDO",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "REDO",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     }
    ]
   },
@@ -2112,9 +2096,9 @@
      "colorId": "GR001",
      "textLabel": "SHIFT",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     }
    ]
   },
@@ -2125,9 +2109,9 @@
      "colorId": "GR001",
      "textLabel": "CTRL",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     }
    ]
   },
@@ -2138,17 +2122,17 @@
      "colorId": "GR001",
      "textLabel": "L2",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "RD003",
      "textLabel": "L3",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": -0.6
+     "y": 0.32
     }
    ]
   },
@@ -2159,17 +2143,17 @@
      "colorId": "GR001",
      "textLabel": "L1",
      "textFontId": 26345,
-     "textSize": 3.72,
+     "textSize": 4.49,
      "x": 0,
-     "y": -3.88
+     "y": -3.6
     },
     {
      "colorId": "GN010",
      "textLabel": "L3",
      "textFontId": 26345,
-     "textSize": 2.53,
+     "textSize": 3.16,
      "x": 0,
-     "y": 1.85
+     "y": 3.38
     }
    ]
   }
