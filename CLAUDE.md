@@ -19,6 +19,8 @@ Oryx key index ↔ name ↔ Yuzu id tables are in scripts/common.py (geometry er
 - `.click()` on key anchors from JS does NOT open keys. Use `__fc(i)` to get the key's centre in screenshot
   coordinates, then click with the computer tool immediately (coordinates shift with scroll), then check
   `location.pathname` ends with `/<layer>/<idx>` BEFORE editing. Wrong-key edits happened twice this way.
+  `__fc` can also return a neighbouring key's centre (seen for #57 → gave #64's spot after keys were cleared):
+  when in doubt take a screenshot, click from it, and trust only the URL. The pane viewport is ~800 px wide.
 - Popover helpers: `__setOpen({tap:{search,code,mods}|null, hold:{...}|null, label})`, `__label(i, txt)`.
   Modifier names in the popover: 'Left Ctrl' 'Left Shift' 'Left Option' 'Left Cmd'. Labels max 10 chars.
   Key-code search quirks: KC_LBRACKET/KC_RBRACKET, "minus"→KC_KP_MINUS, "quot"→KC_QUOTE, "period"→KC_DOT,
