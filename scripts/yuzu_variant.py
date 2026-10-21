@@ -5,7 +5,7 @@ Hex colours are mapped to the nearest Yuzu dye-sub colour (yuzu/colors.txt, from
 Usage: yuzu_variant.py SCHEME [...]  -> yuzu/variants/<SCHEME>.json (+ a colour-mapping report)"""
 import json, os, sys
 from common import load_master, ROOT
-from legends import width_per_cap_mm, TOP_W, slots, text_layers, corner_layer, fit
+from legends import width_per_cap_mm, TOP_W, slots, text_layers, corner_layer, fit, ICONS, icon_layer, ARROWS, arrow_layer
 import legends
 
 m = load_master(); st = m["style"]; K = m["keys"]
@@ -69,25 +69,13 @@ for _t in list(SCHEMES):
     _v = dict(SCHEMES[_t]); _v["icons"] = True; SCHEMES[_t + "i"] = _v
 def is_dark(h):
     r, g, b = _rgb(PAL.get(h, h)); return 0.299 * r + 0.587 * g + 0.114 * b < 128
-ICONS = json.load(open(f"{ROOT}/icons/icons.json"))
-# Layer-0 icon per key (icon-variant sets only).  Icons live in icons/*.svg, flattened by scripts/icons.py.
+# Layer-0 icon per key (icon-variant sets only; the arrows are icons on every set, see legends.ARROWS).
 ICON_MAP = {"3A": "MarkerLeft", "4A": "Marker", "5A": "MarkerRight", "3B": "ShotLeft", "5B": "ShotRight", "4B": "NoSymbol",
             "3C": "PlayLeft", "4C": "StopSquare", "5C": "PlayRight", "3D": "CarrotLeft", "4D": "Key", "5D": "CarrotRight",
-            "7A": "Trash", "R2A": "AudioMute", "R2C": "ArrowUp", "R2D": "ArrowDown", "R1D": "ArrowLeft", "R3D": "ArrowRight"}
-# Slot icons: one height for all, at the top of the stack in place of the Layer-0 word (3.5 mm from top_y down,
-# leaving ~0.9 mm clear above the Layer-1 text). 4.4 mm was clipped at the cap-top edge.
-ICON_H, ICON_W_MAX = 3.5, 10.2
+            "7A": "Trash", "R2A": "AudioMute"}
+# Slot icons: one height for all, at the top of the stack in place of the Layer-0 word (3.5 mm from top_y down).
+ICON_H = 3.5
 ICON_Y = round(st["top_y"] + ICON_H / 2, 2)
-# Arrow keys: big centred glyph like the numpad; the four arrows are one shape rotated, so one long axis for all.
-ARROWS = {"R2C": "ArrowUp", "R2D": "ArrowDown", "R1D": "ArrowLeft", "R3D": "ArrowRight"}
-ARROW_LONG_MM = 9.0
-ARROW_Y = {"R1D": 4.76}   # R1D is 1.5u tall: drop its arrow 0.25u so it lines up with R3D's
-def icon_layer(name, color, height_mm, y):
-    # Yuzu's vectScale 100 maps the viewBox HEIGHT to 1u (19.05 mm) — measured in the Playground SVG (getBBox):
-    # ArrowUp 8.6x17.1 @23.1 -> 2.2x4.4 mm, ArrowLeft 17.1x8.6 @45.93 -> 17.4x8.75 mm. Square icons can't tell.
-    ic = ICONS[name]; w_mm = height_mm * ic["w"] / ic["h"]
-    if w_mm > ICON_W_MAX: w_mm = ICON_W_MAX; height_mm = w_mm * ic["h"] / ic["w"]
-    return dict(colorId=color, vectDef=ic["d"], vectViewbox=ic["viewBox"], vectScale=round(100 * height_mm / 19.05, 2), x=0, y=y)
 DOT = dict(vectDef="M12 2a10 10 0 1 0 0 20a10 10 0 1 0 0-20z", vectViewbox="0 0 24 24", vectScale=44, x=0, y=0)  # ≈7 mm
 
 def build(tag):
@@ -108,16 +96,15 @@ def build(tag):
             t = e["layers"].get(0, {}).get("cap", "")
             cap_mm = min(st["big_cap_max_mm"], (TOP_W["1u"] - 1.2) / max(width_per_cap_mm(x) for x in ("ALT", "SHIFT", "CTRL")))
             layers.append(dict(colorId=inks[0], textLabel=t, textFontId=st["font_label"], textSize=size(cap_mm), x=0, y=0))
-        elif name in st["big_keys"] and not (sc.get("icons") and name in ICON_MAP):
+        elif name in ARROWS:
+            layers.append(arrow_layer(name, inks[0]))
+        elif name in st["big_keys"]:
             t = e["layers"].get(0, {}).get("cap", "")
             if t:
                 cap_mm = min(st["big_cap_max_mm"], (TOP_W[e["size"]] - 1.2) / width_per_cap_mm(t))
                 if t.isalpha() and len(t) > 1:  # word legends (NUM, ENTER) share one size: the one that fits NUM on a 1u key
                     cap_mm = min(st["big_cap_max_mm"], (TOP_W["1u"] - 1.2) / width_per_cap_mm("NUM"))
                 layers.append(dict(colorId=inks[0], textLabel=t, textFontId=st["font_big"], textSize=size(cap_mm), x=0, y=0))
-        elif sc.get("icons") and name in ARROWS:
-            ic = ICONS[ARROWS[name]]; h_mm = ARROW_LONG_MM * ic["h"] / max(ic["w"], ic["h"])
-            layers.append(icon_layer(ARROWS[name], inks[0], h_mm, ARROW_Y.get(name, 0)))
         elif sc.get("icons") and name in ICON_MAP:
             layers.append(icon_layer(ICON_MAP[name], inks[0], ICON_H, ICON_Y))
             txt, _ = text_layers(st, e, inks, st["font_label"])

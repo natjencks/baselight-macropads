@@ -2,6 +2,7 @@
 Three fixed text slots per key (Layer 0 big, Layer 1/2 smaller) at the same heights on every key.
 Layer 3 is a corner letter: a one-letter cap in master.yaml is printed small and blue in the bottom-right corner;
 an empty Layer-3 cap means unlabelled."""
+import json
 from fontTools.ttLib import TTFont
 from PIL import ImageFont, Image, ImageDraw
 from common import ROOT
@@ -49,3 +50,22 @@ def corner_layer(st, e, ink, font_id):
     w = width_per_cap_mm(t) * cm; half_w = TOP_W[e["size"]] / 2
     y = TOP_H / 2 - inset - cm / 2
     return dict(colorId=ink, textLabel=t, textFontId=font_id, textSize=size(st, cm), x=round(half_w - inset - w / 2, 2), y=round(y, 2))
+
+# ---- vector legends (Nat's SVG icons, flattened by scripts/icons.py)
+ICONS = json.load(open(f"{ROOT}/icons/icons.json"))
+ICON_W_MAX = 10.2
+def icon_layer(name, color, height_mm, y):
+    """One icon as a Yuzu vector KeyLayer. Yuzu's vectScale 100 maps the viewBox HEIGHT to 1u (19.05 mm) whatever
+    the aspect (measured with getBBox in the Playground), so vectScale = 100 * height_mm / 19.05."""
+    ic = ICONS[name]; w_mm = height_mm * ic["w"] / ic["h"]
+    if w_mm > ICON_W_MAX: w_mm = ICON_W_MAX; height_mm = w_mm * ic["h"] / ic["w"]
+    return dict(colorId=color, vectDef=ic["d"], vectViewbox=ic["viewBox"], vectScale=round(100 * height_mm / 19.05, 2), x=0, y=y)
+
+# Arrow keys use Nat's arrow icons on EVERY set (not just the icon variants): one big centred glyph, 9 mm long axis
+# (the four files are one shape rotated, so up/down are 4.5 x 9 and left/right 9 x 4.5).
+ARROWS = {"R2C": "ArrowUp", "R2D": "ArrowDown", "R1D": "ArrowLeft", "R3D": "ArrowRight"}
+ARROW_LONG_MM = 9.0
+ARROW_Y = {"R1D": 4.76}   # R1D is a 1.5u-tall cap: drop its arrow 0.25u so it lines up with R3D's
+def arrow_layer(name, color):
+    ic = ICONS[ARROWS[name]]; h_mm = ARROW_LONG_MM * ic["h"] / max(ic["w"], ic["h"])
+    return icon_layer(ARROWS[name], color, h_mm, ARROW_Y.get(name, 0))

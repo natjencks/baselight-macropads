@@ -4,7 +4,7 @@ Layout rules (scripts/legends.py): three fixed slots per key (L0 big, L1/L2 smal
 corner letter; 'big_keys' get one centred legend."""
 import json, os, sys
 from common import load_master, ROOT
-from legends import width_per_cap_mm, TOP_W, slots, text_layers, corner_layer
+from legends import width_per_cap_mm, TOP_W, slots, text_layers, corner_layer, ARROWS, arrow_layer
 import legends
 
 m = load_master(); st = m["style"]
@@ -16,7 +16,9 @@ tpl = json.load(open(f"{ROOT}/yuzu/template.json"))
 keys = {}; warnings = []
 for name, e in m["keys"].items():
     kid = e["yuzu"]; layers = []
-    if name in st["big_keys"]:
+    if name in ARROWS:
+        layers.append(arrow_layer(name, INK[0]))
+    elif name in st["big_keys"]:
         t = e["layers"].get(0, {}).get("cap", "")
         if t:
             cap_mm = min(st["big_cap_max_mm"], (TOP_W[e["size"]] - 1.2) / width_per_cap_mm(t))

@@ -21,7 +21,7 @@ style:
   cap_mm_l0: 3.2       # Layer 0 (shrinks to fit on wide words)
   cap_mm_var: 2.25     # Layer 1/2
   top_y: -5.2
-  gap_after_l0: 1.2
+  gap_after_l0: 1.7   # L1/L2 pushed down 0.5 so the L0 word has air (L2 bottom at +5.0, corner letter to +5.2)
   gap_var: 0.8
   # Layer 3 is not a slot any more: a one-letter cap is printed as a small blue letter in the bottom-right corner
   # (the layer it jumps to); an empty cap means unlabelled.
