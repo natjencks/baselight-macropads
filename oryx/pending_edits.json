@@ -1,106 +1,54 @@
 [
  {
+  "layer": 2,
+  "idx": 12,
+  "key": "6B",
+  "tap": "Ctrl+N",
+  "hold": "",
+  "label": "Next Shape",
+  "was": {
+   "tap": "Shift+S",
+   "hold": "",
+   "label": "Reset Shp"
+  }
+ },
+ {
   "layer": 0,
-  "idx": 5,
-  "key": "6A",
-  "tap": "",
+  "idx": 19,
+  "key": "6C",
+  "tap": "O",
   "hold": "",
-  "label": "",
+  "label": "View Matte",
   "was": {
-   "tap": "Shift+G",
+   "tap": "G",
    "hold": "",
-   "label": "Grab"
+   "label": "Grd⇄Matte"
   }
  },
  {
   "layer": 1,
-  "idx": 5,
-  "key": "6A",
-  "tap": "",
+  "idx": 19,
+  "key": "6C",
+  "tap": "G",
   "hold": "",
-  "label": "",
+  "label": "Grd⇄Matte",
   "was": {
-   "tap": "Ctrl+G",
+   "tap": "Ctrl+N",
    "hold": "",
-   "label": "Group Grd"
-  }
- },
- {
-  "layer": 1,
-  "idx": 8,
-  "key": "2B",
-  "tap": "F2",
-  "hold": "",
-  "label": "2x1 Cursor",
-  "was": {
-   "tap": "",
-   "hold": "",
-   "label": ""
+   "label": "Next Shape"
   }
  },
  {
   "layer": 2,
-  "idx": 8,
-  "key": "2B",
+  "idx": 19,
+  "key": "6C",
   "tap": "",
   "hold": "",
   "label": "",
   "was": {
-   "tap": "F2",
+   "tap": "O",
    "hold": "",
-   "label": "2x1 Cursor"
-  }
- },
- {
-  "layer": 1,
-  "idx": 10,
-  "key": "4B",
-  "tap": "Ctrl+Shift+F11",
-  "hold": "",
-  "label": "Byp Op",
-  "was": {
-   "tap": "F11",
-   "hold": "",
-   "label": "Byp All"
-  }
- },
- {
-  "layer": 2,
-  "idx": 10,
-  "key": "4B",
-  "tap": "F11",
-  "hold": "",
-  "label": "Byp All",
-  "was": {
-   "tap": "Ctrl+Shift+F11",
-   "hold": "",
-   "label": "Byp Op"
-  }
- },
- {
-  "layer": 1,
-  "idx": 16,
-  "key": "3C",
-  "tap": "Shift+G",
-  "hold": "",
-  "label": "Grab",
-  "was": {
-   "tap": "",
-   "hold": "",
-   "label": ""
-  }
- },
- {
-  "layer": 1,
-  "idx": 18,
-  "key": "5C",
-  "tap": "Ctrl+G",
-  "hold": "",
-  "label": "Group Grd",
-  "was": {
-   "tap": "",
-   "hold": "",
-   "label": ""
+   "label": "Matte Disp"
   }
  }
 ]

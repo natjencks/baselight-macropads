@@ -6,7 +6,7 @@ layout:
   name: Ergodox Baselight V16
   oryx_hash: Y6DDQ
   oryx_geometry: ergodox-ez-st
-  oryx_revision: VqwoWd
+  oryx_revision: WvRLzn
   yuzu_name: Baselight V16
 style:
   profile: kam
@@ -293,10 +293,10 @@ keys:
         oryx: Edit Shape
         cap: NEW
       2:
-        fn: Remove shape
-        key: Shift+S
-        oryx: Reset Shp
-        cap: REM
+        fn: Next shape
+        key: Ctrl+N
+        oryx: Next Shape
+        cap: NEXT
       3:
         fn: Jump to CONTRAST layer (FLAPI F17)
         key: F17
@@ -403,20 +403,15 @@ keys:
     size: 1u
     layers:
       0:
+        fn: View matte
+        key: O
+        oryx: View Matte
+        cap: VW-MAT
+      1:
         fn: Toggle grade / matte
         key: G
         oryx: Grd⇄Matte
-        cap: MATTE
-      1:
-        fn: Next shape
-        key: Ctrl+N
-        oryx: Next Shape
-        cap: SHAPE›
-      2:
-        fn: Matte display
-        key: O
-        oryx: Matte Disp
-        cap: DISP
+        cap: GRD/MAT
   1D:
     oryx: 20
     yuzu: 3UK6NS

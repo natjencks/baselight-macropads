@@ -1033,7 +1033,7 @@
     },
     {
      "colorId": "GN010",
-     "textLabel": "REM",
+     "textLabel": "NEXT",
      "textFontId": 26345,
      "textSize": 3.16,
      "x": 0,
@@ -1180,27 +1180,19 @@
    "layers": [
     {
      "colorId": "GR001",
-     "textLabel": "MATTE",
+     "textLabel": "VW-MAT",
      "textFontId": 26345,
-     "textSize": 4.05,
+     "textSize": 3.27,
      "x": 0,
      "y": -3.6
     },
     {
      "colorId": "RD003",
-     "textLabel": "SHAPE›",
+     "textLabel": "GRD/MAT",
      "textFontId": 26345,
-     "textSize": 3.16,
+     "textSize": 2.89,
      "x": 0,
      "y": 0.82
-    },
-    {
-     "colorId": "GN010",
-     "textLabel": "DISP",
-     "textFontId": 26345,
-     "textSize": 3.16,
-     "x": 0,
-     "y": 3.88
     }
    ]
   },
