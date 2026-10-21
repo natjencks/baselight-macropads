@@ -3,39 +3,13 @@
   "layer": 0,
   "idx": 57,
   "key": "R7C",
-  "tap": "",
+  "tap": "KPEnter",
   "hold": "",
   "label": "",
   "was": {
-   "tap": "KPEnter",
+   "tap": "",
    "hold": "",
    "label": ""
-  }
- },
- {
-  "layer": 0,
-  "idx": 69,
-  "key": "R7E",
-  "tap": "",
-  "hold": "",
-  "label": "",
-  "was": {
-   "tap": "RWin",
-   "hold": "",
-   "label": "WIN"
-  }
- },
- {
-  "layer": 1,
-  "idx": 69,
-  "key": "R7E",
-  "tap": "",
-  "hold": "",
-  "label": "",
-  "was": {
-   "tap": "macro: Tab, Tab, Enter",
-   "hold": "",
-   "label": "close comt"
   }
  }
 ]

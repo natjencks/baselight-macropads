@@ -6,7 +6,7 @@ layout:
   name: Ergodox Baselight V16
   oryx_hash: Y6DDQ
   oryx_geometry: ergodox-ez-st
-  oryx_revision: 0WBDX3
+  oryx_revision: 0WBDlP
   yuzu_name: Baselight V16 v3 (caps, slots)
 style:
   profile: kam
@@ -891,7 +891,11 @@ keys:
     oryx: 57
     yuzu: QEKHQW
     size: 1.5u
-    layers: {}
+    layers:
+      0:
+        fn: Keypad Enter
+        key: KPEnter
+        cap: ENTER
   R1D:
     oryx: 58
     yuzu: ZRHML7

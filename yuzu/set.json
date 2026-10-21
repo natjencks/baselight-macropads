@@ -1887,7 +1887,16 @@
   },
   "QEKHQW": {
    "colorId": "GR002",
-   "layers": []
+   "layers": [
+    {
+     "colorId": "GR001",
+     "textLabel": "ENTER",
+     "textFontId": 11838,
+     "textSize": 7.83,
+     "x": 0,
+     "y": 0
+    }
+   ]
   },
   "ZRHML7": {
    "colorId": "GR002",
