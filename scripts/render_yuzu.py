@@ -22,9 +22,10 @@ for name, e in m["keys"].items():
         t = e["layers"].get(0, {}).get("cap", "")
         if t:
             cap_mm = min(st["big_cap_max_mm"], (TOP_W[e["size"]] - 1.2) / width_per_cap_mm(t))
-            if t.isalpha() and len(t) > 1:  # word legends (NUM, ENTER) share one size: the one that fits NUM on a 1u key
-                cap_mm = min(st["big_cap_max_mm"], (TOP_W["1u"] - 1.2) / width_per_cap_mm("NUM"))
-            layers.append({"colorId": INK[0], "textLabel": t, "textFontId": st["font_big"],
+            font = st["font_big"]   # Light: digits and symbols match the arrow icons' stroke
+            if t.isalpha() and len(t) > 1:  # word legends (NUM, ENTER): label font (SemiBold) and one shared size
+                cap_mm = min(st["big_cap_max_mm"], (TOP_W["1u"] - 1.2) / width_per_cap_mm("NUM")); font = st["font_label"]
+            layers.append({"colorId": INK[0], "textLabel": t, "textFontId": font,
                            "textSize": size(cap_mm), "x": 0, "y": 0})
     else:
         layers, warn = text_layers(st, e, INK, st["font_label"])
