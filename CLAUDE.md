@@ -56,9 +56,9 @@ Oryx key index ↔ name ↔ Yuzu id tables are in scripts/common.py (geometry er
   click on the button, then click the entry by ref), import, Nat saves. The Export/Import dialog must be CLOSED
   with its X between operations (document.body.click() doesn't close it and the export text goes stale).
   Saved on Nat's account: Audition G, B1, C, F (right half: arrows own colour; PREFS/JOBS admin grey;
-  MUTE/ALIGN/FOLD/COUNT/CYCLE/CSJ/GROUP one "other" colour; numpad plain). Nat's favourites: C and F. C and F are
-  current (2026-10-21: black thumb cluster, ALT/SHIFT/CTRL one big centred label, L1/L2 dots in the L1/L2 ink
-  colours, 7A DELETE/BKSP, R1A SCENE/FORMAT, R7D ALL SHOTS, R7E TAPE); G and B1 are stale on those points.
+  MUTE/ALIGN/FOLD/COUNT/CYCLE/CSJ/GROUP one "other" colour; numpad plain). Nat's favourites: C and F. All four
+  match yuzu/variants/*.json as of 2026-10-21 (thumb cluster in one colour with L1/L2 dots in the L1/L2 ink colours,
+  ALT/SHIFT/CTRL one big centred label, ENTER sized like NUM, 7A DELETE/BKSP, R1A SCENE/FORMAT, R7D ALL SHOTS, R7E TAPE).
 - Design decisions (Nat's): ALL CAPS; four fixed slots per key at the same heights on every key (blank slot when a
   layer is unassigned); L0 2.65 mm, variants 1.8 mm uniform (sized by the longest label); white caps, inks
   black / red RD003 / green GN010 / blue BL023; numpad + arrows one big centred legend; SemiBold for labels,
