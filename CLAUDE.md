@@ -52,16 +52,17 @@ Oryx key index ↔ name ↔ Yuzu id tables are in scripts/common.py (geometry er
 - Icon sets: Nat's SVGs in icons/ (Illustrator exports) -> scripts/icons.py -> icons/icons.json (one flattened path
   each). yuzu_variant.py builds TAG+"i" variants ("Audition X icons"): ICON_MAP key->icon, slot icons 3.5 mm tall at
   y -3.4 (4.4 mm clipped at the cap-top edge), L1-L3 labels stay in their slots; arrows are big centred glyphs, 9 mm long
-  axis, R1D's dropped 0.25u (y 4.76) to line up with R3D. Saved on Yuzu so far:
-  "Audition C icons". Unplaced icons (Dot, Grid, Boundry*, Expand*, Trash*, Carrot*Thin): ask Nat what they are for.
+  axis, R1D's dropped 0.25u (y 4.76) to line up with R3D. Saved on Yuzu: "Audition C icons", "Audition F icons". Unplaced icons (Dot, Grid, Boundry*, Expand*, Trash*, Carrot*Thin): ask Nat what they are for.
 - Colour auditions: scripts/yuzu_variant.py SCHEME -> yuzu/variants/SCHEME.json (same slots as the production set,
-  per-zone caps). The pane's screenshot is capped at 800 px wide: for a readable render, serialise the Playground
+  per-zone caps). The page can fetch variant JSON straight from raw.githubusercontent.com (repo is public) into window.__json.
+  The pane's screenshot is capped at 800 px wide: for a readable render, serialise the Playground
   SVG into a fixed full-screen iframe (window.__showFrame in the session notes) and tile 3 screenshots.
-- Saving is Nat's click (the harness refuses the Save button). To add a design without overwriting the open one:
+- Saving: the harness refuses an UNREQUESTED Save click, but when Nat's message itself asks for the save ("save B1",
+  "...and save it") the click is allowed — verified 2026-10-21. Otherwise it is Nat's click. To add a design without overwriting the open one:
   click "New" (button text becomes "No name"), import, then Nat clicks Save. To update a saved design: "Open" (JS
   click on the button, then click the entry by ref), import, Nat saves. The Export/Import dialog must be CLOSED
   with its X between operations (document.body.click() doesn't close it and the export text goes stale).
-  Saved on Nat's account: Audition G, B1, C, F (right half: arrows own colour; PREFS/JOBS admin grey;
+  Saved on Nat's account: Audition G, B1, C, F, C icons, F icons (B1 and G: solid RD003/GN023 layer keys) (right half: arrows own colour; PREFS/JOBS admin grey;
   MUTE/ALIGN/FOLD/COUNT/CYCLE/CSJ/GROUP one "other" colour; numpad plain). Nat's favourites: C and F. All four
   match yuzu/variants/*.json as of 2026-10-21 (thumb cluster in one colour with L1/L2 dots in the L1/L2 ink colours,
   ALT/SHIFT/CTRL one big centred label, ENTER sized like NUM, 7A DELETE/BKSP, R1A SCENE/FORMAT, R7D ALL SHOTS, R7E TAPE).
