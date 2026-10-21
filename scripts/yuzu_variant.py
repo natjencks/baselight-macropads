@@ -67,10 +67,10 @@ SCHEMES = {
     caps={"default": "GR001", "sys": "GR001", "view": "BL022", "marks": "OG010", "nav": "RD025", "bypass": "RD025",
           "kf": "RD025", "layer": "GN023", "shape": "PL002", "dbs": "GN010", "edit": "YW026", "blank": "GR001",
           "mod": "GR029", "undo": "GR029", "l1key": "GR001", "l2key": "GR001", "num": "GR001", "arrows": "GN007", "misc": "BN034"}),
- "G": dict(dot=False, inks_light=["#262626"] * 4, inks_dark=["#faf7f0"] * 4,
+ "G": dict(dot=True, dot_colors=("RD003", "GN023"), inks_light=["#262626"] * 4, inks_dark=["#faf7f0"] * 4,
     caps={"default": "#d9d5ce", "sys": "#b8b3ab", "view": "#4a90d9", "marks": "#f0a030", "nav": "#e74c3c", "bypass": "#e74c3c",
           "kf": "#e74c3c", "layer": "#7cb342", "shape": "PL021", "dbs": "#16a085", "edit": "#f1c40f", "blank": "#d9d5ce",
-          "mod": "#b8b3ab", "undo": "#b8b3ab", "l1key": "#d8232a", "l2key": "#1f9d4a", "num": "#d9d5ce", "arrows": "GN005", "misc": "BN039"}),
+          "mod": "#b8b3ab", "undo": "#b8b3ab", "l1key": "#b8b3ab", "l2key": "#b8b3ab", "num": "#d9d5ce", "arrows": "GN005", "misc": "BN039"}),
 }
 def is_dark(h):
     r, g, b = _rgb(PAL.get(h, h)); return 0.299 * r + 0.587 * g + 0.114 * b < 128
