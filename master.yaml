@@ -348,6 +348,16 @@ keys:
         key: Ctrl+Enter
         oryx: Select Shot
         cap: SEL SHOT
+      1:
+        fn: Select shots before cursor
+        key: Alt+Enter
+        oryx: Sel Before
+        cap: BEFORE
+      2:
+        fn: Select shots after cursor
+        key: Alt+Shift+Enter
+        oryx: Sel After
+        cap: AFTER
   2C:
     oryx: 15
     yuzu: I9bsjW
@@ -438,6 +448,11 @@ keys:
         key: G
         oryx: Grd⇄Matte
         cap: GRD/MAT
+      2:
+        fn: Insert matte merge
+        key: T
+        oryx: Ins Matte
+        cap: INS MAT
   1D:
     oryx: 20
     yuzu: 3UK6NS

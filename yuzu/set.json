@@ -1105,6 +1105,22 @@
      "textSize": 4.49,
      "x": 0,
      "y": -3.6
+    },
+    {
+     "colorId": "RD003",
+     "textLabel": "BEFORE",
+     "textFontId": 26345,
+     "textSize": 3.16,
+     "x": 0,
+     "y": 0.82
+    },
+    {
+     "colorId": "GN010",
+     "textLabel": "AFTER",
+     "textFontId": 26345,
+     "textSize": 3.16,
+     "x": 0,
+     "y": 3.88
     }
    ]
   },
@@ -1218,6 +1234,14 @@
      "textSize": 2.89,
      "x": 0,
      "y": 0.82
+    },
+    {
+     "colorId": "GN010",
+     "textLabel": "INS MAT",
+     "textFontId": 26345,
+     "textSize": 3.16,
+     "x": 0,
+     "y": 3.88
     }
    ]
   },

@@ -51,3 +51,20 @@ window.__setOpen = async spec => {
 window.__label = async (i, txt) => { if (!location.pathname.endsWith('/' + i)) return 'WRONG KEY ' + location.pathname; const inp = document.querySelector('.popover .custom-label input.label'); if (!inp) return 'NO LABEL INPUT'; __setVal(inp, txt); await __sleep(300); const v = inp.value; document.body.click(); await __sleep(300); return 'OK ' + v; };
 // Compile with a note; wait ~28 s then __pull() to verify the new revision.
 window.__compile = async notes => { await __goLayer(0); const ta = document.querySelector('textarea.textarea'); if (ta) __setVal(ta, notes); const b = [...document.querySelectorAll('button')].find(x => /Compile this layout/i.test(x.textContent)); if (!b) return 'NO BUTTON'; b.click(); return 'compiling'; };
+
+// Set key <i> on the CURRENT layer, which must already be open (URL ends /<layer>/<i>).  Enforces exactly the given
+// modifiers (deactivates any others left over from the previous assignment), sets the label, closes the popover.
+// spec: {tap:{search,code,mods}|null, label}.  Returns the popover's readback for checking.
+window.__setKey = async (layer, i, spec) => {
+  if (!location.pathname.endsWith('/' + layer + '/' + i)) return 'WRONG KEY ' + location.pathname;
+  const out = [];
+  if (spec.tap === null) { const clr = document.querySelector('[data-test=action-tap] a[href="#clear"]'); if (clr) { clr.click(); await __sleep(300); out.push('cleared tap'); } else out.push('nothing to clear'); }
+  else {
+    out.push('tap: ' + await __pick('tap', spec.tap.search, spec.tap.code, spec.tap.mods));
+    const want = new Set(spec.tap.mods || []);
+    for (const el of document.querySelectorAll('.popover .modifiers .modifier')) { const n = el.textContent.trim(); if (el.classList.contains('active') && !want.has(n)) { el.click(); await __sleep(150); out.push('-' + n); } }
+    const act = [...document.querySelectorAll('.popover .modifiers .modifier.active')].map(e => e.textContent.trim()); out.push('mods=' + act.join('+'));
+  }
+  const inp = document.querySelector('.popover .custom-label input.label'); if (inp) { __setVal(inp, spec.label || ''); await __sleep(200); out.push('label=' + inp.value); }
+  document.body.click(); await __sleep(300); return out.join(' | ');
+};
