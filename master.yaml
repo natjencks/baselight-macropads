@@ -689,8 +689,8 @@ keys:
         oryx: Paste Strp
         cap: STRIPS
       3:
-        fn: Multi-paste
-        key: Ctrl+M
+        fn: Multi-paste view (Win+M opens the panel; Ctrl+M performs the paste)
+        key: Win+M
         oryx: MultiPaste
         cap: ''
   T1:

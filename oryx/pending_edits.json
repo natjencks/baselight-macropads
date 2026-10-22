@@ -182,6 +182,19 @@
   }
  },
  {
+  "layer": 3,
+  "idx": 31,
+  "key": "5E",
+  "tap": "Win+M",
+  "hold": "",
+  "label": "MultiPaste",
+  "was": {
+   "tap": "Ctrl+M",
+   "hold": "",
+   "label": "MultiPaste"
+  }
+ },
+ {
   "layer": 2,
   "idx": 47,
   "key": "R3B",
