@@ -5,7 +5,7 @@ Hex colours are mapped to the nearest Yuzu dye-sub colour (yuzu/colors.txt, from
 Usage: yuzu_variant.py SCHEME [...]  -> yuzu/variants/<SCHEME>.json (+ a colour-mapping report)"""
 import json, os, sys
 from common import load_master, ROOT
-from legends import width_per_cap_mm, TOP_W, slots, text_layers, corner_layer, fit, ICONS, icon_layer, ARROWS, arrow_layer, SLOT_ICONS, slot_icon_layer
+from legends import width_per_cap_mm, TOP_W, slots, text_layers, corner_layer, fit, ICONS, icon_layer, ARROWS, arrow_layer, SLOT_ICONS, slot_icon_layer, big_icon_layer
 import legends
 
 m = load_master(); st = m["style"]; K = m["keys"]
@@ -72,7 +72,9 @@ def is_dark(h):
 # Layer-0 icon per key (icon-variant sets only; the arrows are icons on every set, see legends.ARROWS).
 ICON_MAP = {"3A": "MarkerLeft", "4A": "Marker", "5A": "MarkerRight", "3B": "ShotLeft", "5B": "ShotRight", "4B": "NoSymbol",
             "3C": "PlayLeft", "4C": "StopSquare", "5C": "PlayRight", "3D": "CarrotLeft", "4D": "Key", "5D": "CarrotRight",
-            "R2A": "AudioMute"}
+            }
+# Icon-set keys whose only legend is the icon: drawn big and centred like the arrows (9 mm long axis).
+BIG_ICON_MAP = {"R2A": "AudioMute"}
 # Slot icons: one height for all, at the top of the stack in place of the Layer-0 word (3.5 mm from top_y down).
 ICON_H = 3.5
 ICON_Y = round(st["top_y"] + ICON_H / 2, 2)
@@ -106,6 +108,8 @@ def build(tag):
                 if t.isalpha() and len(t) > 1:  # word legends (NUM, ENTER): label font at the normal Layer-0 size
                     cap_mm = fit(st, t, st["cap_mm_l0"], e["size"])[0]; font = st["font_label"]   # standard Layer-0 size, centred
                 layers.append(dict(colorId=inks[0], textLabel=t, textFontId=font, textSize=size(cap_mm), x=0, y=0))
+        elif sc.get("icons") and name in BIG_ICON_MAP:
+            layers.append(big_icon_layer(BIG_ICON_MAP[name], inks[0]))
         elif sc.get("icons") and name in ICON_MAP:
             layers.append(icon_layer(ICON_MAP[name], inks[0], ICON_H, ICON_Y))
             txt, _ = text_layers(st, e, inks, st["font_label"])
