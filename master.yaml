@@ -329,10 +329,15 @@ keys:
         oryx: Layer Up
         cap: LAY↑
       2:
+        fn: Selected layer up a row
+        key: Alt+PgUp
+        oryx: Lyr Row Up
+        cap: ROW↑
+      3:
         fn: Top of stack
         key: Win+PgUp
         oryx: Stack Top
-        cap: TOP
+        cap: ''
   1C:
     oryx: 14
     yuzu: 3R8UDS
@@ -539,10 +544,15 @@ keys:
         oryx: Layer Down
         cap: LAY↓
       2:
+        fn: Selected layer down a row
+        key: Alt+PgDn
+        oryx: Lyr Row Dn
+        cap: ROW↓
+      3:
         fn: Bottom of stack
         key: Win+PgDn
         oryx: Stack Bot
-        cap: BOT
+        cap: ''
   1E:
     oryx: 27
     yuzu: f19Yvj

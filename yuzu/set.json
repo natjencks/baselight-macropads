@@ -1087,7 +1087,7 @@
     },
     {
      "colorId": "GN010",
-     "textLabel": "TOP",
+     "textLabel": "ROW↑",
      "textFontId": 26345,
      "textSize": 3.16,
      "x": 0,
@@ -1376,7 +1376,7 @@
     },
     {
      "colorId": "GN010",
-     "textLabel": "BOT",
+     "textLabel": "ROW↓",
      "textFontId": 26345,
      "textSize": 3.16,
      "x": 0,

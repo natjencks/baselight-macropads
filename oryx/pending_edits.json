@@ -16,6 +16,19 @@
   "layer": 2,
   "idx": 13,
   "key": "7B",
+  "tap": "Alt+PgUp",
+  "hold": "",
+  "label": "Lyr Row Up",
+  "was": {
+   "tap": "",
+   "hold": "",
+   "label": ""
+  }
+ },
+ {
+  "layer": 3,
+  "idx": 13,
+  "key": "7B",
   "tap": "Win+PgUp",
   "hold": "",
   "label": "Stack Top",
@@ -92,6 +105,19 @@
  },
  {
   "layer": 2,
+  "idx": 26,
+  "key": "7D",
+  "tap": "Alt+PgDn",
+  "hold": "",
+  "label": "Lyr Row Dn",
+  "was": {
+   "tap": "",
+   "hold": "",
+   "label": ""
+  }
+ },
+ {
+  "layer": 3,
   "idx": 26,
   "key": "7D",
   "tap": "Win+PgDn",
