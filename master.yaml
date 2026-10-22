@@ -642,12 +642,12 @@ keys:
         fn: Toggle last workspace
         key: F8
         oryx: Last Wkspc
-        cap: WKSPACE
+        cap: WKSP
       1:
         fn: Reset operator   # FilmLight support — Ctrl+Delete; Ctrl+Backspace is Retime/Curve-grade only
         key: Ctrl+Delete
         oryx: Reset Op
-        cap: RESET OP
+        cap: RESET
   5E:
     oryx: 31
     yuzu: K84UUS

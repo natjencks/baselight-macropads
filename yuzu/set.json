@@ -1508,17 +1508,17 @@
    "layers": [
     {
      "colorId": "GR001",
-     "textLabel": "WKSPACE",
+     "textLabel": "WKSP",
      "textFontId": 26345,
-     "textSize": 2.79,
+     "textSize": 4.49,
      "x": 0,
      "y": -3.6
     },
     {
      "colorId": "RD003",
-     "textLabel": "RESET OP",
+     "textLabel": "RESET",
      "textFontId": 26345,
-     "textSize": 2.81,
+     "textSize": 3.16,
      "x": 0,
      "y": 0.82
     }
