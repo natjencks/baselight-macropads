@@ -121,14 +121,9 @@ def build(tag):
             layers += [l for l in txt if l["y"] != round(SLOT[0], 2)]   # icon replaces the Layer-0 word
             c = corner_layer(st, e, inks[3], st["font_label"])
             if c: layers.append(c)
-        elif sc.get("icons") and name in SLOT_ICONS:   # 7A: the ⌫ icon replaces the Layer-0 word on icon sets only
-            layers.append(slot_icon_layer(name, inks[0], st))
-            txt, _ = text_layers(st, e, inks, st["font_label"])
-            layers += [l for l in txt if l["y"] != round(SLOT[0], 2)]
-            c = corner_layer(st, e, inks[3], st["font_label"])
-            if c: layers.append(c)
         else:
             layers, _ = text_layers(st, e, inks, st["font_label"])
+            if name in SLOT_ICONS: layers.insert(0, slot_icon_layer(name, inks[0], st))
             c = corner_layer(st, e, inks[3], st["font_label"])
             if c: layers.append(c)
         keys[e["yuzu"]] = {"colorId": cap, "layers": layers}

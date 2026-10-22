@@ -74,7 +74,7 @@ def big_icon_layer(icon, color, y=0, long_mm=ARROW_LONG_MM):
     return icon_layer(icon, color, h_mm, y)
 
 # Layer-0 icons used on EVERY set (text sets included), drawn in the Layer-0 slot at the slot-icon size.
-SLOT_ICONS = {"7A": "Backspace"}   # icon sets only; text sets print the word BACKSPACE
+SLOT_ICONS = {"7A": "Backspace"}
 SLOT_ICON_H = 3.5
 def slot_icon_layer(name, color, st):
     return icon_layer(SLOT_ICONS[name], color, SLOT_ICON_H, round(st["top_y"] + SLOT_ICON_H / 2, 2))
