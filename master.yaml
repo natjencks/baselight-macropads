@@ -459,7 +459,7 @@ keys:
     size: 1.5u
     layers:
       0:
-        fn: Reset operator (FilmLight support: Ctrl+Delete; Ctrl+Backspace is Retime/Curve-grade only)
+        fn: Reset operator   # FilmLight support — Ctrl+Delete; Ctrl+Backspace is Retime/Curve-grade only
         key: Ctrl+Delete
         oryx: Reset Op
         cap: RESET OP
