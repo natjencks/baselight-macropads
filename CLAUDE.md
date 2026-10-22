@@ -93,6 +93,9 @@ Oryx key index ↔ name ↔ Yuzu id tables are in scripts/common.py (geometry er
   Save click at (286,20) is allowed when Nat's message asks for the push. The Open-dialog lookup can race the dialog animation:
   wait 1.5 s after __openDlg before __entryPos. yuzu_variant mod zone: big centred word only when the key has Layer 0 alone.
   Nat wants NO label under full size where possible; remaining shrunk ones are accepted (V-MAT 3.06, SHT>TOP 2.09, ‹MARK 2.89...).
+  2026-10-22 17:00: Nat keeps ONLY the icon designs. His account now has exactly six: Audition Black icons, White icons, F icons,
+  C icons, B1 icons, G icons (B1/G converted from the text sets; the text designs and Baselight V16 were deleted by Nat).
+  Regenerate with `yuzu_variant.py B1i Ci Fi Gi Wi Ki` — the plain tags are no longer needed on Yuzu (set.json is the diagram/text reference).
 
 ## Baselight facts used
 Shortcuts from the 7.0 Linux sheet (new): play shot Ctrl+Space; Ctrl+F1 is stereo-only; Reset Operator Ctrl+Backspace;
