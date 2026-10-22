@@ -65,6 +65,19 @@
   }
  },
  {
+  "layer": 3,
+  "idx": 18,
+  "key": "5C",
+  "tap": "Ctrl+B",
+  "hold": "",
+  "label": "Loop/Bnce",
+  "was": {
+   "tap": "",
+   "hold": "",
+   "label": ""
+  }
+ },
+ {
   "layer": 0,
   "idx": 20,
   "key": "1D",
