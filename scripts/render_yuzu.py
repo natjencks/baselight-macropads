@@ -22,11 +22,11 @@ for name, e in m["keys"].items():
         t = e["layers"].get(0, {}).get("cap", "")
         if t:
             cap_mm = min(st["big_cap_max_mm"], (TOP_W[e["size"]] - 1.2) / width_per_cap_mm(t))
-            font = st["font_big"]   # Light: digits and symbols match the arrow icons' stroke
+            font = st["font_big"]; y = 0   # Light: digits and symbols match the arrow icons' stroke
             if t.isalpha() and len(t) > 1:  # word legends (NUM, ENTER): label font at the normal Layer-0 size
-                cap_mm = fit(st, t, st["cap_mm_l0"], e["size"])[0]; font = st["font_label"]   # standard Layer-0 size, centred
+                cap_mm = fit(st, t, st["cap_mm_l0"], e["size"])[0]; font = st["font_label"]; y = round(SLOT[0], 2)   # standard Layer-0 size and position
             layers.append({"colorId": INK[0], "textLabel": t, "textFontId": font,
-                           "textSize": size(cap_mm), "x": 0, "y": 0})
+                           "textSize": size(cap_mm), "x": 0, "y": y})
     else:
         layers, warn = text_layers(st, e, INK, st["font_label"])
         if name in SLOT_ICONS: layers.insert(0, slot_icon_layer(name, INK[0], st))
