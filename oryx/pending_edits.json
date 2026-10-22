@@ -146,9 +146,9 @@
   "layer": 0,
   "idx": 30,
   "key": "4E",
-  "tap": "",
+  "tap": "F8",
   "hold": "",
-  "label": "",
+  "label": "Last Wkspc",
   "was": {
    "tap": "Ctrl+Shift+R",
    "hold": "",

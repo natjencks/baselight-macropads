@@ -617,7 +617,12 @@ keys:
     oryx: 30
     yuzu: dqz1KA
     size: 1u
-    layers: {}
+    layers:
+      0:
+        fn: Toggle last workspace
+        key: F8
+        oryx: Last Wkspc
+        cap: WKSPACE
   5E:
     oryx: 31
     yuzu: K84UUS

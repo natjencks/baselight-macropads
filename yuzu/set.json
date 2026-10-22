@@ -1473,7 +1473,16 @@
   },
   "dqz1KA": {
    "colorId": "GR002",
-   "layers": []
+   "layers": [
+    {
+     "colorId": "GR001",
+     "textLabel": "WKSPACE",
+     "textFontId": 26345,
+     "textSize": 2.79,
+     "x": 0,
+     "y": -3.6
+    }
+   ]
   },
   "K84UUS": {
    "colorId": "GR002",
