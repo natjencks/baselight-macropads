@@ -1,5 +1,96 @@
 [
  {
+  "layer": 0,
+  "idx": 1,
+  "key": "2A",
+  "tap": "F12",
+  "hold": "",
+  "label": "Disp Zoom",
+  "was": {
+   "tap": "F6",
+   "hold": "",
+   "label": "1x1 Shots"
+  }
+ },
+ {
+  "layer": 1,
+  "idx": 1,
+  "key": "2A",
+  "tap": "F6",
+  "hold": "",
+  "label": "1x1 Shots",
+  "was": {
+   "tap": "Ctrl+F6",
+   "hold": "",
+   "label": "Cycle F6"
+  }
+ },
+ {
+  "layer": 2,
+  "idx": 1,
+  "key": "2A",
+  "tap": "Ctrl+F6",
+  "hold": "",
+  "label": "Cycle F6",
+  "was": {
+   "tap": "",
+   "hold": "",
+   "label": ""
+  }
+ },
+ {
+  "layer": 0,
+  "idx": 5,
+  "key": "6A",
+  "tap": "F7",
+  "hold": "",
+  "label": "TL H-Zoom",
+  "was": {
+   "tap": "F12",
+   "hold": "",
+   "label": "Disp Zoom"
+  }
+ },
+ {
+  "layer": 1,
+  "idx": 5,
+  "key": "6A",
+  "tap": "Shift+F7",
+  "hold": "",
+  "label": "TL V-Zoom",
+  "was": {
+   "tap": "F7",
+   "hold": "",
+   "label": "TL H-Zoom"
+  }
+ },
+ {
+  "layer": 2,
+  "idx": 5,
+  "key": "6A",
+  "tap": "Ctrl+Shift+F7",
+  "hold": "",
+  "label": "TL HV-Zoom",
+  "was": {
+   "tap": "Shift+F7",
+   "hold": "",
+   "label": "TL V-Zoom"
+  }
+ },
+ {
+  "layer": 3,
+  "idx": 5,
+  "key": "6A",
+  "tap": "",
+  "hold": "",
+  "label": "",
+  "was": {
+   "tap": "Ctrl+Shift+F7",
+   "hold": "",
+   "label": "TL HV-Zoom"
+  }
+ },
+ {
   "layer": 1,
   "idx": 8,
   "key": "2B",

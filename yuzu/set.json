@@ -723,7 +723,7 @@
    "layers": [
     {
      "colorId": "GR001",
-     "textLabel": "GRID",
+     "textLabel": "ZOOM",
      "textFontId": 26345,
      "textSize": 4.49,
      "x": 0,
@@ -731,11 +731,19 @@
     },
     {
      "colorId": "RD003",
-     "textLabel": "CYC F6",
+     "textLabel": "GRID",
      "textFontId": 26345,
      "textSize": 3.16,
      "x": 0,
      "y": 0.82
+    },
+    {
+     "colorId": "GN010",
+     "textLabel": "CYC F6",
+     "textFontId": 26345,
+     "textSize": 3.16,
+     "x": 0,
+     "y": 3.88
     }
    ]
   },
@@ -815,15 +823,15 @@
    "layers": [
     {
      "colorId": "GR001",
-     "textLabel": "ZOOM",
+     "textLabel": "TMLN H",
      "textFontId": 26345,
-     "textSize": 4.49,
+     "textSize": 3.56,
      "x": 0,
      "y": -3.6
     },
     {
      "colorId": "RD003",
-     "textLabel": "TMLN H",
+     "textLabel": "TMLN V",
      "textFontId": 26345,
      "textSize": 3.16,
      "x": 0,
@@ -831,9 +839,9 @@
     },
     {
      "colorId": "GN010",
-     "textLabel": "TMLN V",
+     "textLabel": "TMLN HV",
      "textFontId": 26345,
-     "textSize": 3.16,
+     "textSize": 3.03,
      "x": 0,
      "y": 3.88
     }

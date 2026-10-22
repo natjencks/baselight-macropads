@@ -73,11 +73,16 @@ keys:
     size: 1u
     layers:
       0:
+        fn: Display zoom
+        key: F12
+        oryx: Disp Zoom
+        cap: ZOOM
+      1:
         fn: 1x1 Shots view
         key: F6
         oryx: 1x1 Shots
         cap: GRID
-      1:
+      2:
         fn: Cycle F6 views
         key: Ctrl+F6
         oryx: Cycle F6
@@ -138,25 +143,20 @@ keys:
     size: 1u
     layers:
       0:
-        fn: Display zoom
-        key: F12
-        oryx: Disp Zoom
-        cap: ZOOM
-      1:
         fn: Timeline horizontal zoom
         key: F7
         oryx: TL H-Zoom
         cap: TMLN H
-      2:
+      1:
         fn: Timeline vertical zoom
         key: Shift+F7
         oryx: TL V-Zoom
         cap: TMLN V
-      3:
+      2:
         fn: Timeline H+V zoom
         key: Ctrl+Shift+F7
         oryx: TL HV-Zoom
-        cap: ''
+        cap: TMLN HV
   7A:
     oryx: 6
     yuzu: A59P47
