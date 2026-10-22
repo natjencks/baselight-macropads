@@ -10,6 +10,9 @@ def band(name, layer, cls):
     lay = K[name]["layers"].get(layer)
     if not lay: return f'<div class="{cls}"></div>'
     cap = html.escape(lay.get("diagram") or lay.get("cap", "").replace("\n", " ")) or "·"   # 'diagram:' names an icon legend
+    if layer == 3:   # Layer 3 is not printed on the caps (except the corner letter): show the Oryx name, greyed = not on the keycap
+        corner = lay.get("cap", "")
+        cap = (f'<b>{html.escape(corner)}</b> ' if corner else "") + f'<i>{html.escape(lay.get("oryx") or lay.get("fn", ""))}</i>'
     ks = lay.get("key") or lay.get("hold") or ""
     tip = html.escape(lay.get("fn", "") + (f"  ·  {ks}" if ks else ""))
     return f'<div class="{cls}"><span class="b" data-tip="{tip}">{cap}</span></div>'
@@ -48,7 +51,7 @@ CSS = """
 .k .l1{background:#FAECE7;color:#712B13}.k .l2{background:#E1F5EE;color:#085041}.k .l3{background:#E6F1FB;color:#0C447C}
 [data-mode="dark"] .k .l1{background:#4a1f10;color:#F5C4B3}[data-mode="dark"] .k .l2{background:#0a3a2e;color:#9FE1CB}[data-mode="dark"] .k .l3{background:#0c2f4f;color:#B5D4F4}
 .k .l1:empty,.k .l2:empty,.k .l3:empty{opacity:.35}
-.k .l3{border-radius:0 0 8px 8px}
+.k .l3{border-radius:0 0 8px 8px}.k .l3 i{font-style:normal;opacity:.6}.k .l3 b{font-weight:700}
 .prime{outline:2px solid #534AB7;outline-offset:-2px}.prime .id{color:#534AB7}
 [data-mode="dark"] .prime{outline-color:#AFA9EC}
 .b{position:relative;cursor:default}
@@ -68,7 +71,7 @@ CSS = """
 rev = m["layout"]["oryx_revision"]; title = html.escape(m["layout"]["name"])
 body = f"""<div class="wrap">
 <div class="lab">{title} — Oryx revision {rev} — left half</div>
-<div class="sub">Keycap legends; hover a legend for the function and the keystroke. Top = Layer 0; red = Layer 1 (hold T3); green = Layer 2 (hold T4); blue = Layer 3 (T3+T4 chord, one-shot). Purple outline = prime block.</div>
+<div class="sub">Keycap legends; hover a legend for the function and the keystroke. Top = Layer 0; red = Layer 1 (hold T3); green = Layer 2 (hold T4); blue = Layer 3 (T3+T4 chord, one-shot; greyed names are not printed on the caps, only the bold corner letter is). Purple outline = prime block.</div>
 {grid(rows_left)}
 <div class="stage"><div class="chord"><b>Layer 3 chord</b><br>Hold T3, tap T4 (or hold T4, tap T3) → next key from Layer 3. Hold both to keep it active. Same on the right cluster.</div>{thumbs(LEFT_T, "left")}</div>
 <div class="lab">Right half</div>
