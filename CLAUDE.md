@@ -58,7 +58,7 @@ Oryx key index ↔ name ↔ Yuzu id tables are in scripts/common.py (geometry er
 - Icon sets: Nat's SVGs in icons/ (Illustrator exports) -> scripts/icons.py -> icons/icons.json (one flattened path
   each). yuzu_variant.py builds TAG+"i" variants ("Audition X icons"): ICON_MAP key->icon, slot icons 3.5 mm tall at
   y -3.45 (4.4 mm clipped at the cap-top edge), L1/L2 labels stay in their slots. The ARROW keys use Nat's arrow icons on
-  EVERY set (legends.ARROWS): 9 mm long axis, centred, R1D's dropped 0.25u (y 4.76) to line up with R3D. Saved on Yuzu: "Audition C icons", "Audition F icons". legends.SLOT_ICONS (7A Backspace, icons/Backspace.svg: my ⌫ in Nat's style, 2:1 point, X through to the top/bottom lines) print on every set; icons/AudioMute.svg was
+  EVERY set (legends.ARROWS): 9 mm long axis, centred, R1D's dropped 0.25u (y 4.76) to line up with R3D. Saved on Yuzu: "Audition C icons", "Audition F icons". legends.SLOT_ICONS (7A Backspace, icons/Backspace.svg: my ⌫ in Nat's style, 2:1 point, floating X — Nat rejected the X-through-to-the-edges version) print on every set; icons/AudioMute.svg was
   redrawn by me (stroke 0.53 mm at 9 mm, arcs concentric on the speaker) and shows full size (BIG_ICON_MAP) on the icon sets.
   Unplaced icons (Dot, Grid, Boundry*, Expand*, Trash*, Carrot*Thin): ask Nat what they are for. master.yaml `diagram:` gives
   a diagram-only label for icon legends.
@@ -87,7 +87,7 @@ Oryx key index ↔ name ↔ Yuzu id tables are in scripts/common.py (geometry er
   L1-L3 text, solid red/green layer keys), Black icons (Ki). The Open dialog lists 9 designs; click "Load More" for the rest. Update loop (helpers now in scripts/yuzu_browser.js): set window.__sha = commit -> __openDlg() -> click entry at __entryPos(name)
   -> __loadFromRepo(name, 'yuzu/variants/X.json') -> Save click at (286,20) in the 800-px frame (1024-wide pane). The dates in the Open
   dialog are creation dates, NOT last-saved: verify a save by reloading the page, re-opening the design and probing its JSON.
-  Icon sets (C/F/White/Black icons) re-saved 22:40 at repo e07a162: new ⌫ (X through to the top/bottom lines), thinner Key, MUTE −25%;
+  Icon sets (C/F/White/Black icons) re-saved 22:40 at repo e07a162: ⌫ with floating X (e11fc93 drawing), thinner Key, MUTE −25%;
   the six non-icon sets still carry the previous ⌫ (DejaVu-style) — resave them when Nat asks.
 
 ## Baselight facts used
