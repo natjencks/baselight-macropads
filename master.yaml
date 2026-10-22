@@ -599,7 +599,7 @@ keys:
     size: 1u
     layers:
       0:
-        fn: Win / Meta (hold)
+        fn: Win / Meta (hold) — needed for Win+click-drag in the paint tool
         key: LWin
         oryx: Win
         cap: WIN
@@ -1107,7 +1107,7 @@ keys:
     size: 1u
     layers:
       0:
-        fn: Win / Meta (hold)
+        fn: Win / Meta (hold) — needed for Win+click-drag in the paint tool
         key: LWin
         oryx: Win
         cap: WIN
