@@ -58,7 +58,10 @@ Oryx key index ↔ name ↔ Yuzu id tables are in scripts/common.py (geometry er
 - Icon sets: Nat's SVGs in icons/ (Illustrator exports) -> scripts/icons.py -> icons/icons.json (one flattened path
   each). yuzu_variant.py builds TAG+"i" variants ("Audition X icons"): ICON_MAP key->icon, slot icons 3.5 mm tall at
   y -3.45 (4.4 mm clipped at the cap-top edge), L1/L2 labels stay in their slots. The ARROW keys use Nat's arrow icons on
-  EVERY set (legends.ARROWS): 9 mm long axis, centred, R1D's dropped 0.25u (y 4.76) to line up with R3D. Saved on Yuzu: "Audition C icons", "Audition F icons". Unplaced icons (Dot, Grid, Boundry*, Expand*, Trash*, Carrot*Thin): ask Nat what they are for.
+  EVERY set (legends.ARROWS): 9 mm long axis, centred, R1D's dropped 0.25u (y 4.76) to line up with R3D. Saved on Yuzu: "Audition C icons", "Audition F icons". legends.SLOT_ICONS (7A Backspace, a ⌫ drawn from DejaVu's glyph) print on every set; icons/AudioMute.svg was
+  redrawn by me (stroke 0.53 mm at 9 mm, arcs concentric on the speaker) and shows full size (BIG_ICON_MAP) on the icon sets.
+  Unplaced icons (Dot, Grid, Boundry*, Expand*, Trash*, Carrot*Thin): ask Nat what they are for. master.yaml `diagram:` gives
+  a diagram-only label for icon legends.
 - Colour auditions: scripts/yuzu_variant.py SCHEME -> yuzu/variants/SCHEME.json (same slots as the production set,
   per-zone caps). The page can fetch variant JSON straight from raw.githubusercontent.com (repo is public) into window.__json.
   The pane's screenshot is capped at 800 px wide: for a readable render, serialise the Playground
@@ -79,7 +82,7 @@ Oryx key index ↔ name ↔ Yuzu id tables are in scripts/common.py (geometry er
   (the layer it jumps to: B/F/W/V/C on row B); empty L3 cap = unlabelled (2A, 4C).
   White caps, inks black / red RD003 / green GN010 / blue BL023; numpad + arrows one big centred legend; SemiBold for
   labels, Regular for the big glyphs. Previews can be rendered locally with PIL from fonts/ to avoid Yuzu round-trips.
-- Saved designs on Nat's account (all re-saved 2026-10-21 19:18 at repo 5b42eac / Oryx GGKD5j: 3-slot legends, Light digits + SemiBold NUM/ENTER, arrow icons everywhere, L1/L2 +0.5 mm, label changes 2x1C/2x1D/WIP D, 6B NEW/NEXT, 6C VW-MAT/GRD-MAT, 2A SHOTS/CYC F6, 6A zoom set): Baselight V16 (production, white),
+- Saved designs on Nat's account (all re-saved 2026-10-21 20:55 at repo 2e4ce56 / Oryx 3vAb4w: 3-slot legends, Light digits, NUM/ENTER SemiBold at L0 size, arrow icons everywhere, 2A GRID/CYC F6, 6A zoom set, 7A ⌫ icon/DEL, R2A MUTE icon full size on icon sets): Baselight V16 (production, white),
   Audition B1, C, F, G, C icons, F icons. Update loop: Open dialog -> click entry (coords from __entryPos) -> fetch the
   variant JSON from raw.githubusercontent.com/<commit sha>/... (the /main/ URL is cached ~5 min) -> __import -> Save.
 
@@ -87,4 +90,5 @@ Oryx key index ↔ name ↔ Yuzu id tables are in scripts/common.py (geometry er
 Shortcuts from the 7.0 Linux sheet (new): play shot Ctrl+Space; Ctrl+F1 is stereo-only; Reset Operator Ctrl+Backspace;
 Timeline Alignment panel Win+; vs Align Timeline Vertically Ctrl+;. Layer-3 jumps send F13–F17 for a FLAPI script (todo); Formats is JOBS(R1B)+L1 since B4KY9x; since VqwoWd: 2x1 Cursor 2B+L1, Byp Op 4B+L1 / Byp All 4B+L2,
 Grab Still 3C(REW)+L1, Group Grade 5C(FWD)+L1; WvRLzn: 6B L2 Next Shape, 6C View Matte (O) / Grd⇄Matte (G); wOXdx9: 2D L2 Cur|Ref,
-2E L2 Gang Curs; GGKD5j: zoom set 2A→6A, 2A = 1x1 Shots view F6 / Cycle F6 Ctrl+F6; R7D F18 = ALL SHOTS view, R7E F19 = CURRENT TAPE view (Shots View filters, script todo).
+2E L2 Gang Curs; GGKD5j: zoom set 2A→6A, 2A = 1x1 Shots view F6 / Cycle F6 Ctrl+F6; 3vAb4w: 7A Backspace L0 / Delete L1, 4C L1 Group Grd,
+5C L1 Play Scene / L2 Play Shot; R7D F18 = ALL SHOTS view, R7E F19 = CURRENT TAPE view (Shots View filters, script todo).
