@@ -454,10 +454,20 @@ keys:
     size: 1.5u
     layers:
       0:
-        fn: Reset operator   # FilmLight support — Ctrl+Delete; Ctrl+Backspace is Retime/Curve-grade only
-        key: Ctrl+Delete
-        oryx: Reset Op
-        cap: RESET OP
+        fn: Insert layer
+        key: P
+        oryx: Insert Lyr
+        cap: +LYR
+      1:
+        fn: Delete layer
+        key: Shift+P
+        oryx: Delete Lyr
+        cap: −LYR
+      2:
+        fn: Rename strip
+        key: Ctrl+Shift+R
+        oryx: Rename
+        cap: NAME
   2D:
     oryx: 21
     yuzu: h9SSVX
@@ -579,20 +589,10 @@ keys:
     size: 1u
     layers:
       0:
-        fn: Insert layer
-        key: P
-        oryx: Insert Lyr
-        cap: +LYR
-      1:
-        fn: Delete layer
-        key: Shift+P
-        oryx: Delete Lyr
-        cap: −LYR
-      2:
-        fn: Rename strip
-        key: Ctrl+Shift+R
-        oryx: Rename
-        cap: NAME
+        fn: Win / Meta (hold)
+        key: LWin
+        oryx: Win
+        cap: WIN
   2E:
     oryx: 28
     yuzu: kOxNNJ
@@ -643,6 +643,11 @@ keys:
         key: F8
         oryx: Last Wkspc
         cap: WKSPACE
+      1:
+        fn: Reset operator   # FilmLight support — Ctrl+Delete; Ctrl+Backspace is Retime/Curve-grade only
+        key: Ctrl+Delete
+        oryx: Reset Op
+        cap: RESET OP
   5E:
     oryx: 31
     yuzu: K84UUS
@@ -1033,6 +1038,11 @@ keys:
         key: F18
         oryx: ALL SHOTS
         cap: ALL SHOTS
+      1:
+        fn: Jump to CURRENT TAPE view (FLAPI F19, script todo)
+        key: F19
+        oryx: CUR TAPE
+        cap: TAPE
   R3E:
     oryx: 65
     yuzu: R4QLAP
@@ -1077,10 +1087,10 @@ keys:
     size: 1u
     layers:
       0:
-        fn: Jump to CURRENT TAPE view (FLAPI F19, script todo)
-        key: F19
-        oryx: CUR TAPE
-        cap: TAPE
+        fn: Win / Meta (hold)
+        key: LWin
+        oryx: Win
+        cap: WIN
   RT2:
     oryx: 70
     yuzu: 4GSW3A

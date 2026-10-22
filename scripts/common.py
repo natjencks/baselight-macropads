@@ -46,7 +46,7 @@ CODE2NAME = {
     "KC_SCLN":";","KC_QUOTE":"'","KC_LBRC":"[","KC_RBRC":"]","KC_BSLS":"\\","KC_COMMA":",","KC_DOT":".",
     "KC_KP_MINUS":"KP-","KC_KP_PLUS":"KP+","KC_KP_SLASH":"KP/","KC_KP_ASTERISK":"KP*","KC_KP_DOT":"KP.",
     "KC_KP_ENTER":"KPEnter","KC_NUM":"NumLock",
-    "KC_LEFT_ALT":"LAlt","KC_LEFT_SHIFT":"LShift","KC_LEFT_CTRL":"LCtrl","KC_RIGHT_GUI":"RWin",
+    "KC_LEFT_ALT":"LAlt","KC_LEFT_SHIFT":"LShift","KC_LEFT_CTRL":"LCtrl","KC_LEFT_GUI":"LWin","KC_RIGHT_GUI":"RWin",
     "KC_TRANSPARENT":"-",
 }
 for _c in "ABCDEFGHIJKLMNOPQRSTUVWXYZ": CODE2NAME["KC_" + _c] = _c

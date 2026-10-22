@@ -16,13 +16,39 @@
   "layer": 0,
   "idx": 20,
   "key": "1D",
-  "tap": "Ctrl+Delete",
+  "tap": "P",
   "hold": "",
-  "label": "Reset Op",
+  "label": "Insert Lyr",
   "was": {
    "tap": "Ctrl+Backspace",
    "hold": "",
    "label": "Reset Op"
+  }
+ },
+ {
+  "layer": 1,
+  "idx": 20,
+  "key": "1D",
+  "tap": "Shift+P",
+  "hold": "",
+  "label": "Delete Lyr",
+  "was": {
+   "tap": "",
+   "hold": "",
+   "label": ""
+  }
+ },
+ {
+  "layer": 2,
+  "idx": 20,
+  "key": "1D",
+  "tap": "Ctrl+Shift+R",
+  "hold": "",
+  "label": "Rename",
+  "was": {
+   "tap": "",
+   "hold": "",
+   "label": ""
   }
  },
  {
@@ -32,6 +58,58 @@
   "tap": "F",
   "hold": "",
   "label": "Strip Cat",
+  "was": {
+   "tap": "",
+   "hold": "",
+   "label": ""
+  }
+ },
+ {
+  "layer": 0,
+  "idx": 27,
+  "key": "1E",
+  "tap": "LWin",
+  "hold": "",
+  "label": "Win",
+  "was": {
+   "tap": "P",
+   "hold": "",
+   "label": "Insert Lyr"
+  }
+ },
+ {
+  "layer": 1,
+  "idx": 27,
+  "key": "1E",
+  "tap": "",
+  "hold": "",
+  "label": "",
+  "was": {
+   "tap": "Shift+P",
+   "hold": "",
+   "label": "Delete Lyr"
+  }
+ },
+ {
+  "layer": 2,
+  "idx": 27,
+  "key": "1E",
+  "tap": "",
+  "hold": "",
+  "label": "",
+  "was": {
+   "tap": "Ctrl+Shift+R",
+   "hold": "",
+   "label": "Rename"
+  }
+ },
+ {
+  "layer": 1,
+  "idx": 30,
+  "key": "4E",
+  "tap": "Ctrl+Delete",
+  "hold": "",
+  "label": "Reset Op",
   "was": {
    "tap": "",
    "hold": "",
@@ -49,6 +127,32 @@
    "tap": "",
    "hold": "",
    "label": ""
+  }
+ },
+ {
+  "layer": 1,
+  "idx": 64,
+  "key": "R7D",
+  "tap": "F19",
+  "hold": "",
+  "label": "CUR TAPE",
+  "was": {
+   "tap": "",
+   "hold": "",
+   "label": ""
+  }
+ },
+ {
+  "layer": 0,
+  "idx": 69,
+  "key": "R7E",
+  "tap": "LWin",
+  "hold": "",
+  "label": "Win",
+  "was": {
+   "tap": "F19",
+   "hold": "",
+   "label": "CUR TAPE"
   }
  }
 ]

@@ -1250,11 +1250,27 @@
    "layers": [
     {
      "colorId": "GR001",
-     "textLabel": "RESET OP",
+     "textLabel": "+LYR",
      "textFontId": 26345,
      "textSize": 4.49,
      "x": 0,
      "y": -3.6
+    },
+    {
+     "colorId": "RD003",
+     "textLabel": "−LYR",
+     "textFontId": 26345,
+     "textSize": 3.16,
+     "x": 0,
+     "y": 0.82
+    },
+    {
+     "colorId": "GN010",
+     "textLabel": "NAME",
+     "textFontId": 26345,
+     "textSize": 3.16,
+     "x": 0,
+     "y": 3.88
     }
    ]
   },
@@ -1421,27 +1437,11 @@
    "layers": [
     {
      "colorId": "GR001",
-     "textLabel": "+LYR",
+     "textLabel": "WIN",
      "textFontId": 26345,
      "textSize": 4.49,
      "x": 0,
      "y": -3.6
-    },
-    {
-     "colorId": "RD003",
-     "textLabel": "−LYR",
-     "textFontId": 26345,
-     "textSize": 3.16,
-     "x": 0,
-     "y": 0.82
-    },
-    {
-     "colorId": "GN010",
-     "textLabel": "NAME",
-     "textFontId": 26345,
-     "textSize": 3.16,
-     "x": 0,
-     "y": 3.88
     }
    ]
   },
@@ -1513,6 +1513,14 @@
      "textSize": 2.79,
      "x": 0,
      "y": -3.6
+    },
+    {
+     "colorId": "RD003",
+     "textLabel": "RESET OP",
+     "textFontId": 26345,
+     "textSize": 2.81,
+     "x": 0,
+     "y": 0.82
     }
    ]
   },
@@ -2051,6 +2059,14 @@
      "textSize": 4.49,
      "x": 0,
      "y": -3.6
+    },
+    {
+     "colorId": "RD003",
+     "textLabel": "TAPE",
+     "textFontId": 26345,
+     "textSize": 3.16,
+     "x": 0,
+     "y": 0.82
     }
    ]
   },
@@ -2111,7 +2127,7 @@
    "layers": [
     {
      "colorId": "GR001",
-     "textLabel": "TAPE",
+     "textLabel": "WIN",
      "textFontId": 26345,
      "textSize": 4.49,
      "x": 0,
