@@ -29,9 +29,9 @@
   "layer": 0,
   "idx": 14,
   "key": "1C",
-  "tap": "",
+  "tap": "Ctrl+Enter",
   "hold": "",
-  "label": "",
+  "label": "Select Shot",
   "was": {
    "tap": "PgUp",
    "hold": "",
@@ -55,9 +55,9 @@
   "layer": 0,
   "idx": 20,
   "key": "1D",
-  "tap": "",
+  "tap": "Ctrl+Backspace",
   "hold": "",
-  "label": "",
+  "label": "Reset Op",
   "was": {
    "tap": "PgDn",
    "hold": "",

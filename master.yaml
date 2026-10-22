@@ -337,7 +337,12 @@ keys:
     oryx: 14
     yuzu: 3R8UDS
     size: 1.5u
-    layers: {}
+    layers:
+      0:
+        fn: Select shot
+        key: Ctrl+Enter
+        oryx: Select Shot
+        cap: SELECT SHOT
   2C:
     oryx: 15
     yuzu: I9bsjW
@@ -427,7 +432,12 @@ keys:
     oryx: 20
     yuzu: 3UK6NS
     size: 1.5u
-    layers: {}
+    layers:
+      0:
+        fn: Reset operator
+        key: Ctrl+Backspace
+        oryx: Reset Op
+        cap: RESET OP
   2D:
     oryx: 21
     yuzu: h9SSVX

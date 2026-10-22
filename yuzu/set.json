@@ -1097,7 +1097,16 @@
   },
   "3R8UDS": {
    "colorId": "GR002",
-   "layers": []
+   "layers": [
+    {
+     "colorId": "GR001",
+     "textLabel": "SELECT SHOT",
+     "textFontId": 26345,
+     "textSize": 3.88,
+     "x": 0,
+     "y": -3.6
+    }
+   ]
   },
   "I9bsjW": {
    "colorId": "GR002",
@@ -1214,7 +1223,16 @@
   },
   "3UK6NS": {
    "colorId": "GR002",
-   "layers": []
+   "layers": [
+    {
+     "colorId": "GR001",
+     "textLabel": "RESET OP",
+     "textFontId": 26345,
+     "textSize": 4.49,
+     "x": 0,
+     "y": -3.6
+    }
+   ]
   },
   "h9SSVX": {
    "colorId": "GR002",
