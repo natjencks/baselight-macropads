@@ -87,9 +87,12 @@ Oryx key index ↔ name ↔ Yuzu id tables are in scripts/common.py (geometry er
   L1-L3 text, solid red/green layer keys), Black icons (Ki). The Open dialog lists 9 designs; click "Load More" for the rest. Update loop (helpers now in scripts/yuzu_browser.js): set window.__sha = commit -> __openDlg() -> click entry at __entryPos(name)
   -> __loadFromRepo(name, 'yuzu/variants/X.json') -> Save click at (286,20) in the 800-px frame (1024-wide pane). The dates in the Open
   dialog are creation dates, NOT last-saved: verify a save by reloading the page, re-opening the design and probing its JSON.
-  ALL TEN re-saved 2026-10-22 13:50 at repo a9570db (Oryx NowGbA): floating-X ⌫, thin Key, MUTE −25%, 1C SEL SHOT/BEFORE/AFTER,
-  1D RESET OP, 4E WKSPACE, 7B LAY↑/ROW↑, 7D LAY↓/ROW↓, 1E L2 NAME, 6C L2 INS MAT. Save click at (286,20) is allowed when Nat's
-  message asks for the push. The Open-dialog lookup can race the dialog animation: wait 1.5 s after __openDlg before __entryPos.
+  ALL TEN re-saved 2026-10-22 17:05 at repo 7f96610 (Oryx XbpMoW): 2A ZOOM/GRID/CYC F6, 6A TL H/TL V/TL HV, 2B 1×1/2x1D/2x1C,
+  2C WIP D/ANGLE/Z-GANG, 1C SEL SHOT/BEFORE/AFTER, 1D +LYR/−LYR/NAME, 1E WIN/UI/IMG/LOUPE (mod grey, 3 slots), 4D TOG CAT, 4E WKSP/RST OP,
+  6C V-MAT/G‹›M/INS MAT, R3B FOLD/ALL/SHT>TOP, R3C 00:00, R3E GRUP, R7D ALL SHOTS/TAPE, R7E WIN (mod grey, big word).
+  Save click at (286,20) is allowed when Nat's message asks for the push. The Open-dialog lookup can race the dialog animation:
+  wait 1.5 s after __openDlg before __entryPos. yuzu_variant mod zone: big centred word only when the key has Layer 0 alone.
+  Nat wants NO label under full size where possible; remaining shrunk ones are accepted (V-MAT 3.06, SHT>TOP 2.09, ‹MARK 2.89...).
 
 ## Baselight facts used
 Shortcuts from the 7.0 Linux sheet (new): play shot Ctrl+Space; Ctrl+F1 is stereo-only; Reset Operator Ctrl+Backspace;
@@ -102,4 +105,11 @@ NowGbA (2026-10-22): 1C Select Shot Ctrl+Enter / Sel Before Alt+Enter / Sel Afte
 Win+PgUp/PgDn, 1E L2 Rename Ctrl+Shift+R, 5C L3 Loop/Bounce Ctrl+B, 5E L3 Multi-paste Ctrl+M, 6C L2 Insert Matte Merge T.
 Oryx quirk: clicking "Modify layout" creates the next revision id immediately (NowGbA appeared before compiling, same content as
 3vAb4w); the compile then keeps that id — so "rev changed" is not a compile signal; compare key contents instead.
-The 7.0 shortcut sheet is in the session uploads (6562ac98-Baselight_v7.0_KB_Shortcuts_Linux.pdf; pdftotext -layout to grep it).
+XbpMoW (2026-10-22 17:00): 2A Disp Zoom F12 / 1x1 Shots F6 / Cycle Ctrl+F6; 6A TL zoom F7 / Shift+F7 / Ctrl+Shift+F7 (L3 cleared);
+2B L1 2x1|DBS Ctrl+Alt+3, L2 2x1 Cursor F2; 2C Wipe|DBS Ctrl+Alt+4 / Wipe Angle Ctrl+Shift+F3 / Zoom-Pan Gang F9; 1D P / Shift+P / Ctrl+Shift+R;
+1E Left Win (hold, for paint-tool Win+drag) / UI-Image Ctrl+Esc / Loupe Win+Esc; 4D L1 Toggle Strip Category F; 4E L1 Reset Op Ctrl+Delete
+(FilmLight support: Ctrl+Backspace is Retime/Curve only); 4C L3 cleared; 5E L3 Multi-paste VIEW Win+M (Ctrl+M performs the paste);
+R3B L2 Fold Shot into Top Strip Alt+\; R7D L1 CUR TAPE F19; R7E Left Win. Confirmed by Nat: Play Shot = Ctrl+Space, FPS = Win+F.
+Shortcut sheets: the 8-page Typst "Baselight_v7.0_KB_Shortcuts_Linux.pdf" (maintained copy, dated 2026-10-20) and FilmLight's
+6-page QR-1051; they agree except Play Current Shot (Shift+Ctrl+Space in QR-1051) and FPS (Ctrl+F in Typst — wrong, that's Paste Strips).
+The v7 User Guide (1180 pp) was uploaded to the session; extract with pdftotext -layout to grep (Zoom/Pan Ganging p.449, gestural p.86).
