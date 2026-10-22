@@ -1,102 +1,50 @@
 [
  {
-  "layer": 0,
-  "idx": 1,
-  "key": "2A",
-  "tap": "F6",
-  "hold": "",
-  "label": "1x1 Shots",
-  "was": {
-   "tap": "F12",
-   "hold": "",
-   "label": "Disp Zoom"
-  }
- },
- {
   "layer": 1,
-  "idx": 1,
-  "key": "2A",
-  "tap": "Ctrl+F6",
+  "idx": 17,
+  "key": "4C",
+  "tap": "Ctrl+G",
   "hold": "",
-  "label": "Cycle F6",
+  "label": "Group Grd",
   "was": {
-   "tap": "F7",
+   "tap": "Shift+Space",
    "hold": "",
-   "label": "TL H-Zoom"
+   "label": "Play Scene"
   }
  },
  {
   "layer": 2,
-  "idx": 1,
-  "key": "2A",
+  "idx": 17,
+  "key": "4C",
   "tap": "",
   "hold": "",
   "label": "",
   "was": {
-   "tap": "Shift+F7",
+   "tap": "Ctrl+Space",
    "hold": "",
-   "label": "TL V-Zoom"
-  }
- },
- {
-  "layer": 3,
-  "idx": 1,
-  "key": "2A",
-  "tap": "",
-  "hold": "",
-  "label": "",
-  "was": {
-   "tap": "Ctrl+Shift+F7",
-   "hold": "",
-   "label": "TL HV-Zoom"
-  }
- },
- {
-  "layer": 0,
-  "idx": 5,
-  "key": "6A",
-  "tap": "F12",
-  "hold": "",
-  "label": "Disp Zoom",
-  "was": {
-   "tap": "",
-   "hold": "",
-   "label": ""
+   "label": "Play Shot"
   }
  },
  {
   "layer": 1,
-  "idx": 5,
-  "key": "6A",
-  "tap": "F7",
+  "idx": 18,
+  "key": "5C",
+  "tap": "Shift+Space",
   "hold": "",
-  "label": "TL H-Zoom",
+  "label": "Play Scene",
   "was": {
-   "tap": "",
+   "tap": "Ctrl+G",
    "hold": "",
-   "label": ""
+   "label": "Group Grd"
   }
  },
  {
   "layer": 2,
-  "idx": 5,
-  "key": "6A",
-  "tap": "Shift+F7",
+  "idx": 18,
+  "key": "5C",
+  "tap": "Ctrl+Space",
   "hold": "",
-  "label": "TL V-Zoom",
-  "was": {
-   "tap": "",
-   "hold": "",
-   "label": ""
-  }
- },
- {
-  "layer": 3,
-  "idx": 5,
-  "key": "6A",
-  "tap": "Ctrl+Shift+F7",
-  "hold": "",
-  "label": "TL HV-Zoom",
+  "label": "Play Shot",
   "was": {
    "tap": "",
    "hold": "",

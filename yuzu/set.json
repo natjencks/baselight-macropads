@@ -1155,19 +1155,11 @@
     },
     {
      "colorId": "RD003",
-     "textLabel": "SCENE",
+     "textLabel": "GG",
      "textFontId": 26345,
      "textSize": 3.16,
      "x": 0,
      "y": 0.82
-    },
-    {
-     "colorId": "GN010",
-     "textLabel": "SHOT",
-     "textFontId": 26345,
-     "textSize": 3.16,
-     "x": 0,
-     "y": 3.88
     }
    ]
   },
@@ -1184,11 +1176,19 @@
     },
     {
      "colorId": "RD003",
-     "textLabel": "GG",
+     "textLabel": "SCENE",
      "textFontId": 26345,
      "textSize": 3.16,
      "x": 0,
      "y": 0.82
+    },
+    {
+     "colorId": "GN010",
+     "textLabel": "SHOT",
+     "textFontId": 26345,
+     "textSize": 3.16,
+     "x": 0,
+     "y": 3.88
     }
    ]
   },

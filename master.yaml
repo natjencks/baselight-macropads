@@ -378,15 +378,10 @@ keys:
         oryx: Stop
         cap: STOP
       1:
-        fn: Play scene
-        key: Shift+Space
-        oryx: Play Scene
-        cap: SCENE
-      2:
-        fn: Play shot
-        key: Ctrl+Space
-        oryx: Play Shot
-        cap: SHOT
+        fn: Group grading
+        key: Ctrl+G
+        oryx: Group Grd
+        cap: GG
       3:
         fn: Reset all parameters
         key: Ctrl+Delete
@@ -403,10 +398,15 @@ keys:
         oryx: Fwd
         cap: FWD
       1:
-        fn: Group grading
-        key: Ctrl+G
-        oryx: Group Grd
-        cap: GG
+        fn: Play scene
+        key: Shift+Space
+        oryx: Play Scene
+        cap: SCENE
+      2:
+        fn: Play shot
+        key: Ctrl+Space
+        oryx: Play Shot
+        cap: SHOT
   6C:
     oryx: 19
     yuzu: SGQPN7
