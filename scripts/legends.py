@@ -69,3 +69,9 @@ ARROW_Y = {"R1D": 4.76}   # R1D is a 1.5u-tall cap: drop its arrow 0.25u so it l
 def arrow_layer(name, color):
     ic = ICONS[ARROWS[name]]; h_mm = ARROW_LONG_MM * ic["h"] / max(ic["w"], ic["h"])
     return icon_layer(ARROWS[name], color, h_mm, ARROW_Y.get(name, 0))
+
+# Layer-0 icons used on EVERY set (text sets included), drawn in the Layer-0 slot at the slot-icon size.
+SLOT_ICONS = {"7A": "Backspace"}
+SLOT_ICON_H = 3.5
+def slot_icon_layer(name, color, st):
+    return icon_layer(SLOT_ICONS[name], color, SLOT_ICON_H, round(st["top_y"] + SLOT_ICON_H / 2, 2))

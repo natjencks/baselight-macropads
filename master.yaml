@@ -163,15 +163,15 @@ keys:
     size: 1u
     layers:
       0:
+        fn: Backspace
+        key: Backspace
+        oryx: Backspace
+        cap: ''        # printed as the Backspace icon (legends.SLOT_ICONS), on every set
+      1:
         fn: Delete
         key: Delete
         oryx: Delete
         cap: DEL
-      1:
-        fn: Backspace
-        key: Backspace
-        oryx: Backspace
-        cap: BKSP
   1B:
     oryx: 7
     yuzu: CEBPLX

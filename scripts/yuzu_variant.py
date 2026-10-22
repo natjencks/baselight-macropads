@@ -5,7 +5,7 @@ Hex colours are mapped to the nearest Yuzu dye-sub colour (yuzu/colors.txt, from
 Usage: yuzu_variant.py SCHEME [...]  -> yuzu/variants/<SCHEME>.json (+ a colour-mapping report)"""
 import json, os, sys
 from common import load_master, ROOT
-from legends import width_per_cap_mm, TOP_W, slots, text_layers, corner_layer, fit, ICONS, icon_layer, ARROWS, arrow_layer
+from legends import width_per_cap_mm, TOP_W, slots, text_layers, corner_layer, fit, ICONS, icon_layer, ARROWS, arrow_layer, SLOT_ICONS, slot_icon_layer
 import legends
 
 m = load_master(); st = m["style"]; K = m["keys"]
@@ -72,7 +72,7 @@ def is_dark(h):
 # Layer-0 icon per key (icon-variant sets only; the arrows are icons on every set, see legends.ARROWS).
 ICON_MAP = {"3A": "MarkerLeft", "4A": "Marker", "5A": "MarkerRight", "3B": "ShotLeft", "5B": "ShotRight", "4B": "NoSymbol",
             "3C": "PlayLeft", "4C": "StopSquare", "5C": "PlayRight", "3D": "CarrotLeft", "4D": "Key", "5D": "CarrotRight",
-            "7A": "Trash", "R2A": "AudioMute"}
+            "R2A": "AudioMute"}
 # Slot icons: one height for all, at the top of the stack in place of the Layer-0 word (3.5 mm from top_y down).
 ICON_H = 3.5
 ICON_Y = round(st["top_y"] + ICON_H / 2, 2)
@@ -114,6 +114,7 @@ def build(tag):
             if c: layers.append(c)
         else:
             layers, _ = text_layers(st, e, inks, st["font_label"])
+            if name in SLOT_ICONS: layers.insert(0, slot_icon_layer(name, inks[0], st))
             c = corner_layer(st, e, inks[3], st["font_label"])
             if c: layers.append(c)
         keys[e["yuzu"]] = {"colorId": cap, "layers": layers}

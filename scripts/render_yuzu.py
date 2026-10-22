@@ -4,7 +4,7 @@ Layout rules (scripts/legends.py): three fixed slots per key (L0 big, L1/L2 smal
 corner letter; 'big_keys' get one centred legend."""
 import json, os, sys
 from common import load_master, ROOT
-from legends import width_per_cap_mm, TOP_W, slots, text_layers, corner_layer, ARROWS, arrow_layer, fit
+from legends import width_per_cap_mm, TOP_W, slots, text_layers, corner_layer, ARROWS, arrow_layer, fit, SLOT_ICONS, slot_icon_layer
 import legends
 
 m = load_master(); st = m["style"]
@@ -29,6 +29,7 @@ for name, e in m["keys"].items():
                            "textSize": size(cap_mm), "x": 0, "y": 0})
     else:
         layers, warn = text_layers(st, e, INK, st["font_label"])
+        if name in SLOT_ICONS: layers.insert(0, slot_icon_layer(name, INK[0], st))
         warnings += [f"{name} {w}" for w in warn]
         c = corner_layer(st, e, INK[3], st["font_label"])
         if c: layers.append(c)
