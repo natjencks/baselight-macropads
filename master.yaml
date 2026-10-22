@@ -562,7 +562,7 @@ keys:
         fn: Reset blur
         key: Shift+B
         oryx: Reset Blur
-        cap: RESET
+        cap: RST OP
   7D:
     oryx: 26
     yuzu: AMR4XD
@@ -652,7 +652,7 @@ keys:
         fn: Reset operator   # FilmLight support — Ctrl+Delete; Ctrl+Backspace is Retime/Curve-grade only
         key: Ctrl+Delete
         oryx: Reset Op
-        cap: RESET
+        cap: RST OP
   5E:
     oryx: 31
     yuzu: K84UUS
