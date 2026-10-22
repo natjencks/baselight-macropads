@@ -1935,9 +1935,9 @@
    "layers": [
     {
      "colorId": "GR001",
-     "textLabel": "COUNT",
+     "textLabel": "00:00",
      "textFontId": 26345,
-     "textSize": 3.91,
+     "textSize": 4.49,
      "x": 0,
      "y": -3.6
     },

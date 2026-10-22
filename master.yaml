@@ -949,7 +949,7 @@ keys:
         fn: Counters
         key: V
         oryx: Counters
-        cap: COUNT
+        cap: '00:00'
       1:
         fn: Show FPS
         key: Win+F
