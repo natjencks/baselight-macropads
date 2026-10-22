@@ -567,7 +567,7 @@ keys:
         fn: Reset blur
         key: Shift+B
         oryx: Reset Blur
-        cap: RST OP
+        cap: RESET
   7D:
     oryx: 26
     yuzu: AMR4XD

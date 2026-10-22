@@ -1411,7 +1411,7 @@
     },
     {
      "colorId": "RD003",
-     "textLabel": "RST OP",
+     "textLabel": "RESET",
      "textFontId": 26345,
      "textSize": 3.16,
      "x": 0,
