@@ -78,7 +78,7 @@ ICON_MAP = {"3A": "MarkerLeft", "4A": "Marker", "5A": "MarkerRight", "3B": "Shot
             "3C": "PlayLeft", "4C": "StopSquare", "5C": "PlayRight", "3D": "CarrotLeft", "4D": "Key", "5D": "CarrotRight",
             }
 # Icon-set keys whose only legend is the icon: drawn big and centred like the arrows (9 mm long axis).
-BIG_ICON_MAP = {"R2A": "AudioMute"}
+BIG_ICON_MAP = {"R2A": ("AudioMute", 6.75)}   # (icon, long axis in mm); the arrows are 9
 # Slot icons: one height for all, at the top of the stack in place of the Layer-0 word (3.5 mm from top_y down).
 ICON_H = 3.5
 ICON_Y = round(st["top_y"] + ICON_H / 2, 2)
@@ -114,7 +114,7 @@ def build(tag):
                     cap_mm = fit(st, t, st["cap_mm_l0"], e["size"])[0]; font = st["font_label"]; y = round(SLOT[0], 2)   # standard Layer-0 size and position
                 layers.append(dict(colorId=inks[0], textLabel=t, textFontId=font, textSize=size(cap_mm), x=0, y=y))
         elif sc.get("icons") and name in BIG_ICON_MAP:
-            layers.append(big_icon_layer(BIG_ICON_MAP[name], inks[0]))
+            layers.append(big_icon_layer(BIG_ICON_MAP[name][0], inks[0], long_mm=BIG_ICON_MAP[name][1]))
         elif sc.get("icons") and name in ICON_MAP:
             layers.append(icon_layer(ICON_MAP[name], inks[0], ICON_H, ICON_Y))
             txt, _ = text_layers(st, e, inks, st["font_label"])

@@ -68,9 +68,9 @@ ARROW_LONG_MM = 9.0
 ARROW_Y = {"R1D": 4.76}   # R1D is a 1.5u-tall cap: drop its arrow 0.25u so it lines up with R3D's
 def arrow_layer(name, color):
     return big_icon_layer(ARROWS[name], color, ARROW_Y.get(name, 0))
-def big_icon_layer(icon, color, y=0):
-    """One big centred icon, 9 mm along its long axis (the arrows' size)."""
-    ic = ICONS[icon]; h_mm = ARROW_LONG_MM * ic["h"] / max(ic["w"], ic["h"])
+def big_icon_layer(icon, color, y=0, long_mm=ARROW_LONG_MM):
+    """One big centred icon, long_mm along its long axis (the arrows are 9 mm)."""
+    ic = ICONS[icon]; h_mm = long_mm * ic["h"] / max(ic["w"], ic["h"])
     return icon_layer(icon, color, h_mm, y)
 
 # Layer-0 icons used on EVERY set (text sets included), drawn in the Layer-0 slot at the slot-icon size.
