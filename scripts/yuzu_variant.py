@@ -66,8 +66,8 @@ SCHEMES = {
           "mod": "#b8b3ab", "undo": "#b8b3ab", "l1key": "RD003", "l2key": "GN023", "num": "#d9d5ce", "arrows": "GN005", "misc": "BN039"}),
  "W": dict(dot=False, inks_light=DK, inks_dark=LT, name="White",   # the production set's look (white caps, 4 inks)
     caps={"default": "GR002", "l1key": "GR002", "l2key": "GR002"}),
- "K": dict(dot=False, inks_light=["#262626"] * 4, inks_dark=["#faf7f0"] * 4, name="Black",   # all black, all-white text,
-    caps={"default": "GR001", "l1key": "RD003", "l2key": "GN023"}),                                # solid red/green layer keys
+ "K": dict(dot=False, inks_light=DK, inks_dark=LT, name="Black",   # all black; white L0, coral/mint/blue L1-L3;
+    caps={"default": "GR001", "l1key": "RD003", "l2key": "GN023"}),   # solid red/green layer keys
 }
 for _t in list(SCHEMES):
     _v = dict(SCHEMES[_t]); _v["icons"] = True; SCHEMES[_t + "i"] = _v
