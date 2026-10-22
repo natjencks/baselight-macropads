@@ -99,7 +99,7 @@ def build(tag):
             if not is_dark(cap_hex) and cap == "GR002":   # white layer keys (W): labelled like the production set
                 layers, _ = text_layers(st, e, inks, st["font_label"])
             # solid red/green caps say it all: no L1/L2/L3 text (Nat, 2026-10-21)
-        elif zone == "mod":
+        elif zone == "mod" and len(e["layers"]) == 1:   # ALT/SHIFT/CTRL/R7E WIN: one big centred word; 1E WIN has L1/L2 so it keeps the 3 slots
             t = e["layers"].get(0, {}).get("cap", "")
             cap_mm = min(st["big_cap_max_mm"], (TOP_W["1u"] - 1.2) / max(width_per_cap_mm(x) for x in ("ALT", "SHIFT", "CTRL")))
             layers.append(dict(colorId=inks[0], textLabel=t, textFontId=st["font_label"], textSize=size(cap_mm), x=0, y=0))
