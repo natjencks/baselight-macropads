@@ -508,6 +508,11 @@ keys:
         key: KP-
         oryx: Toggle KF
         cap: KEY ±
+      1:
+        fn: Toggle strip category
+        key: F
+        oryx: Strip Cat
+        cap: STRIP CAT
   5D:
     oryx: 24
     yuzu: NGDt4W
