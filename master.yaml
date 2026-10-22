@@ -342,7 +342,7 @@ keys:
         fn: Select shot
         key: Ctrl+Enter
         oryx: Select Shot
-        cap: SELECT SHOT
+        cap: SEL SHOT
   2C:
     oryx: 15
     yuzu: I9bsjW

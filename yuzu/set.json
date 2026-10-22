@@ -1100,9 +1100,9 @@
    "layers": [
     {
      "colorId": "GR001",
-     "textLabel": "SELECT SHOT",
+     "textLabel": "SEL SHOT",
      "textFontId": 26345,
-     "textSize": 3.88,
+     "textSize": 4.49,
      "x": 0,
      "y": -3.6
     }
