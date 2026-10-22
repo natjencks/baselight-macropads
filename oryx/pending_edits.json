@@ -37,5 +37,18 @@
    "hold": "",
    "label": ""
   }
+ },
+ {
+  "layer": 2,
+  "idx": 47,
+  "key": "R3B",
+  "tap": "Alt+\\",
+  "hold": "",
+  "label": "Shot>Top",
+  "was": {
+   "tap": "",
+   "hold": "",
+   "label": ""
+  }
  }
 ]

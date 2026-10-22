@@ -864,6 +864,11 @@ keys:
         key: Ctrl+\
         oryx: Fold All
         cap: ALL
+      2:
+        fn: Fold shot into top strip
+        key: Alt+\
+        oryx: Shot>Top
+        cap: SHT>TOP
   R4B:
     oryx: 48
     yuzu: 6Sh7Tl
