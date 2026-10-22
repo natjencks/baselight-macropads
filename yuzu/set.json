@@ -1450,6 +1450,14 @@
      "textSize": 4.49,
      "x": 0,
      "y": -3.6
+    },
+    {
+     "colorId": "RD003",
+     "textLabel": "UI/IMG",
+     "textFontId": 26345,
+     "textSize": 3.16,
+     "x": 0,
+     "y": 0.82
     }
    ]
   },

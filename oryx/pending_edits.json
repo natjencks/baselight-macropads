@@ -94,9 +94,9 @@
   "layer": 1,
   "idx": 27,
   "key": "1E",
-  "tap": "",
+  "tap": "Ctrl+Esc",
   "hold": "",
-  "label": "",
+  "label": "UI/Image",
   "was": {
    "tap": "Shift+P",
    "hold": "",

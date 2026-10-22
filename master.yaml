@@ -598,6 +598,11 @@ keys:
         key: LWin
         oryx: Win
         cap: WIN
+      1:
+        fn: Toggle UI / image display
+        key: Ctrl+Esc
+        oryx: UI/Image
+        cap: UI/IMG
   2E:
     oryx: 28
     yuzu: kOxNNJ
