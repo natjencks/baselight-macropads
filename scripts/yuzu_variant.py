@@ -64,7 +64,7 @@ SCHEMES = {
     caps={"default": "#d9d5ce", "sys": "#b8b3ab", "view": "#4a90d9", "marks": "#f0a030", "nav": "#e74c3c", "bypass": "#e74c3c",
           "kf": "#e74c3c", "layer": "#7cb342", "shape": "PL021", "dbs": "#16a085", "edit": "#f1c40f", "blank": "#d9d5ce",
           "mod": "#b8b3ab", "undo": "#b8b3ab", "l1key": "RD003", "l2key": "GN023", "num": "#d9d5ce", "arrows": "GN005", "misc": "BN039"}),
- "W": dict(dot=False, inks_light=DK, inks_dark=LT, name="White",   # the production set's look (white caps, 4 inks)
+ "W": dict(dot=True, dot_colors=("RD003", "GN010"), inks_light=DK, inks_dark=LT, name="White",   # production look; layer keys white with a red/green dot
     caps={"default": "GR002", "l1key": "GR002", "l2key": "GR002"}),
  "K": dict(dot=False, inks_light=DK, inks_dark=LT, name="Black",   # all black; white L0, coral/mint/blue L1-L3;
     caps={"default": "GR001", "l1key": "RD003", "l2key": "GN023"}),   # solid red/green layer keys
