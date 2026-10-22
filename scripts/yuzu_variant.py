@@ -40,10 +40,10 @@ ZONE = {}
 def z(names, zone):
     for n in names.split(): ZONE[n] = zone
 z("1A R1A R1B", "sys"); z("2A 2B 2C 2D 2E", "view"); z("R2A R2B R3A R3B R3C R3E R4E", "misc"); z("3A 4A 5A", "marks")
-z("3B 5B 3C 4C 5C", "nav"); z("4B", "bypass"); z("3D 4D 5D", "kf"); z("1B 1C 1D 1E", "layer"); z("6A 6B 6C 6D", "shape")
-z("7B 7D", "dbs"); z("3E 4E 5E", "edit"); z("7A", "blank"); z("T2 T5 T6 RT2 RT5 RT6", "mod"); z("T1 RT1", "undo")
+z("3B 5B 3C 4C 5C", "nav"); z("4B", "bypass"); z("3D 4D 5D", "kf"); z("1B 1C 1D", "layer"); z("6A 6B 6C 6D", "shape")
+z("7B 7D", "dbs"); z("3E 4E 5E", "edit"); z("7A", "blank"); z("T2 T5 T6 RT2 RT5 RT6 1E R7E", "mod"); z("T1 RT1", "undo")   # 1E/R7E = WIN modifiers
 z("T3 RT3", "l1key"); z("T4 RT4", "l2key"); z("R2C R1D R2D R3D", "arrows")
-z("R4A R5A R6A R7A R4B R5B R6B R7B R4C R5C R6C R7C R4D R5D R6D R7D R5E R6E R7E", "num")
+z("R4A R5A R6A R7A R4B R5B R6B R7B R4C R5C R6C R7C R4D R5D R6D R7D R5E R6E", "num")   # R7D (ALL SHOTS/TAPE) stays numpad-plain by Nat's choice
 
 DK = ["#262626", "#db3537", "#346563", "#2b4782"]          # current inks (black, RD003, GN010, BL023)
 LT = ["#faf7f0", "#ff8a7a", "#7fe0b8", "#9cc8ff"]          # light inks for dark caps
