@@ -167,6 +167,7 @@ keys:
         key: Backspace
         oryx: Backspace
         cap: ''        # printed as the Backspace icon (legends.SLOT_ICONS), on every set
+        diagram: BKSPACE
       1:
         fn: Delete
         key: Delete

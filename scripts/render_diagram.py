@@ -9,7 +9,7 @@ m = load_master(); K = m["keys"]
 def band(name, layer, cls):
     lay = K[name]["layers"].get(layer)
     if not lay: return f'<div class="{cls}"></div>'
-    cap = html.escape(lay.get("cap", "").replace("\n", " ")) or "·"
+    cap = html.escape(lay.get("diagram") or lay.get("cap", "").replace("\n", " ")) or "·"   # 'diagram:' names an icon legend
     ks = lay.get("key") or lay.get("hold") or ""
     tip = html.escape(lay.get("fn", "") + (f"  ·  {ks}" if ks else ""))
     return f'<div class="{cls}"><span class="b" data-tip="{tip}">{cap}</span></div>'
