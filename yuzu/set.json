@@ -1466,6 +1466,14 @@
      "textSize": 3.16,
      "x": 0,
      "y": 0.82
+    },
+    {
+     "colorId": "GN010",
+     "textLabel": "LOUPE",
+     "textFontId": 26345,
+     "textSize": 3.16,
+     "x": 0,
+     "y": 3.88
     }
    ]
   },

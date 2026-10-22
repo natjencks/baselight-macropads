@@ -159,9 +159,9 @@
   "layer": 2,
   "idx": 27,
   "key": "1E",
-  "tap": "",
+  "tap": "Win+Esc",
   "hold": "",
-  "label": "",
+  "label": "Loupe",
   "was": {
    "tap": "Ctrl+Shift+R",
    "hold": "",

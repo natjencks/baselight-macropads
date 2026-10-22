@@ -608,6 +608,11 @@ keys:
         key: Ctrl+Esc
         oryx: UI/Image
         cap: UI/IMG
+      2:
+        fn: Show loupe
+        key: Win+Esc
+        oryx: Loupe
+        cap: LOUPE
   2E:
     oryx: 28
     yuzu: kOxNNJ
