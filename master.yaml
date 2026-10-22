@@ -403,11 +403,6 @@ keys:
         key: Ctrl+G
         oryx: Group Grd
         cap: GG
-      3:
-        fn: Reset all parameters
-        key: Ctrl+Delete
-        oryx: Reset Prms
-        cap: ''
   5C:
     oryx: 18
     yuzu: Cg7Wc0

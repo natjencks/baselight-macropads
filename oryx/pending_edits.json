@@ -1,5 +1,18 @@
 [
  {
+  "layer": 3,
+  "idx": 17,
+  "key": "4C",
+  "tap": "",
+  "hold": "",
+  "label": "",
+  "was": {
+   "tap": "Ctrl+Delete",
+   "hold": "",
+   "label": "Reset Prms"
+  }
+ },
+ {
   "layer": 0,
   "idx": 20,
   "key": "1D",
