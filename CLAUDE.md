@@ -3,6 +3,8 @@
 Project: Nat's Baselight control setup — ErgoDox EZ (ST/glow, firmware v25) as two macropads + Yuzu keycaps.
 Nat is a colorist, not a developer: run git/scripts for him, explain in plain words, flag any click he must do himself.
 `master.yaml` is the single source of truth; never hand-edit Oryx or Yuzu without updating it. See README for the loop.
+After EVERY layout change (even master-only), regenerate and send diagram.html to Nat (SendUserFile, render) — the inline
+widget doesn't reach him. The diagram's blue band shows the Layer-3 corner letter, "·" = programmed but unlabelled.
 
 ## Naming
 Left half columns 1–7 left→right, rows A–E top→bottom (1A upper-left). Right half R1 (centre) → R7 (outer).
