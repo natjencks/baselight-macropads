@@ -92,8 +92,7 @@ def build(tag):
             dc = sc.get("dot_colors", ("RD003", "GN010"))
             layers.append(dict(colorId=dc[0] if zone == "l1key" else dc[1], **DOT))
         elif zone in ("l1key", "l2key"):
-            inks = [nearest(h) for h in LT]
-            layers, _ = text_layers(st, e, inks, st["font_label"])
+            pass   # solid red/green cap says it all: no L1/L2/L3 text (Nat, 2026-10-21)
         elif zone == "mod":
             t = e["layers"].get(0, {}).get("cap", "")
             cap_mm = min(st["big_cap_max_mm"], (TOP_W["1u"] - 1.2) / max(width_per_cap_mm(x) for x in ("ALT", "SHIFT", "CTRL")))
