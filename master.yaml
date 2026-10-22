@@ -146,17 +146,17 @@ keys:
         fn: Timeline horizontal zoom
         key: F7
         oryx: TL H-Zoom
-        cap: TMLN H
+        cap: TL H
       1:
         fn: Timeline vertical zoom
         key: Shift+F7
         oryx: TL V-Zoom
-        cap: TMLN V
+        cap: TL V
       2:
         fn: Timeline H+V zoom
         key: Ctrl+Shift+F7
         oryx: TL HV-Zoom
-        cap: TMLN HV
+        cap: TL HV
   7A:
     oryx: 6
     yuzu: A59P47
@@ -209,7 +209,7 @@ keys:
         oryx: 2x1|DBS
         cap: 2x1D
       2:
-        fn: 2x1 cursors   # Nat asked for Layer 3, but 2B L3 is the BASE GRADE jump (B) — parked on L2 pending his call
+        fn: 2x1 cursors
         key: F2
         oryx: 2x1 Cursor
         cap: 2x1C
@@ -302,7 +302,7 @@ keys:
         fn: Add shape
         key: S
         oryx: Add Shape
-        cap: SHAPE
+        cap: SHAP
       1:
         fn: New shape
         key: Q
@@ -372,7 +372,7 @@ keys:
         fn: Wipe vs DBS
         key: Ctrl+Alt+4
         oryx: Wipe|DBS
-        cap: WIPE D
+        cap: WIP D
       1:
         fn: Set wipe angle
         key: Ctrl+Shift+F3
@@ -447,7 +447,7 @@ keys:
         fn: View matte
         key: O
         oryx: View Matte
-        cap: VW-MAT
+        cap: V-MAT
       1:
         fn: Toggle grade / matte
         key: G

@@ -823,15 +823,15 @@
    "layers": [
     {
      "colorId": "GR001",
-     "textLabel": "TMLN H",
+     "textLabel": "TL H",
      "textFontId": 26345,
-     "textSize": 3.56,
+     "textSize": 4.49,
      "x": 0,
      "y": -3.6
     },
     {
      "colorId": "RD003",
-     "textLabel": "TMLN V",
+     "textLabel": "TL V",
      "textFontId": 26345,
      "textSize": 3.16,
      "x": 0,
@@ -839,9 +839,9 @@
     },
     {
      "colorId": "GN010",
-     "textLabel": "TMLN HV",
+     "textLabel": "TL HV",
      "textFontId": 26345,
-     "textSize": 3.03,
+     "textSize": 3.16,
      "x": 0,
      "y": 3.88
     }
@@ -1050,9 +1050,9 @@
    "layers": [
     {
      "colorId": "GR001",
-     "textLabel": "SHAPE",
+     "textLabel": "SHAP",
      "textFontId": 26345,
-     "textSize": 4.1,
+     "textSize": 4.49,
      "x": 0,
      "y": -3.6
     },
@@ -1145,9 +1145,9 @@
    "layers": [
     {
      "colorId": "GR001",
-     "textLabel": "WIPE D",
+     "textLabel": "WIP D",
      "textFontId": 26345,
-     "textSize": 3.84,
+     "textSize": 4.49,
      "x": 0,
      "y": -3.6
     },
@@ -1245,9 +1245,9 @@
    "layers": [
     {
      "colorId": "GR001",
-     "textLabel": "VW-MAT",
+     "textLabel": "V-MAT",
      "textFontId": 26345,
-     "textSize": 3.27,
+     "textSize": 4.3,
      "x": 0,
      "y": -3.6
     },
