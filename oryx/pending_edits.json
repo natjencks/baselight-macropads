@@ -1,11 +1,63 @@
 [
  {
+  "layer": 1,
+  "idx": 8,
+  "key": "2B",
+  "tap": "Ctrl+Alt+3",
+  "hold": "",
+  "label": "2x1|DBS",
+  "was": {
+   "tap": "F2",
+   "hold": "",
+   "label": "2x1 Cursor"
+  }
+ },
+ {
   "layer": 2,
+  "idx": 8,
+  "key": "2B",
+  "tap": "F2",
+  "hold": "",
+  "label": "2x1 Cursor",
+  "was": {
+   "tap": "",
+   "hold": "",
+   "label": ""
+  }
+ },
+ {
+  "layer": 0,
+  "idx": 15,
+  "key": "2C",
+  "tap": "Ctrl+Alt+4",
+  "hold": "",
+  "label": "Wipe|DBS",
+  "was": {
+   "tap": "Ctrl+Alt+3",
+   "hold": "",
+   "label": "2x1|DBS"
+  }
+ },
+ {
+  "layer": 1,
   "idx": 15,
   "key": "2C",
   "tap": "Ctrl+Shift+F3",
   "hold": "",
   "label": "Wipe Angle",
+  "was": {
+   "tap": "Ctrl+Alt+4",
+   "hold": "",
+   "label": "Wipe|DBS"
+  }
+ },
+ {
+  "layer": 2,
+  "idx": 15,
+  "key": "2C",
+  "tap": "F9",
+  "hold": "",
+  "label": "Zoom Gang",
   "was": {
    "tap": "",
    "hold": "",

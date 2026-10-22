@@ -204,7 +204,12 @@ keys:
         oryx: 1x1
         cap: 1×1
       1:
-        fn: 2x1 cursors
+        fn: 2x1 vs DBS
+        key: Ctrl+Alt+3
+        oryx: 2x1|DBS
+        cap: 2x1D
+      2:
+        fn: 2x1 cursors   # Nat asked for Layer 3, but 2B L3 is the BASE GRADE jump (B) — parked on L2 pending his call
         key: F2
         oryx: 2x1 Cursor
         cap: 2x1C
@@ -364,20 +369,20 @@ keys:
     size: 1u
     layers:
       0:
-        fn: 2x1 vs DBS
-        key: Ctrl+Alt+3
-        oryx: 2x1|DBS
-        cap: 2x1D
-      1:
         fn: Wipe vs DBS
         key: Ctrl+Alt+4
         oryx: Wipe|DBS
-        cap: WIP D
-      2:
+        cap: WIPE D
+      1:
         fn: Set wipe angle
         key: Ctrl+Shift+F3
         oryx: Wipe Angle
         cap: ANGLE
+      2:
+        fn: Toggle zoom/pan ganging
+        key: F9
+        oryx: Zoom Gang
+        cap: Z-GANG
   3C:
     oryx: 16
     yuzu: dXk9mu
