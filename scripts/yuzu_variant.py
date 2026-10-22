@@ -64,6 +64,10 @@ SCHEMES = {
     caps={"default": "#d9d5ce", "sys": "#b8b3ab", "view": "#4a90d9", "marks": "#f0a030", "nav": "#e74c3c", "bypass": "#e74c3c",
           "kf": "#e74c3c", "layer": "#7cb342", "shape": "PL021", "dbs": "#16a085", "edit": "#f1c40f", "blank": "#d9d5ce",
           "mod": "#b8b3ab", "undo": "#b8b3ab", "l1key": "RD003", "l2key": "GN023", "num": "#d9d5ce", "arrows": "GN005", "misc": "BN039"}),
+ "W": dict(dot=False, inks_light=DK, inks_dark=LT, name="White",   # the production set's look (white caps, 4 inks)
+    caps={"default": "GR002", "l1key": "GR002", "l2key": "GR002"}),
+ "K": dict(dot=False, inks_light=["#262626"] * 4, inks_dark=["#faf7f0"] * 4, name="Black",   # all black, all-white text,
+    caps={"default": "GR001", "l1key": "RD003", "l2key": "GN023"}),                                # solid red/green layer keys
 }
 for _t in list(SCHEMES):
     _v = dict(SCHEMES[_t]); _v["icons"] = True; SCHEMES[_t + "i"] = _v
@@ -92,7 +96,9 @@ def build(tag):
             dc = sc.get("dot_colors", ("RD003", "GN010"))
             layers.append(dict(colorId=dc[0] if zone == "l1key" else dc[1], **DOT))
         elif zone in ("l1key", "l2key"):
-            pass   # solid red/green cap says it all: no L1/L2/L3 text (Nat, 2026-10-21)
+            if not is_dark(cap_hex) and cap == "GR002":   # white layer keys (W): labelled like the production set
+                layers, _ = text_layers(st, e, inks, st["font_label"])
+            # solid red/green caps say it all: no L1/L2/L3 text (Nat, 2026-10-21)
         elif zone == "mod":
             t = e["layers"].get(0, {}).get("cap", "")
             cap_mm = min(st["big_cap_max_mm"], (TOP_W["1u"] - 1.2) / max(width_per_cap_mm(x) for x in ("ALT", "SHIFT", "CTRL")))
@@ -121,7 +127,8 @@ def build(tag):
             c = corner_layer(st, e, inks[3], st["font_label"])
             if c: layers.append(c)
         keys[e["yuzu"]] = {"colorId": cap, "layers": layers}
-    out = dict(tpl); out["name"] = f"Audition {tag[:-1]} icons" if tag.endswith("i") else f"Audition {tag}"; out["author"] = "Nat"; out["keys"] = keys; out["keyTemplates"] = {}; out["designUrl"] = None
+    out = dict(tpl); base = tag[:-1] if tag.endswith("i") else tag; label = SCHEMES[base].get("name", base)
+    out["name"] = f"Audition {label} icons" if tag.endswith("i") else f"Audition {label}"; out["author"] = "Nat"; out["keys"] = keys; out["keyTemplates"] = {}; out["designUrl"] = None
     os.makedirs(f"{ROOT}/yuzu/variants", exist_ok=True)
     json.dump(out, open(f"{ROOT}/yuzu/variants/{tag}.json", "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     print(f"{tag}: yuzu/variants/{tag}.json  colour mapping:"); [print(f"   {h} -> {v}") for h, v in REPORT.items()]
