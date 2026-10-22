@@ -1072,7 +1072,7 @@ keys:
         fn: Groups
         key: Win+G
         oryx: Groups
-        cap: GROUP
+        cap: GRUP
   R4E:
     oryx: 66
     yuzu: SkCBkD

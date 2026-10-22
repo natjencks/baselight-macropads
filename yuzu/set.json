@@ -2107,9 +2107,9 @@
    "layers": [
     {
      "colorId": "GR001",
-     "textLabel": "GROUP",
+     "textLabel": "GRUP",
      "textFontId": 26345,
-     "textSize": 3.85,
+     "textSize": 4.49,
      "x": 0,
      "y": -3.6
     }
