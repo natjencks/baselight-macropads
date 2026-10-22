@@ -452,7 +452,7 @@ keys:
         fn: Toggle grade / matte
         key: G
         oryx: Grd⇄Matte
-        cap: GRD/MAT
+        cap: G‹›M
       2:
         fn: Insert matte merge
         key: T
