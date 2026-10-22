@@ -4,7 +4,7 @@ Layout rules (scripts/legends.py): three fixed slots per key (L0 big, L1/L2 smal
 corner letter; 'big_keys' get one centred legend."""
 import json, os, sys
 from common import load_master, ROOT
-from legends import width_per_cap_mm, TOP_W, slots, text_layers, corner_layer, ARROWS, arrow_layer
+from legends import width_per_cap_mm, TOP_W, slots, text_layers, corner_layer, ARROWS, arrow_layer, fit
 import legends
 
 m = load_master(); st = m["style"]
@@ -23,8 +23,8 @@ for name, e in m["keys"].items():
         if t:
             cap_mm = min(st["big_cap_max_mm"], (TOP_W[e["size"]] - 1.2) / width_per_cap_mm(t))
             font = st["font_big"]   # Light: digits and symbols match the arrow icons' stroke
-            if t.isalpha() and len(t) > 1:  # word legends (NUM, ENTER): label font (SemiBold) and one shared size
-                cap_mm = min(st["big_cap_max_mm"], (TOP_W["1u"] - 1.2) / width_per_cap_mm("NUM")); font = st["font_label"]
+            if t.isalpha() and len(t) > 1:  # word legends (NUM, ENTER): label font at the normal Layer-0 size
+                cap_mm = fit(st, t, st["cap_mm_l0"], e["size"])[0]; font = st["font_label"]   # standard Layer-0 size, centred
             layers.append({"colorId": INK[0], "textLabel": t, "textFontId": font,
                            "textSize": size(cap_mm), "x": 0, "y": 0})
     else:

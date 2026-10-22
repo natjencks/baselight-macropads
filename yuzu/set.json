@@ -1669,7 +1669,7 @@
      "colorId": "GR001",
      "textLabel": "NUM",
      "textFontId": 26345,
-     "textSize": 5.6,
+     "textSize": 4.49,
      "x": 0,
      "y": 0
     }
@@ -1901,7 +1901,7 @@
      "colorId": "GR001",
      "textLabel": "ENTER",
      "textFontId": 26345,
-     "textSize": 5.6,
+     "textSize": 4.49,
      "x": 0,
      "y": 0
     }
