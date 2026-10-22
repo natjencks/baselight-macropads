@@ -76,7 +76,7 @@ keys:
         fn: 1x1 Shots view
         key: F6
         oryx: 1x1 Shots
-        cap: SHOTS
+        cap: GRID
       1:
         fn: Cycle F6 views
         key: Ctrl+F6
