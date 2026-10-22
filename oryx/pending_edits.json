@@ -1,76 +1,154 @@
 [
  {
-  "layer": 0,
-  "idx": 6,
-  "key": "7A",
-  "tap": "Backspace",
-  "hold": "",
-  "label": "Backspace",
-  "was": {
-   "tap": "Delete",
-   "hold": "",
-   "label": "Delete"
-  }
- },
- {
   "layer": 1,
-  "idx": 6,
-  "key": "7A",
-  "tap": "Delete",
+  "idx": 13,
+  "key": "7B",
+  "tap": "PgUp",
   "hold": "",
-  "label": "Delete",
+  "label": "Layer Up",
   "was": {
-   "tap": "Backspace",
+   "tap": "",
    "hold": "",
-   "label": "Backspace"
-  }
- },
- {
-  "layer": 1,
-  "idx": 17,
-  "key": "4C",
-  "tap": "Ctrl+G",
-  "hold": "",
-  "label": "Group Grd",
-  "was": {
-   "tap": "Shift+Space",
-   "hold": "",
-   "label": "Play Scene"
+   "label": ""
   }
  },
  {
   "layer": 2,
-  "idx": 17,
-  "key": "4C",
+  "idx": 13,
+  "key": "7B",
+  "tap": "Win+PgUp",
+  "hold": "",
+  "label": "Stack Top",
+  "was": {
+   "tap": "",
+   "hold": "",
+   "label": ""
+  }
+ },
+ {
+  "layer": 0,
+  "idx": 14,
+  "key": "1C",
   "tap": "",
   "hold": "",
   "label": "",
   "was": {
-   "tap": "Ctrl+Space",
+   "tap": "PgUp",
    "hold": "",
-   "label": "Play Shot"
+   "label": "Layer Up"
   }
  },
  {
   "layer": 1,
-  "idx": 18,
-  "key": "5C",
-  "tap": "Shift+Space",
+  "idx": 14,
+  "key": "1C",
+  "tap": "",
   "hold": "",
-  "label": "Play Scene",
+  "label": "",
   "was": {
-   "tap": "Ctrl+G",
+   "tap": "Win+PgUp",
    "hold": "",
-   "label": "Group Grd"
+   "label": "Stack Top"
+  }
+ },
+ {
+  "layer": 0,
+  "idx": 20,
+  "key": "1D",
+  "tap": "",
+  "hold": "",
+  "label": "",
+  "was": {
+   "tap": "PgDn",
+   "hold": "",
+   "label": "Layer Down"
+  }
+ },
+ {
+  "layer": 1,
+  "idx": 20,
+  "key": "1D",
+  "tap": "",
+  "hold": "",
+  "label": "",
+  "was": {
+   "tap": "Win+PgDn",
+   "hold": "",
+   "label": "Stack Bot"
+  }
+ },
+ {
+  "layer": 1,
+  "idx": 26,
+  "key": "7D",
+  "tap": "PgDn",
+  "hold": "",
+  "label": "Layer Down",
+  "was": {
+   "tap": "",
+   "hold": "",
+   "label": ""
   }
  },
  {
   "layer": 2,
-  "idx": 18,
-  "key": "5C",
-  "tap": "Ctrl+Space",
+  "idx": 26,
+  "key": "7D",
+  "tap": "Win+PgDn",
   "hold": "",
-  "label": "Play Shot",
+  "label": "Stack Bot",
+  "was": {
+   "tap": "",
+   "hold": "",
+   "label": ""
+  }
+ },
+ {
+  "layer": 2,
+  "idx": 27,
+  "key": "1E",
+  "tap": "Ctrl+Shift+R",
+  "hold": "",
+  "label": "Rename",
+  "was": {
+   "tap": "",
+   "hold": "",
+   "label": ""
+  }
+ },
+ {
+  "layer": 0,
+  "idx": 30,
+  "key": "4E",
+  "tap": "",
+  "hold": "",
+  "label": "",
+  "was": {
+   "tap": "Ctrl+Shift+R",
+   "hold": "",
+   "label": "Rename"
+  }
+ },
+ {
+  "layer": 2,
+  "idx": 30,
+  "key": "4E",
+  "tap": "",
+  "hold": "",
+  "label": "",
+  "was": {
+   "tap": "Ctrl+M",
+   "hold": "",
+   "label": "MultiPaste"
+  }
+ },
+ {
+  "layer": 3,
+  "idx": 31,
+  "key": "5E",
+  "tap": "Ctrl+M",
+  "hold": "",
+  "label": "MultiPaste",
   "was": {
    "tap": "",
    "hold": "",

@@ -1076,29 +1076,28 @@
      "textSize": 4.49,
      "x": 0,
      "y": -3.6
+    },
+    {
+     "colorId": "RD003",
+     "textLabel": "LAY↑",
+     "textFontId": 26345,
+     "textSize": 3.16,
+     "x": 0,
+     "y": 0.82
+    },
+    {
+     "colorId": "GN010",
+     "textLabel": "TOP",
+     "textFontId": 26345,
+     "textSize": 3.16,
+     "x": 0,
+     "y": 3.88
     }
    ]
   },
   "3R8UDS": {
    "colorId": "GR002",
-   "layers": [
-    {
-     "colorId": "GR001",
-     "textLabel": "LAYER↑",
-     "textFontId": 26345,
-     "textSize": 4.49,
-     "x": 0,
-     "y": -3.6
-    },
-    {
-     "colorId": "RD003",
-     "textLabel": "TOP",
-     "textFontId": 26345,
-     "textSize": 3.16,
-     "x": 0,
-     "y": 0.82
-    }
-   ]
+   "layers": []
   },
   "I9bsjW": {
    "colorId": "GR002",
@@ -1215,24 +1214,7 @@
   },
   "3UK6NS": {
    "colorId": "GR002",
-   "layers": [
-    {
-     "colorId": "GR001",
-     "textLabel": "LAYER↓",
-     "textFontId": 26345,
-     "textSize": 4.49,
-     "x": 0,
-     "y": -3.6
-    },
-    {
-     "colorId": "RD003",
-     "textLabel": "BOTTOM",
-     "textFontId": 26345,
-     "textSize": 3.16,
-     "x": 0,
-     "y": 0.82
-    }
-   ]
+   "layers": []
   },
   "h9SSVX": {
    "colorId": "GR002",
@@ -1365,6 +1347,22 @@
      "textSize": 4.28,
      "x": 0,
      "y": -3.6
+    },
+    {
+     "colorId": "RD003",
+     "textLabel": "LAY↓",
+     "textFontId": 26345,
+     "textSize": 3.16,
+     "x": 0,
+     "y": 0.82
+    },
+    {
+     "colorId": "GN010",
+     "textLabel": "BOT",
+     "textFontId": 26345,
+     "textSize": 3.16,
+     "x": 0,
+     "y": 3.88
     }
    ]
   },
@@ -1386,6 +1384,14 @@
      "textSize": 3.16,
      "x": 0,
      "y": 0.82
+    },
+    {
+     "colorId": "GN010",
+     "textLabel": "NAME",
+     "textFontId": 26345,
+     "textSize": 3.16,
+     "x": 0,
+     "y": 3.88
     }
    ]
   },
@@ -1449,24 +1455,7 @@
   },
   "dqz1KA": {
    "colorId": "GR002",
-   "layers": [
-    {
-     "colorId": "GR001",
-     "textLabel": "NAME",
-     "textFontId": 26345,
-     "textSize": 4.49,
-     "x": 0,
-     "y": -3.6
-    },
-    {
-     "colorId": "GN010",
-     "textLabel": "MULTI",
-     "textFontId": 26345,
-     "textSize": 3.16,
-     "x": 0,
-     "y": 3.88
-    }
-   ]
+   "layers": []
   },
   "K84UUS": {
    "colorId": "GR002",

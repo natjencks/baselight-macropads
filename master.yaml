@@ -323,21 +323,21 @@ keys:
         key: ;
         oryx: DBS View
         cap: VIEW
-  1C:
-    oryx: 14
-    yuzu: 3R8UDS
-    size: 1.5u
-    layers:
-      0:
+      1:
         fn: Layer up
         key: PgUp
         oryx: Layer Up
-        cap: LAYER↑
-      1:
+        cap: LAY↑
+      2:
         fn: Top of stack
         key: Win+PgUp
         oryx: Stack Top
         cap: TOP
+  1C:
+    oryx: 14
+    yuzu: 3R8UDS
+    size: 1.5u
+    layers: {}
   2C:
     oryx: 15
     yuzu: I9bsjW
@@ -427,17 +427,7 @@ keys:
     oryx: 20
     yuzu: 3UK6NS
     size: 1.5u
-    layers:
-      0:
-        fn: Layer down
-        key: PgDn
-        oryx: Layer Down
-        cap: LAYER↓
-      1:
-        fn: Bottom of stack
-        key: Win+PgDn
-        oryx: Stack Bot
-        cap: BOTTOM
+    layers: {}
   2D:
     oryx: 21
     yuzu: h9SSVX
@@ -533,6 +523,16 @@ keys:
         key: ''''
         oryx: DBS Apply
         cap: APPLY
+      1:
+        fn: Layer down
+        key: PgDn
+        oryx: Layer Down
+        cap: LAY↓
+      2:
+        fn: Bottom of stack
+        key: Win+PgDn
+        oryx: Stack Bot
+        cap: BOT
   1E:
     oryx: 27
     yuzu: f19Yvj
@@ -548,6 +548,11 @@ keys:
         key: Shift+P
         oryx: Delete Lyr
         cap: −LYR
+      2:
+        fn: Rename strip
+        key: Ctrl+Shift+R
+        oryx: Rename
+        cap: NAME
   2E:
     oryx: 28
     yuzu: kOxNNJ
@@ -592,17 +597,7 @@ keys:
     oryx: 30
     yuzu: dqz1KA
     size: 1u
-    layers:
-      0:
-        fn: Rename strip
-        key: Ctrl+Shift+R
-        oryx: Rename
-        cap: NAME
-      2:
-        fn: Multi-paste
-        key: Ctrl+M
-        oryx: MultiPaste
-        cap: MULTI
+    layers: {}
   5E:
     oryx: 31
     yuzu: K84UUS
@@ -623,6 +618,11 @@ keys:
         key: Ctrl+F
         oryx: Paste Strp
         cap: STRIPS
+      3:
+        fn: Multi-paste
+        key: Ctrl+M
+        oryx: MultiPaste
+        cap: ''
   T1:
     oryx: 32
     yuzu: GGCFEK
