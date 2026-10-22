@@ -83,8 +83,8 @@ Oryx key index ↔ name ↔ Yuzu id tables are in scripts/common.py (geometry er
   White caps, inks black / red RD003 / green GN010 / blue BL023; numpad + arrows one big centred legend; SemiBold for
   labels, Regular for the big glyphs. Previews can be rendered locally with PIL from fonts/ to avoid Yuzu round-trips.
 - Saved designs on Nat's account (all re-saved 2026-10-21 21:50 at repo 8121fbf / Oryx 3vAb4w: 3-slot legends, Light digits, NUM/ENTER SemiBold at L0 size+position, arrow icons everywhere, 2A GRID/CYC F6, 6A zoom set, 7A ⌫ icon/DEL, R2A MUTE icon full size on icon sets, B1/G solid layer keys with no text, F marks row RD006): Baselight V16 (production, white),
-  Audition B1, C, F, G, C icons, F icons, + (21:55) White icons (Wi: production look + icons), Black (K: all black, all-white
-  text, solid red/green layer keys), Black icons (Ki). The Open dialog lists 9 designs; click "Load More" for the rest. Update loop: Open dialog -> click entry (coords from __entryPos) -> fetch the
+  Audition B1, C, F, G, C icons, F icons, + (21:55) White icons (Wi: production look + icons), Black (K: all black, white L0 + coral/mint/blue
+  L1-L3 text, solid red/green layer keys), Black icons (Ki). The Open dialog lists 9 designs; click "Load More" for the rest. Update loop: Open dialog -> click entry (coords from __entryPos) -> fetch the
   variant JSON from raw.githubusercontent.com/<commit sha>/... (the /main/ URL is cached ~5 min) -> __import -> Save.
 
 ## Baselight facts used
