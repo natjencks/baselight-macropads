@@ -29,7 +29,6 @@ for name, e in m["keys"].items():
                            "textSize": size(cap_mm), "x": 0, "y": y})
     else:
         layers, warn = text_layers(st, e, INK, st["font_label"])
-        if name in SLOT_ICONS: layers.insert(0, slot_icon_layer(name, INK[0], st))
         warnings += [f"{name} {w}" for w in warn]
         c = corner_layer(st, e, INK[3], st["font_label"])
         if c: layers.append(c)
