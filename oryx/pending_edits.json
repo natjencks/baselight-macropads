@@ -1,5 +1,18 @@
 [
  {
+  "layer": 2,
+  "idx": 15,
+  "key": "2C",
+  "tap": "Ctrl+Shift+F3",
+  "hold": "",
+  "label": "Wipe Angle",
+  "was": {
+   "tap": "",
+   "hold": "",
+   "label": ""
+  }
+ },
+ {
   "layer": 3,
   "idx": 17,
   "key": "4C",

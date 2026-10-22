@@ -373,6 +373,11 @@ keys:
         key: Ctrl+Alt+4
         oryx: Wipe|DBS
         cap: WIP D
+      2:
+        fn: Set wipe angle
+        key: Ctrl+Shift+F3
+        oryx: Wipe Angle
+        cap: ANGLE
   3C:
     oryx: 16
     yuzu: dXk9mu
