@@ -527,7 +527,7 @@ keys:
         fn: Toggle strip category
         key: F
         oryx: Strip Cat
-        cap: STRIP CAT
+        cap: TOG CAT
   5D:
     oryx: 24
     yuzu: NGDt4W
