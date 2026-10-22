@@ -87,12 +87,19 @@ Oryx key index ↔ name ↔ Yuzu id tables are in scripts/common.py (geometry er
   L1-L3 text, solid red/green layer keys), Black icons (Ki). The Open dialog lists 9 designs; click "Load More" for the rest. Update loop (helpers now in scripts/yuzu_browser.js): set window.__sha = commit -> __openDlg() -> click entry at __entryPos(name)
   -> __loadFromRepo(name, 'yuzu/variants/X.json') -> Save click at (286,20) in the 800-px frame (1024-wide pane). The dates in the Open
   dialog are creation dates, NOT last-saved: verify a save by reloading the page, re-opening the design and probing its JSON.
-  Icon sets (C/F/White/Black icons) re-saved 22:40 at repo e07a162: ⌫ with floating X (e11fc93 drawing), thinner Key, MUTE −25%;
-  the six non-icon sets still carry the previous ⌫ (DejaVu-style) — resave them when Nat asks.
+  ALL TEN re-saved 2026-10-22 13:50 at repo a9570db (Oryx NowGbA): floating-X ⌫, thin Key, MUTE −25%, 1C SEL SHOT/BEFORE/AFTER,
+  1D RESET OP, 4E WKSPACE, 7B LAY↑/ROW↑, 7D LAY↓/ROW↓, 1E L2 NAME, 6C L2 INS MAT. Save click at (286,20) is allowed when Nat's
+  message asks for the push. The Open-dialog lookup can race the dialog animation: wait 1.5 s after __openDlg before __entryPos.
 
 ## Baselight facts used
 Shortcuts from the 7.0 Linux sheet (new): play shot Ctrl+Space; Ctrl+F1 is stereo-only; Reset Operator Ctrl+Backspace;
 Timeline Alignment panel Win+; vs Align Timeline Vertically Ctrl+;. Layer-3 jumps send F13–F17 for a FLAPI script (todo); Formats is JOBS(R1B)+L1 since B4KY9x; since VqwoWd: 2x1 Cursor 2B+L1, Byp Op 4B+L1 / Byp All 4B+L2,
 Grab Still 3C(REW)+L1, Group Grade 5C(FWD)+L1; WvRLzn: 6B L2 Next Shape, 6C View Matte (O) / Grd⇄Matte (G); wOXdx9: 2D L2 Cur|Ref,
 2E L2 Gang Curs; GGKD5j: zoom set 2A→6A, 2A = 1x1 Shots view F6 / Cycle F6 Ctrl+F6; 3vAb4w: 7A Backspace L0 / Delete L1, 4C L1 Group Grd,
-5C L1 Play Scene / L2 Play Shot; R7D F18 = ALL SHOTS view, R7E F19 = CURRENT TAPE view (Shots View filters, script todo).
+5C L1 Play Scene / L2 Play Shot; R7D F18 = ALL SHOTS view, R7E F19 = CURRENT TAPE view (Shots View filters, script todo);
+NowGbA (2026-10-22): 1C Select Shot Ctrl+Enter / Sel Before Alt+Enter / Sel After Alt+Shift+Enter, 1D Reset Operator Ctrl+Backspace,
+4E Toggle last Workspace F8, 7B/7D L1 Layer Up/Down PgUp/PgDn, L2 selected-layer row up/down Alt+PgUp/PgDn, L3 stack top/bottom
+Win+PgUp/PgDn, 1E L2 Rename Ctrl+Shift+R, 5C L3 Loop/Bounce Ctrl+B, 5E L3 Multi-paste Ctrl+M, 6C L2 Insert Matte Merge T.
+Oryx quirk: clicking "Modify layout" creates the next revision id immediately (NowGbA appeared before compiling, same content as
+3vAb4w); the compile then keeps that id — so "rev changed" is not a compile signal; compare key contents instead.
+The 7.0 shortcut sheet is in the session uploads (6562ac98-Baselight_v7.0_KB_Shortcuts_Linux.pdf; pdftotext -layout to grep it).
